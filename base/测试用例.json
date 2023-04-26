@@ -1,0 +1,5008 @@
+[
+  {
+    "Project": "Module",
+    "Songhua": "VAL",
+    "测试回数": "测试项目数",
+    "2回目": 0,
+    "3回目": 0
+  },
+  {
+    "测试回数": "测试通过项目数",
+    "2回目": 0,
+    "3回目": 0
+  },
+  {
+    "测试回数": "测试未通过项目数",
+    "2回目": 0,
+    "3回目": 0
+  },
+  {
+    "测试回数": "未测试项目数",
+    "2回目": 0,
+    "3回目": 0
+  },
+  {},
+  {},
+  {},
+  {
+    "Project": "服务",
+    "Songhua": "ID",
+    "测试回数": "机能模块",
+    "2回目": "条件一",
+    "3回目": "测试命令"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "空气质量等级",
+    "2回目": "优",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getInCabinPm25Level"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "空气质量等级",
+    "2回目": "良",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getInCabinPm25Level"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "空气质量等级",
+    "2回目": "轻度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getInCabinPm25Level"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "空气质量等级",
+    "2回目": "中度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getInCabinPm25Level"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "空气质量等级",
+    "2回目": "重度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getInCabinPm25Level"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "空气质量等级",
+    "2回目": "严重",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getInCabinPm25Level"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "通知空气质量等级",
+    "2回目": "优",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "通知空气质量等级",
+    "2回目": "良",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "通知空气质量等级",
+    "2回目": "轻度",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "通知空气质量等级",
+    "2回目": "中度",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "通知空气质量等级",
+    "2回目": "重度",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_IN_CABIN_PM25_LEVEL",
+    "测试回数": "通知空气质量等级",
+    "2回目": "严重",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "主驾空调温度调节",
+    "2回目": "默认温度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 1 20"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "主驾空调温度调节",
+    "2回目": "温度为 20",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 1 30"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "主驾空调温度调节",
+    "2回目": "温度 30",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 1 17.5"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "副驾空调温度调节",
+    "2回目": "默认温度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 2 20"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "副驾空调温度调节",
+    "2回目": "温度为 20",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 2 30"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "副驾空调温度调节",
+    "2回目": "温度 30",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 2 17"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "后左空调温度调节",
+    "2回目": "默认温度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 3 20"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "后左空调温度调节",
+    "2回目": "温度为 20",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 3 30"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "后左空调温度调节",
+    "2回目": "温度 30",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 3 17"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "后右空调温度调节",
+    "2回目": "默认温度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 4 20"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "后右空调温度调节",
+    "2回目": "温度为 20",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 4 30"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "后右空调温度减",
+    "2回目": "温度 30",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setTemperature 4 17"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "当前主驾空调温度",
+    "2回目": "主驾空调打开中,温度20度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getTemperature 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "当前副驾空调温度",
+    "2回目": "副驾空调打开中,温度20度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getTemperature 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "当前左后空调温度",
+    "2回目": "左后空调打开中,温度20度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getTemperature 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "当前右后空调温度",
+    "2回目": "右后空调打开中,温度20度",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getTemperature 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "通知主驾空调温度",
+    "2回目": "设置主驾温度为25",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "通知副驾空调温度",
+    "2回目": "设置副驾温度为25",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "通后后左空调温度",
+    "2回目": "设置后左温度为25",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_TEMPERATURE",
+    "测试回数": "通知后右空调温度",
+    "2回目": "设置后右温度为25",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "前排风量调节",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 0 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "前排风量调节",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 0 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "前排风量调节",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 0 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "前排风量调节",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 0 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "前排风量调节",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 0 5"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "前排风量调节",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 0 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "前排风量调节",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 0 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "前排风量调节",
+    "2回目": "风量为0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 0 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "主驾风量调节",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 1 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "主驾风量调节",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 1 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "主驾风量调节",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 1 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "主驾风量调节",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 1 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "主驾风量调节",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 1 5"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "主驾风量调节",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 1 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "主驾风量调节",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 1 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "主驾风量调节",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 1 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "副驾风量调节",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 2 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "副驾风量调节",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 2 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "副驾风量调节",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 2 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "副驾风量调节",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 2 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "副驾风量调节",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 2 5"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "副驾风量调节",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 2 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "副驾风量调节",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 2 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "副驾风量调节",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 2 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后左风量调节",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 3 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后左风量调节",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 3 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后左风量调节",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 3 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后左风量调节",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 3 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后左风量调节",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 3 5"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后左风量调节",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 3 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后左风量调节",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 3 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后左风量调节",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 3 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后右风量调节",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 4 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后右风量调节",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 4 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后右风量调节",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 4 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后右风量调节",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 4 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后右风量调节",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 4 5"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后右风量调节",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 4 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后右风量调节",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 4 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "后右风量调节",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwLevel 4 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前主驾空调风量",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前主驾空调风量",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前主驾空调风量",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前主驾空调风量",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前主驾空调风量",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前主驾空调风量",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前主驾空调风量",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前主驾空调风量",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前副驾空调风量",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前副驾空调风量",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前副驾空调风量",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前副驾空调风量",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前副驾空调风量",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前副驾空调风量",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前副驾空调风量",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前副驾空调风量",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前左后空调风量",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前左后空调风量",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前左后空调风量",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前左后空调风量",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前左后空调风量",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前左后空调风量",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前左后空调风量",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前左后空调风量",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前右后空调风量",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前右后空调风量",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前右后空调风量",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前右后空调风量",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前右后空调风量",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前右后空调风量",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前右后空调风量",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前右后空调风量",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前前排空调风量",
+    "2回目": "等级1",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前前排空调风量",
+    "2回目": "等级2",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前前排空调风量",
+    "2回目": "等级3",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前前排空调风量",
+    "2回目": "等级4",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前前排空调风量",
+    "2回目": "等级5",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前前排空调风量",
+    "2回目": "等级6",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前前排空调风量",
+    "2回目": "等级7",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "当前前排空调风量",
+    "2回目": "等级0",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/getBlwLevel 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知主驾空调风量",
+    "2回目": "设置左前空调风量1档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知主驾空调风量",
+    "2回目": "设置左前空调风量2档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知主驾空调风量",
+    "2回目": "设置左前空调风量3档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知主驾空调风量",
+    "2回目": "设置左前空调风量4档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知主驾空调风量",
+    "2回目": "设置左前空调风量5档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知主驾空调风量",
+    "2回目": "设置左前空调风量6档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知主驾空调风量",
+    "2回目": "设置左前空调风量7档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知主驾空调风量",
+    "2回目": "设置左前空调风量0档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知前排空调风量",
+    "2回目": "设置前排空调风量1档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知前排空调风量",
+    "2回目": "设置前排空调风量2档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知前排空调风量",
+    "2回目": "设置前排空调风量3档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知前排空调风量",
+    "2回目": "设置前排空调风量4档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知前排空调风量",
+    "2回目": "设置前排空调风量5档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知前排空调风量",
+    "2回目": "设置前排空调风量6档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知前排空调风量",
+    "2回目": "设置前排空调风量7档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知前排空调风量",
+    "2回目": "设置前排空调风量0档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知副驾空调风量",
+    "2回目": "设置副驾空调风量1档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知副驾空调风量",
+    "2回目": "设置右前空调风量2档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知副驾空调风量",
+    "2回目": "设置右前空调风量3档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知副驾空调风量",
+    "2回目": "设置右前空调风量4档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知副驾空调风量",
+    "2回目": "设置右前空调风量5档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知副驾空调风量",
+    "2回目": "设置右前空调风量6档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知副驾空调风量",
+    "2回目": "设置右前空调风量7档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知副驾空调风量",
+    "2回目": "设置右前空调风量0档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后左空调风量",
+    "2回目": "设置后左空调风量1档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后左空调风量",
+    "2回目": "设置后左空调风量2档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后左空调风量",
+    "2回目": "设置后左空调风量3档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后左空调风量",
+    "2回目": "设置后左空调风量4档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后左空调风量",
+    "2回目": "设置后左空调风量5档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后左空调风量",
+    "2回目": "设置后左空调风量6档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后左空调风量",
+    "2回目": "设置后左空调风量7档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后左空调风量",
+    "2回目": "设置后左空调风量0档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后右空调风量",
+    "2回目": "设置后右空调风量1档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后右空调风量",
+    "2回目": "设置后右空调风量2档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后右空调风量",
+    "2回目": "设置后右空调风量3档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后右空调风量",
+    "2回目": "设置后右空调风量4档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后右空调风量",
+    "2回目": "设置后右空调风量5档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后右空调风量",
+    "2回目": "设置后右空调风量6档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后右空调风量",
+    "2回目": "设置后右空调风量7档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_LEVEL",
+    "测试回数": "通知后右空调风量",
+    "2回目": "设置后右空调风量0档",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_WHOLE_CABIN_AIR_CD",
+    "测试回数": "全部空调开关",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setWholeCabinAirCd 7 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_WHOLE_CABIN_AIR_CD",
+    "测试回数": "全部空调开关",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setWholeCabinAirCd 7 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_WHOLE_CABIN_AIR_CD",
+    "测试回数": "前排空调开关",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setWholeCabinAirCd 0 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_WHOLE_CABIN_AIR_CD",
+    "测试回数": "前排空调开关",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setWholeCabinAirCd 0 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_WHOLE_CABIN_AIR_CD",
+    "测试回数": "后排空调开关",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setWholeCabinAirCd 6 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_WHOLE_CABIN_AIR_CD",
+    "测试回数": "后排空调开关",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setWholeCabinAirCd 6 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AIR_CD_AC_MODE",
+    "测试回数": "前排空调A/C开关",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAirCdAcMode 0 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AIR_CD_AC_MODE",
+    "测试回数": "前排空调A/C开关",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAirCdAcMode 0 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AIR_CD_AC_MODE",
+    "测试回数": "后排空调A/C开关",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAirCdAcMode 6 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AIR_CD_AC_MODE",
+    "测试回数": "后排空调A/C开关",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAirCdAcMode 6 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_RECYCLE_DOOR_MODE",
+    "测试回数": "空调内外循环模式切换",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setRecycleDoorMode 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_RECYCLE_DOOR_MODE",
+    "测试回数": "空调内外循环模式切换",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setRecycleDoorMode 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AUTO_AIR_CD_MODE",
+    "测试回数": "前排自动",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAutoAirCdMode 0 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AUTO_AIR_CD_MODE",
+    "测试回数": "主驾空调自动",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAutoAirCdMode 1 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AUTO_AIR_CD_MODE",
+    "测试回数": "副驾空调自动",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAutoAirCdMode 2 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AUTO_AIR_CD_MODE",
+    "测试回数": "后左空调自动",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAutoAirCdMode 3 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AUTO_AIR_CD_MODE",
+    "测试回数": "后右空调自动",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAutoAirCdMode 4 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "主驾吹风模式调节",
+    "2回目": "吹脸模式",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 1 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "主驾吹风模式调节",
+    "2回目": "吹脚",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 1 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "主驾吹风模式调节",
+    "2回目": "吹脸吹脚模式",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 1 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "主驾吹风模式调节",
+    "2回目": "吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 1 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "主驾吹风模式调节",
+    "2回目": "吹脚吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 1 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "主驾吹风模式调节",
+    "2回目": "吹脸吹脚吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 1 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "主驾吹风模式调节",
+    "2回目": "吹脸吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 1 8"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "副驾吹风模式调节",
+    "2回目": "吹脸模式",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 2 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "副驾吹风模式调节",
+    "2回目": "吹脚",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 2 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "副驾吹风模式调节",
+    "2回目": "吹脸吹脚模式",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 2 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "副驾吹风模式调节",
+    "2回目": "吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 2 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "副驾吹风模式调节",
+    "2回目": "吹脚吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 2 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "副驾吹风模式调节",
+    "2回目": "吹脸吹脚吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 2 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "副驾吹风模式调节",
+    "2回目": "吹脸吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 2 8"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后左吹风模式调节",
+    "2回目": "吹脸模式",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 3 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后左吹风模式调节",
+    "2回目": "吹脚",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 3 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后左吹风模式调节",
+    "2回目": "吹脸吹脚模式",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 3 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后左吹风模式调节",
+    "2回目": "吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 3 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后左吹风模式调节",
+    "2回目": "吹脚吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 3 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后左吹风模式调节",
+    "2回目": "吹脸吹脚吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 3 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后左吹风模式调节",
+    "2回目": "吹脸吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 3 8"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后右吹风模式调节",
+    "2回目": "吹脸模式",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 4 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后右吹风模式调节",
+    "2回目": "吹脚",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 4 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后右吹风模式调节",
+    "2回目": "吹脸吹脚模式",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 4 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后右吹风模式调节",
+    "2回目": "吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 4 4"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后右吹风模式调节",
+    "2回目": "吹脚吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 4 6"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后右吹风模式调节",
+    "2回目": "吹脸吹脚吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 4 7"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_BLW_DIRECT",
+    "测试回数": "后右吹风模式调节",
+    "2回目": "吹脸吹窗",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setBlwDirect 4 8"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AQS_IONIZER",
+    "测试回数": "空调自动循环空气净化",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAqsIonizer 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AQS_IONIZER",
+    "测试回数": "空调自动循环空气净化",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAqsIonizer 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AUTO_ION_MODE",
+    "测试回数": "负离子自动开启，空气净化",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAutoIonMode 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_AUTO_ION_MODE",
+    "测试回数": "负离子自动开启，空气净化",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setAutoIonMode 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_REAR_DEFROST",
+    "测试回数": "外后视镜加热",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setOutsideRearViewMirrorHeat 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_REAR_DEFROST",
+    "测试回数": "外后视镜加热",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setOutsideRearViewMirrorHeat 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "主驾座椅加热",
+    "2回目": "加热程度高",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 1 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "主驾座椅加热",
+    "2回目": "加热程度中",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 1 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "主驾座椅加热",
+    "2回目": "加热程度低",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 1 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "主驾座椅加热",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 1 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "副驾座椅加热",
+    "2回目": "加热程度高",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 2 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "副驾座椅加热",
+    "2回目": "加热程度中",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 2 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "副驾座椅加热",
+    "2回目": "加热程度低",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 2 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "副驾座椅加热",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 2 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "左后座椅加热",
+    "2回目": "加热程度高",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 3 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "左后座椅加热",
+    "2回目": "加热程度中",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 3 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "左后座椅加热",
+    "2回目": "加热程度低",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 3 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "左后座椅加热",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 3 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "右后座椅加热",
+    "2回目": "加热程度高",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 4 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "右后座椅加热",
+    "2回目": "加热程度中",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 4 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "右后座椅加热",
+    "2回目": "加热程度低",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 4 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_HEAT",
+    "测试回数": "右后座椅加热",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatHeat 4 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "主驾座椅通风",
+    "2回目": "通风程度高",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 1 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "主驾座椅通风",
+    "2回目": "通风程度中",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 1 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "主驾座椅通风",
+    "2回目": "通风程度低",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 1 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "主驾座椅通风",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 1 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "副驾座椅通风",
+    "2回目": "通风程度高",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 2 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "副驾座椅通风",
+    "2回目": "通风程度中",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 2 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "副驾座椅通风",
+    "2回目": "通风程度低",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 2 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "副驾座椅通风",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 2 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "左后座椅通风",
+    "2回目": "通风程度高",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 3 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "左后座椅通风",
+    "2回目": "通风程度中",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 3 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "左后座椅通风",
+    "2回目": "通风程度低",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 3 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "左后座椅通风",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 3 0"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "右后座椅通风",
+    "2回目": "通风程度高",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 4 3"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "右后座椅通风",
+    "2回目": "通风程度中",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 4 2"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "右后座椅通风",
+    "2回目": "通风程度低",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 4 1"
+  },
+  {
+    "Project": "Climate",
+    "Songhua": "Climate.ID_SEAT_VENT",
+    "测试回数": "右后座椅通风",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Climate/v1/s0/setSeatVent 4 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_FRAGRANCE_MODE",
+    "测试回数": "香氛开关",
+    "2回目": "打开",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setFragranceMode 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_FRAGRANCE_MODE",
+    "测试回数": "香氛开关",
+    "2回目": "关闭",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setFragranceMode 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_FRAGRANCE_TAT",
+    "测试回数": "香氛香型1",
+    "2回目": "气味1",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setFragranceTat 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_FRAGRANCE_TAT",
+    "测试回数": "香氛香型2",
+    "2回目": "气味2",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setFragranceTat 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_FRAGRANCE_TAT",
+    "测试回数": "香氛香型3",
+    "2回目": "气味3",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setFragranceTat 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_FRAGRANCE_CCT",
+    "测试回数": "香氛浓度调节低",
+    "2回目": "低",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setFragranceCct 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_FRAGRANCE_CCT",
+    "测试回数": "香氛浓度调节中",
+    "2回目": "中",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setFragranceCct 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_FRAGRANCE_CCT",
+    "测试回数": "香氛浓度调节高",
+    "2回目": "高",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setFragranceCct 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_STEERING_WHEEL_HEATING",
+    "测试回数": "方向盘加热",
+    "2回目": "打开",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSteeringWheelHeating 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_STEERING_WHEEL_HEATING",
+    "测试回数": "方向盘加热",
+    "2回目": "关闭",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSteeringWheelHeating 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "主驾座椅按摩强度",
+    "2回目": "按摩强度1",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 1 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "主驾座椅按摩强度",
+    "2回目": "按摩强度2",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 1 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "主驾座椅按摩强度",
+    "2回目": "按摩强度3",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 1 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "主驾座椅按摩强度",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 1 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "副驾座椅按摩强度",
+    "2回目": "按摩强度1",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 2 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "副驾座椅按摩强度",
+    "2回目": "按摩强度2",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 2 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "副驾座椅按摩强度",
+    "2回目": "按摩强度3",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 2 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "副驾座椅按摩强度",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 2 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "左后座椅按摩强度",
+    "2回目": "按摩强度1",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 3 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "左后座椅按摩强度",
+    "2回目": "按摩强度2",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 3 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "左后座椅按摩强度",
+    "2回目": "按摩强度3",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 3 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "左后座椅按摩强度",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 3 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "右后座椅按摩强度",
+    "2回目": "按摩强度1",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 4 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "右后座椅按摩强度",
+    "2回目": "按摩强度2",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 4 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "右后座椅按摩强度",
+    "2回目": "按摩强度3",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 4 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE",
+    "测试回数": "右后座椅按摩强度",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassage 4 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE_MODE",
+    "测试回数": "主驾座椅按摩模式",
+    "2回目": "滚筒模式\n",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassageMode 1 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE_MODE",
+    "测试回数": "主驾座椅按摩模式",
+    "2回目": "波浪模式",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassageMode 1 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE_MODE",
+    "测试回数": "副驾座椅按摩模式",
+    "2回目": "滚筒模式\n",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassageMode 2 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE_MODE",
+    "测试回数": "副驾座椅按摩模式",
+    "2回目": "波浪模式",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassageMode 2 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE_MODE",
+    "测试回数": "左后座椅按摩模式",
+    "2回目": "滚筒模式\n",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassageMode 3 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE_MODE",
+    "测试回数": "左后座椅按摩模式",
+    "2回目": "波浪模式",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassageMode 3 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE_MODE",
+    "测试回数": "右后座椅按摩模式",
+    "2回目": "滚筒模式\n",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassageMode 4 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MASSAGE_MODE",
+    "测试回数": "右后座椅按摩模式",
+    "2回目": "波浪模式",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMassageMode 4 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "座椅记忆位置",
+    "2回目": "记忆位置1",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryRead 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "座椅记忆位置",
+    "2回目": "记忆位置2",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryRead 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "座椅记忆位置",
+    "2回目": "记忆位置3",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryRead 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "主驾座椅前后调节",
+    "2回目": "座椅向前",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 1 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "主驾座椅前后调节",
+    "2回目": "座椅向后",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 1 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "主驾座椅前后调节",
+    "2回目": "座椅停止",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 1 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "主驾座椅前后调节",
+    "2回目": "座椅向上",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 1 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "主驾座椅前后调节",
+    "2回目": "座椅向下",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 1 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "副驾座椅前后调节",
+    "2回目": "座椅向前",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 2 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "副驾座椅前后调节",
+    "2回目": "座椅向后",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 2 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "副驾座椅前后调节",
+    "2回目": "座椅停止",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 2 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "副驾座椅前后调节",
+    "2回目": "座椅向上",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 2 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_POSITION",
+    "测试回数": "副驾座椅前后调节",
+    "2回目": "座椅向下",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatPosition 2 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_BACK",
+    "测试回数": "主驾背靠角度调节",
+    "2回目": "靠背向后",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatBack 1 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_BACK",
+    "测试回数": "主驾背靠角度调节",
+    "2回目": "靠背向前",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatBack 1 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_BACK",
+    "测试回数": "主驾背靠角度调节",
+    "2回目": "靠背停止",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatBack 1 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_BACK",
+    "测试回数": "副驾背靠角度调节",
+    "2回目": "靠背向后",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatBack 2 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_BACK",
+    "测试回数": "副驾背靠角度调节",
+    "2回目": "靠背向前",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatBack 2 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_BACK",
+    "测试回数": "副驾背靠角度调节",
+    "2回目": "靠背停止",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatBack 2 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_LUMBAR_SUPPORT",
+    "测试回数": "主驾腰托位置调节",
+    "2回目": "腰托位置向前",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatLumbarSupport 1 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_LUMBAR_SUPPORT",
+    "测试回数": "主驾腰托位置调节",
+    "2回目": "腰托位置向后",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatLumbarSupport 1 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_LUMBAR_SUPPORT",
+    "测试回数": "主驾腰托位置调节",
+    "2回目": "腰托位置向上",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatLumbarSupport 1 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_LUMBAR_SUPPORT",
+    "测试回数": "主驾腰托位置调节",
+    "2回目": "腰托位置向下",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatLumbarSupport 1 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_CUSHION",
+    "测试回数": "主驾坐垫角度调节",
+    "2回目": "坐垫向前",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatCushion 1 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_CUSHION",
+    "测试回数": "主驾坐垫角度调节",
+    "2回目": "坐垫向后",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatCushion 1 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_CUSHION",
+    "测试回数": "主驾坐垫高度调节",
+    "2回目": "坐垫高度升高",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatCushion 1 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_CUSHION",
+    "测试回数": "主驾坐垫高度调节",
+    "2回目": "坐垫高度降低",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatCushion 1 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_CUSHION",
+    "测试回数": "副驾坐垫角度调节",
+    "2回目": "坐垫向前",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatCushion 2 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_CUSHION",
+    "测试回数": "副驾坐垫角度调节",
+    "2回目": "坐垫向后",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatCushion 2 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_CUSHION",
+    "测试回数": "副驾坐垫高度调节",
+    "2回目": "坐垫高度升高",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatCushion 2 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_CUSHION",
+    "测试回数": "副驾坐垫高度调节",
+    "2回目": "坐垫高度降低",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatCushion 2 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_ONEKEY_RESET",
+    "测试回数": "副驾座椅一键复位",
+    "2回目": "仅支持开",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatOnekeyReset 2 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_ONEKEY_RESET",
+    "测试回数": "右后座椅一键复位",
+    "2回目": "仅支持开",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatOnekeyReset 4 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_WIRELESS_CHARGING_SWITCH",
+    "测试回数": "无线充电",
+    "2回目": "打开",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setWirelessChargingSwitch 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_WIRELESS_CHARGING_SWITCH",
+    "测试回数": "无线充电",
+    "2回目": "关闭",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setWirelessChargingSwitch 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_INSTRUMENT_THEME",
+    "测试回数": "设置车控仪表主题设置",
+    "2回目": "运动",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setInstrumentTheme 0"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_INSTRUMENT_THEME",
+    "测试回数": "设置车控仪表主题设置",
+    "2回目": "经典",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setInstrumentTheme 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_INSTRUMENT_THEME",
+    "测试回数": "设置车控仪表主题设置",
+    "2回目": "简约",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setInstrumentTheme 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_NORMAL_FRONT_LEFT_LEG_MOTOR",
+    "测试回数": "设置腿托调节",
+    "2回目": "H37",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatNormalFrontLeftLegMotor 4 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_NORMAL_FRONT_LEFT_LEG_MOTOR",
+    "测试回数": "设置腿托调节",
+    "2回目": "H37",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatNormalFrontLeftLegMotor 4 4"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "设置主驾座椅记忆调取",
+    "2回目": "H37",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryReadLR 1 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "设置主驾座椅记忆调取",
+    "2回目": "H37",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryReadLR 1 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "设置主驾座椅记忆调取",
+    "2回目": "H37",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryReadLR 1 3"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "设置副驾座椅记忆调取",
+    "2回目": "H37",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryReadLR 2 1"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "设置副驾座椅记忆调取",
+    "2回目": "H37",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryReadLR 2 2"
+  },
+  {
+    "Project": "Comforts",
+    "Songhua": "Comforts.ID_SEAT_MEMORY_READ",
+    "测试回数": "设置副驾座椅记忆调取",
+    "2回目": "H37",
+    "3回目": "vurl val://Vehicle/static/Comforts/v1/s0/setSeatMemoryReadLR 2 3"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员状态",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureSts 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员状态",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureSts 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "获取右前人员状态",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureSts 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "获取右前人员状态",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureSts 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_REARPERSON_STS",
+    "测试回数": "获取后排人员状态",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureSts 6"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_REARPERSON_STS",
+    "测试回数": "获取后排人员状态",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureSts 6"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知左前人员状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知左前人员状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知右前人员状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知右前人员状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_REARPERSON_STS",
+    "测试回数": "通知后排人员状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_REARPERSON_STS",
+    "测试回数": "通知后排人员状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureAgeType 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureAgeType 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureAgeType 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureAgeType 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取右前人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureAgeType 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取右前人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureAgeType 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取右前人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureAgeType 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取右前人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureAgeType 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知左前人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知左前人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知左前人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知左前人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知右前人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知右前人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知右前人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知右前人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureEmotionSts 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureEmotionSts 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "获取左前人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureEmotionSts 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "获取右前人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureEmotionSts 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "获取右前人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureEmotionSts 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "获取右前人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureEmotionSts 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知左前人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知左前人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FL",
+    "测试回数": "通知左前人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知右前人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知右前人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_FR",
+    "测试回数": "通知右前人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 3"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 3"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员年龄类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearAgeType 3"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员年龄类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val：//Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val：//Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 1"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 2"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val：//Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 3"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val://Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 3"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "获取后排人员情绪类型",
+    "3回目": "vurl val：//Vehicle/static/Dms/v1/s0/getFeatureRearEmotionSts 3"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Dms",
+    "Songhua": "Dms.ID_FEATURE_REAR",
+    "测试回数": "通知后排人员情绪类型",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_GEAR_POSITION",
+    "测试回数": "挂 D 档，获取当前档位信息为 3",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getDrvInfoGearPosition"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_GEAR_POSITION",
+    "测试回数": "挂 N 档，获取当前档位信息为 2",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getDrvInfoGearPosition"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_GEAR_POSITION",
+    "测试回数": "挂 R 档，获取当前档位信息为 1",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getDrvInfoGearPosition"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_GEAR_POSITION",
+    "测试回数": "挂 P 档，获取当前档位信息为 0",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getDrvInfoGearPosition"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_GEAR_POSITION",
+    "测试回数": "挂 D 档，确认收到通知当前档位信息为 3",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_GEAR_POSITION",
+    "测试回数": "挂 N 档，确认收到通知当前档位信息为 2",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_GEAR_POSITION",
+    "测试回数": "挂 R 档，确认收到通知当前档位信息为 1",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_GEAR_POSITION",
+    "测试回数": "挂 P 档，确认收到通知当前档位信息为 0",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_SPEED_INFO",
+    "测试回数": "获得车速",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getDrvInfoSpeedInfo"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_INFO_SPEED_INFO",
+    "测试回数": "通知车速",
+    "2回目": "相同车速只通知一次",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_MODE",
+    "测试回数": "驾驶模式",
+    "2回目": "驾驶模式设置为ECO",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvMode 1"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_MODE",
+    "测试回数": "驾驶模式",
+    "2回目": "COMFORT",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvMode 2"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_MODE",
+    "测试回数": "驾驶模式",
+    "2回目": "运动",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvMode 3"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_MODE",
+    "测试回数": "驾驶模式",
+    "2回目": "个性化",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvMode 10"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_MODE",
+    "测试回数": "驾驶模式",
+    "2回目": "雪地模式",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvMode 12"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_BRK_REGEN_MODE",
+    "测试回数": "能量回收设置",
+    "2回目": "能量回收设置NORMAL",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvBrkRegenMode 0"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_BRK_REGEN_MODE",
+    "测试回数": "能量回收设置",
+    "2回目": "能量回收设置LOW_LEVEL",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvBrkRegenMode 1"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_BRK_REGEN_MODE",
+    "测试回数": "能量回收设置",
+    "2回目": "能量回收设置强",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvBrkRegenMode 2"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_SOCSET",
+    "测试回数": "能源模式设置",
+    "2回目": "能源模式设置SMART_MODE",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvSocset 0"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_SOCSET",
+    "测试回数": "能源模式设置",
+    "2回目": "能源模式设置EV_MODE",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvSocset 1"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_SOCSET",
+    "测试回数": "能源模式设置",
+    "2回目": "能源模式设置rev",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvSocset 2"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "主驾安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 1"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "主驾安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 1"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "副驾安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 2"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "副驾安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 2"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排左座安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 3"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排左座安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 3"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排右座安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 4"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排右座安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 4"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排中间座安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 12"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排中间座安全带状态",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/getSeatbeltLockStatus 12"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "通知主驾安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "通知主驾安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "副驾安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "副驾安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排左座安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排左座安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排右座安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排右座安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排中间座安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_SEATBELT_LOCK_STATUS",
+    "测试回数": "第二排中间座安全带状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "-",
+    "测试回数": "设置语言设置",
+    "2回目": "ivi 语言设置中文",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setLanguageSettings 0"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "-",
+    "测试回数": "设置语言设置",
+    "2回目": "ivi 语言设置英文",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setLanguageSettings 1"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "-",
+    "测试回数": "设置屏幕清洁",
+    "2回目": "打开屏幕清洁模式 1",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setClearScreenMode 1"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "-",
+    "测试回数": "设置屏幕清洁",
+    "2回目": "关闭屏幕清洁模式0",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setClearScreenMode 1"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_SUSPENSION_ADJUST_STATUS",
+    "测试回数": "设置悬架调节状态",
+    "2回目": "升高",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvSuspensionAdjustStatus 0"
+  },
+  {
+    "Project": "Driving",
+    "Songhua": "Driving.ID_DRV_SUSPENSION_ADJUST_STATUS",
+    "测试回数": "设置悬架调节状态",
+    "2回目": "恢复",
+    "3回目": "vurl val://Vehicle/static/Driving/v1/s0/setDrvSuspensionAdjustStatus 1"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_REMAINING_MILEAGE_STANDARD",
+    "测试回数": "获取纯电续航里程",
+    "2回目": "电池电量续航100km",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getRemainingMileageStandard"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_REMAINING_MILEAGE_STANDARD",
+    "测试回数": "通知纯电续航里程",
+    "2回目": "电池电量续航100km",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_FUEL_REMAIN_RANGE",
+    "测试回数": "获取燃油续航里程 ic_remainingMileage",
+    "2回目": "续航100km",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getFuelRemainRange"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_FUEL_REMAIN_RANGE",
+    "测试回数": "通知燃油续航里程 ic_remainingMileage",
+    "2回目": "续航100km",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_FUEL_PERCENT",
+    "测试回数": "获得剩余油量",
+    "2回目": "剩余油量20%",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getFuelPercent"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_FUEL_PERCENT",
+    "测试回数": "通知剩余油量",
+    "2回目": "剩余油量20%",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_HV_PERCENT",
+    "测试回数": "电池电量",
+    "2回目": "电池电量20%",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getHvPercent"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_HV_PERCENT",
+    "测试回数": "通知电池电量",
+    "2回目": "电池电量20%",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_CHARGE_STATE",
+    "测试回数": "充电中",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getChargeState"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_CHARGE_STATE",
+    "测试回数": "充电状态完成",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getChargeState"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_CHARGE_STATE",
+    "测试回数": "充电状态",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getChargeState"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_CHARGE_STATE",
+    "测试回数": "通知充电状态",
+    "2回目": "充电中",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_CHARGE_STATE",
+    "测试回数": "通知充电状态",
+    "2回目": "充电状态完成",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_CHARGE_STATE",
+    "测试回数": "通知充电状态",
+    "2回目": "充电状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_ELEC_POWER_DISCHARGE_SOC_CFG",
+    "测试回数": "放电设置",
+    "2回目": 20,
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/setElecPowerDischargeSocCfg 20"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_ELEC_POWER_DISCHARGE_SOC_CFG",
+    "测试回数": "放电设置",
+    "2回目": 50,
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/setElecPowerDischargeSocCfg 20"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "ElecPower.ID_ELEC_POWER_USER_STOP_CHG",
+    "测试回数": "停止充电",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/setElecPowerUserStopChg 0"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "云接口",
+    "测试回数": "获取混动剩余里程100km",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getMixRemainRange"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "云接口",
+    "测试回数": "通知混动剩余里程",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "云接口",
+    "测试回数": "获取混动剩余时间35分钟",
+    "3回目": "vurl val://Vehicle/static/ElecPower/v1/s0/getMixRemainTime"
+  },
+  {
+    "Project": "ElecPower",
+    "Songhua": "云接口",
+    "测试回数": "通知混动剩余时间",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "机械/电动尾门控制",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setDoor 8 1"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "机械/电动尾门控制",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setDoor 8 0"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "主驾车门开关状态",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 1"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "主驾车门开关状态",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 1"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "副驾车门开关状态",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 2"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "副驾车门开关状态",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 2"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "左后车门开关状态",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 3"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "左后车门开关状态",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 3"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "右后车门开关状态",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 4"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "右后车门开关状态",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 4"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "后备箱",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 8"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "后备箱",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoor 8"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "主驾车门开关状态",
+    "2回目": "打开车门",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "主驾车门开关状态",
+    "2回目": "关闭车门",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "副驾车门开关状态",
+    "2回目": "打开车门",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "副驾车门开关状态",
+    "2回目": "关闭车门",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "左后车门开关状态",
+    "2回目": "打开车门",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "左后车门开关状态",
+    "2回目": "关闭车门",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "右后车门开关状态",
+    "2回目": "打开车门",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "右后车门开关状态",
+    "2回目": "关闭车门",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "通知后备箱状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR",
+    "测试回数": "通知后备箱状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR_LOCK",
+    "测试回数": "全车车锁状态上锁",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setDoorLock 1"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR_LOCK",
+    "测试回数": "全车车锁状态",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setDoorLock 0"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR_LOCK",
+    "测试回数": "全车车锁状态",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoorLock"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR_LOCK",
+    "测试回数": "全车车锁状态",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getDoorLock"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR_LOCK",
+    "测试回数": "通知全车车锁状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_DOOR_LOCK",
+    "测试回数": "通知全车车锁状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_LOCKS_CHILD_SEC_DOOR_LOCK",
+    "测试回数": "打开关闭儿童锁",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setLocksChildSecDoorLock 7 1"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_LOCKS_CHILD_SEC_DOOR_LOCK",
+    "测试回数": "打开关闭儿童锁",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setLocksChildSecDoorLock 7 0"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_LOCKS_CHILD_SEC_DOOR_LOCK",
+    "测试回数": "儿童锁状态",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getLocksChildSecDoorLock 7"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_LOCKS_CHILD_SEC_DOOR_LOCK",
+    "测试回数": "儿童锁状态",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getLocksChildSecDoorLock 7"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_LOCKS_CHILD_SEC_DOOR_LOCK",
+    "测试回数": "儿童锁状态",
+    "2回目": "打开儿童锁",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_LOCKS_CHILD_SEC_DOOR_LOCK",
+    "测试回数": "儿童锁状态",
+    "2回目": "关闭儿童锁",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_FUEL_PORT",
+    "测试回数": "油箱口盖关",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setFuelPort 1"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_FUEL_PORT",
+    "测试回数": "油箱口盖开",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setFuelPort 0"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_FUEL_PORT",
+    "测试回数": "油箱口盖状态",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getFuelPort"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_FUEL_PORT",
+    "测试回数": "油箱口盖状态",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getFuelPort"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_FUEL_PORT",
+    "测试回数": "通知油箱口盖状态",
+    "2回目": "打开油箱口盖",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_FUEL_PORT",
+    "测试回数": "通知油箱口盖状态",
+    "2回目": "关闭油箱口盖",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_CHARGE_PORT",
+    "测试回数": "打开充电口盖",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setChargePort 1"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_CHARGE_PORT",
+    "测试回数": "打开充电口盖",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setChargePort 0"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_CHARGE_PORT",
+    "测试回数": "充电口盖状态",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getChargePort"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_CHARGE_PORT",
+    "测试回数": "充电口盖状态",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/getChargePort"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_CHARGE_PORT",
+    "测试回数": "通知充电口盖状态",
+    "2回目": "打开",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_CHARGE_PORT",
+    "测试回数": "通知充电口盖状态",
+    "2回目": "关闭",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_LOCKS_MODE_WALK_AWAY_LOCK",
+    "测试回数": "迎送宾设置",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setLocksModeApproachUnlock 1"
+  },
+  {
+    "Project": "EntryLocks",
+    "Songhua": "EntryLocks.ID_LOCKS_MODE_WALK_AWAY_LOCK",
+    "测试回数": "迎送宾设置",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/EntryLocks/v1/s0/setLocksModeApproachUnlock 0"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_AUDIO_AMP_MAIN_VOL",
+    "测试回数": "媒体音量设置",
+    "2回目": 25,
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAudioAmpMainVol 50"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_AUDIO_AMP_MAIN_VOL",
+    "测试回数": "当前媒体音量",
+    "2回目": 30,
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/getAudioAmpMainVol"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_AUDIO_AMP_MAIN_VOL",
+    "测试回数": "通知媒体音量",
+    "2回目": "设置音量10",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_AMP_SOUND_FIELD",
+    "测试回数": "声场位置设置",
+    "2回目": "驾驶位",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAmpSoundField 1"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_AMP_SOUND_FIELD",
+    "测试回数": "声场位置设置",
+    "2回目": "右前",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAmpSoundField 2"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_AMP_SOUND_FIELD",
+    "测试回数": "声场位置设置",
+    "2回目": "后排",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAmpSoundField 3"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_AMP_SOUND_FIELD",
+    "测试回数": "声场位置设置",
+    "2回目": "自定义",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAmpSoundField 4"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_AMP_SOUND_FIELD",
+    "测试回数": "声场位置设置",
+    "2回目": "全部",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAmpSoundField 0"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_ASE_MODE",
+    "测试回数": "发动机声浪音效模拟开关",
+    "2回目": "默认",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAseMode 0"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_ASE_MODE",
+    "测试回数": "发动机声浪音效模拟开关",
+    "2回目": "关闭",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAseMode 1"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_ASE_MODE",
+    "测试回数": "发动机声浪音效模拟开关",
+    "2回目": "ESEONOFFSTS_SOUNDEFFECT",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAseMode 2"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "Infotainment.ID_ASE_MODE",
+    "测试回数": "发动机声浪音效模拟开关",
+    "2回目": "ESEONOFFSTS_SOUNDEFFECT2",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setAseMode 3"
+  },
+  {
+    "Project": "Infotainment",
+    "Songhua": "android sdk",
+    "测试回数": "系统音量",
+    "2回目": "0-30",
+    "3回目": "vurl val://Vehicle/static/Infotainment/v1/s0/setGeneralStsAndroid 15"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_DAY_NIGHT_MODE",
+    "测试回数": "白天",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/getDayNightMode"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_DAY_NIGHT_MODE",
+    "测试回数": "黑夜",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/getDayNightMode"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_DAY_NIGHT_MODE",
+    "测试回数": "白天",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_DAY_NIGHT_MODE",
+    "测试回数": "黑夜",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_MODE",
+    "测试回数": "近光灯",
+    "2回目": "3S",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setTelltaleLowBeam 3"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_MODE",
+    "测试回数": "近光灯",
+    "2回目": "6S",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setTelltaleLowBeam 6"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_MODE",
+    "测试回数": "近光灯",
+    "2回目": "9S",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setTelltaleLowBeam 9"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_HEIGHT_AUTO",
+    "测试回数": "近光灯高度调节",
+    "2回目": "低",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightHeightAuto 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_HEIGHT_AUTO",
+    "测试回数": "近光灯高度调节",
+    "2回目": "中低",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightHeightAuto 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_HEIGHT_AUTO",
+    "测试回数": "近光灯高度调节",
+    "2回目": "中",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightHeightAuto 3"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_HEIGHT_AUTO",
+    "测试回数": "近光灯高度调节",
+    "2回目": "中高",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightHeightAuto 4"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_HEIGHT_AUTO",
+    "测试回数": "近光灯高度调节",
+    "2回目": "高",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightHeightAuto 5"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_HIGH_BEAM",
+    "测试回数": "远光灯",
+    "2回目": "左前闪烁时间：3S",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setHighBeam 3"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_HIGH_BEAM",
+    "测试回数": "远光灯",
+    "2回目": "左前闪烁时间：6S",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setHighBeam 6"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_HIGH_BEAM",
+    "测试回数": "远光灯",
+    "2回目": "左前闪烁时间：9s",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setHighBeam 9"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_TELLTALE_FOG_LAMP",
+    "测试回数": "雾灯",
+    "2回目": "打开",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setTelltaleFogLamp 7 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_TELLTALE_FOG_LAMP",
+    "测试回数": "雾灯",
+    "2回目": "关闭",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setTelltaleFogLamp 7 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式1",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式1",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式2",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式3",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 3"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式4",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 4"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式5",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 5"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式6",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 6"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式7",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 7"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式8",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 8"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式9",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 9"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_EXT_LIGHT_WELCOME_MODE",
+    "测试回数": "泊车迎宾灯",
+    "2回目": "模式10",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setExtLightWelcomeMode 10"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "车内所有阅读灯",
+    "2回目": "亮度低",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 7 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "车内所有阅读灯",
+    "2回目": "亮度高",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 7 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "车内所有阅读灯",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 7 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "主驾阅读灯",
+    "2回目": "亮度低",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 1 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "主驾阅读灯",
+    "2回目": "亮度高",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 1 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "主驾阅读灯",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 1 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "副驾阅读灯",
+    "2回目": "亮度低",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 2 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "副驾阅读灯",
+    "2回目": "亮度高",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 2 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "副驾阅读灯",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 2 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "左后阅读灯",
+    "2回目": "亮度低",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 3 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "左后阅读灯",
+    "2回目": "亮度高",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 3 3"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "左后阅读灯",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 3 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "右后阅读灯",
+    "2回目": "亮度低",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 4 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "右后阅读灯",
+    "2回目": "亮度高",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 4 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_CABIN_LIGHT_ON_OFF",
+    "测试回数": "右后阅读灯",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setCabinLightOnOff 4 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "ambient",
+    "测试回数": "氛围灯开关",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setInteriorLightAmbientLight 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "ambient",
+    "测试回数": "氛围灯开关",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setInteriorLightAmbientLight 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_COLOR",
+    "测试回数": "氛围灯颜色",
+    "2回目": "RGB 0～255",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightColor 255"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_MODE",
+    "测试回数": "氛围灯模式",
+    "2回目": "dynamic",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightMode 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_MODE",
+    "测试回数": "氛围灯模式",
+    "2回目": "DRIVE_MODE",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightMode 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_MODE",
+    "测试回数": "氛围灯模式",
+    "2回目": "static_mode",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightMode 0"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 1",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 2",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 3",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 3"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 4",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 4"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 5",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 5"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 6",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 6"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 7",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 7"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 8",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 8"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 9",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 9"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_BRIGHTNESS",
+    "测试回数": "氛围灯亮度",
+    "2回目": "level 10",
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightBrightness 10"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_GAMUT",
+    "测试回数": "氛围灯色域调节",
+    "2回目": 1,
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightGamut 1"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_GAMUT",
+    "测试回数": "氛围灯色域调节",
+    "2回目": 2,
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightGamut 2"
+  },
+  {
+    "Project": "Lighting",
+    "Songhua": "Lighting.ID_AMB_LIGHT_GAMUT",
+    "测试回数": "氛围灯色域调节",
+    "2回目": 3,
+    "3回目": "vurl val://Vehicle/static/Lighting/v1/s0/setAmbLightGamut 3"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "Signal.ID_SEAT_ONEKEY_ADAPTIVE",
+    "测试回数": "右后座椅一键自适应",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setSeatOnekeyAdaptive 4 1"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "Signal.ID_SEAT_ONEKEY_ADAPTIVE",
+    "测试回数": "右后座椅一键自适应",
+    "2回目": "关闭",
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setSeatOnekeyAdaptive 4 0"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "sdk",
+    "测试回数": "隐私模式设置",
+    "2回目": "开，蓝牙电话可隐私数据",
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setPrivacyModeStatus 1"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "sdk",
+    "测试回数": "隐私模式设置",
+    "2回目": "关，蓝牙电话中隐私去掉",
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setPrivacyModeStatus 0"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "android sdk",
+    "测试回数": "屏幕亮度设置",
+    "2回目": 50,
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setBrightctlreq 50"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "android sdk",
+    "测试回数": "屏幕亮度设置",
+    "2回目": 100,
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setBrightctlreq 100"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "Signal.ID_FCAPLOCKCMD_FDD",
+    "测试回数": "设置油箱盖解闭锁",
+    "2回目": "打开",
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setFcaplockcmdFdd 1"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "Signal.ID_FCAPLOCKCMD_FDD",
+    "测试回数": "设置油箱盖解闭锁",
+    "2回目": "关闭",
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setFcaplockcmdFdd 0"
+  },
+  {
+    "Project": "Signal",
+    "Songhua": "3rd api",
+    "测试回数": "设置停止播放媒体音频",
+    "2回目": "音乐打开中",
+    "3回目": "vurl val://Vehicle/static/Signal/v1/s0/setStopPlayMediaReq 1"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_INSIDE_TEMPERATURE",
+    "测试回数": "获取车内温度",
+    "2回目": "-50～130",
+    "3回目": "vurl val://Vehicle/static/VehicleBody/v1/s0/getInsideTemperature"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_INSIDE_TEMPERATURE",
+    "测试回数": "通知车内温度",
+    "2回目": "-50～130",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_OUTSIDE_TEMPERATURE",
+    "测试回数": "获取车外温度",
+    "2回目": "-50～130",
+    "3回目": "vurl val://Vehicle/static/VehicleBody/v1/s0/getOutsideTemperature"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_OUTSIDE_TEMPERATURE",
+    "测试回数": "通知车外温度",
+    "2回目": "-50～130",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_TIRE_PRESSURE",
+    "测试回数": "胎压报警",
+    "3回目": "vurl val://Vehicle/static/VehicleBody/v1/s0/getTirePressure"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_TIRE_PRESSURE",
+    "测试回数": "胎压报警",
+    "3回目": "vurl val://Vehicle/static/VehicleBody/v1/s0/getTirePressure"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_TIRE_PRESSURE",
+    "测试回数": "通知胎压报警",
+    "2回目": "设置胎压异常",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_WIPER_TIP",
+    "测试回数": "雨刮 开",
+    "2回目": "设置雨刮摆动时间：0～60S",
+    "3回目": "vurl val://Vehicle/static/VehicleBody/v1/s0/setWiperTip 0 1"
+  },
+  {
+    "Project": "VehicleBody",
+    "Songhua": "VehicleBody.ID_WIPER_TIP",
+    "测试回数": "雨刮 关",
+    "2回目": "设置雨刮摆动时间：0～60S",
+    "3回目": "vurl val://Vehicle/static/VehicleBody/v1/s0/setWiperTip 0 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "主驾车窗",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 1 100"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "主驾车窗",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 1 50"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "主驾车窗",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 1 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "副驾车窗",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 2 100"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "副驾车窗",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 2 50"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "副驾车窗",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 2 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 3 100"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 3 50"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 3 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 4 100"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 4 50"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 4 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "所有车窗",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 7 100"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "所有车窗",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 7 50"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "所有车窗",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setWindow 7 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左前车窗开关状态",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 1"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左前车窗开关状态",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 1"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左前车窗开关状态",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 1"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗开关状态",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 3"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗开关状态",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 3"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗开关状态",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 3"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右前车窗开关状态",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 2"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右前车窗开关状态",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 2"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右前车窗开关状态",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 2"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗开关状态",
+    "2回目": "全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 4"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗开关状态",
+    "2回目": "通风，50",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 4"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗开关状态",
+    "2回目": "全关， 0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getWindow 4"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左前车窗开关状态",
+    "2回目": "打开窗全开，100",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左前车窗开关状态",
+    "2回目": "打开窗通风，50",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左前车窗开关状态",
+    "2回目": "全关， 0",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗开关状态",
+    "2回目": "打开窗全开，100",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗开关状态",
+    "2回目": "打开窗通风，50",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "左后车窗开关状态",
+    "2回目": "全关， 0",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右前车窗开关状态",
+    "2回目": "打开窗全开，100",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右前车窗开关状态",
+    "2回目": "打开窗通风，50",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右前车窗开关状态",
+    "2回目": "全关， 0",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗开关状态",
+    "2回目": "打开窗全开，100",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗开关状态",
+    "2回目": "打开窗通风，50",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_WINDOW",
+    "测试回数": "右后车窗开关状态",
+    "2回目": "全关， 0",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "天窗遮阳帘调节",
+    "2回目": "前排全开，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setSunshade 0 100"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "天窗遮阳帘调节",
+    "2回目": "前排0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setSunshade 0 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "天窗遮阳帘调节",
+    "2回目": "后排通风，100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setSunshade 6 100"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "天窗遮阳帘调节",
+    "2回目": "后排通风，0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/setSunshade 6 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "遮阳帘",
+    "2回目": "前排开百分之100",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getSunshade 0"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "遮阳帘",
+    "2回目": "后排开百分之0",
+    "3回目": "vurl val://Vehicle/static/Windows/v1/s0/getSunshade 6"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "遮阳帘",
+    "2回目": "前排遮阳帘调节100",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "遮阳帘",
+    "2回目": "前排遮阳帘调节0",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "遮阳帘",
+    "2回目": "后排遮阳帘开百分之100",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Windows",
+    "Songhua": "Windows.ID_SUNSHADE",
+    "测试回数": "遮阳帘",
+    "2回目": "后排遮阳帘开百分之0",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Cabin",
+    "Songhua": "Cabin.ID_REAR_VIEW_MIRROR_FOLD_CONTROL",
+    "测试回数": "全部后视镜控制",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Cabin/v1/s0/setRearViewMirrorFoldControl 11 1"
+  },
+  {
+    "Project": "Cabin",
+    "Songhua": "Cabin.ID_REAR_VIEW_MIRROR_FOLD_CONTROL",
+    "测试回数": "全部后视镜控制",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Cabin/v1/s0/setRearViewMirrorFoldControl 11 0"
+  },
+  {
+    "Project": "Apa",
+    "Songhua": "Apa.ID_AVM_VOICE_ONOFF_REQ",
+    "测试回数": "360环视AVM",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/Apa/v1/s0/setAvmVoiceOnoffReq 1"
+  },
+  {
+    "Project": "Apa",
+    "Songhua": "Apa.ID_AVM_VOICE_ONOFF_REQ",
+    "测试回数": "360环视AVM",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/Apa/v1/s0/setAvmVoiceOnoffReq 0"
+  },
+  {
+    "Project": "VehicleMotion",
+    "Songhua": "VehicleMotion.ID_ACOUSTIC_VEH_ALERT",
+    "测试回数": "设置低速行人开",
+    "2回目": "开",
+    "3回目": "vurl val://Vehicle/static/VehicleMotion/v1/s0/setAcousticVehAlert 1"
+  },
+  {
+    "Project": "VehicleMotion",
+    "Songhua": "VehicleMotion.ID_ACOUSTIC_VEH_ALERT",
+    "测试回数": "设置低速行人关",
+    "2回目": "关",
+    "3回目": "vurl val://Vehicle/static/VehicleMotion/v1/s0/setAcousticVehAlert 0"
+  },
+  {
+    "Project": "DataTrace",
+    "Songhua": "val service",
+    "测试回数": "设置数据埋点数据",
+    "2回目": "埋点信息",
+    "3回目": "vurl val://Vehicle/static/DataTrace/v1/s0/setDataTrace testdatatestdata"
+  },
+  {
+    "Project": "ConfigInfo",
+    "Songhua": "val service",
+    "测试回数": "获取配置字信息",
+    "3回目": "vurl val://Vehicle/static/ConfigInfo/v1/s0/getConfigInfo"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "ktv话筒连接，获取当前状态信息为 1",
+    "2回目": "话筒连接",
+    "3回目": "vurl val://Vehicle/static/KTV/v1/s0/getKtvConnectStatus"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "ktv话筒未连接，获取当前状态信息为 0",
+    "2回目": "话筒未连接",
+    "3回目": "vurl val://Vehicle/static/KTV/v1/s0/getKtvConnectStatus"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "KTV话筒连接，确认通知状态信息为 1",
+    "2回目": "话筒开始连接",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "KTV话筒断开，确认通知状态信息为 0",
+    "2回目": "话筒断开连接",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "ktv mv为播放状态，确认获得状态为 1",
+    "2回目": "mv 播放中",
+    "3回目": "vurl val://Vehicle/static/KTV/v1/s0/getKtvMvStatus"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "ktv mv为未播放状态，确认获得状态为 0",
+    "2回目": "mv 停止",
+    "3回目": "vurl val://Vehicle/static/KTV/v1/s0/getKtvMvStatus"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "ktv mv播放，确认收到通知当前mv播放状态为 1",
+    "2回目": "mv 开始播放",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "ktv mv停止播放，确认收到通知当前mv播放状态为 0",
+    "2回目": "mv 开始停止",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "打开KTV app，app被打开",
+    "2回目": "ktv 未打开",
+    "3回目": "vurl val://Vehicle/static/KTV/v1/s0/setOpenKtvApp"
+  },
+  {
+    "Project": "KTV",
+    "Songhua": "-",
+    "测试回数": "输入vpa语音播报内容为test，语音播放",
+    "2回目": "语音内容test",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaSpeakText test"
+  },
+  {
+    "Project": "VPA",
+    "Songhua": "-",
+    "测试回数": "VPA动作为 0，动作被执行",
+    "2回目": "VPA动作为 0，动作被执行",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaAction 0"
+  },
+  {
+    "Project": "VPA",
+    "Songhua": "-",
+    "测试回数": "VPA动作为 1，动作被执行",
+    "2回目": "VPA动作为 1，动作被执行",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaAction 1"
+  },
+  {
+    "Project": "VPA",
+    "Songhua": "-",
+    "测试回数": "VPA动作为 2，动作被执行",
+    "2回目": "VPA动作为 2，动作被执行",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaAction 2"
+  },
+  {
+    "Project": "VPA",
+    "Songhua": "-",
+    "测试回数": "VPA动作为 3，动作被执行",
+    "2回目": "VPA动作为 3，动作被执行",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaAction 3"
+  },
+  {
+    "Project": "VPA",
+    "Songhua": "-",
+    "测试回数": "VPA动作为 4，动作被执行",
+    "2回目": "VPA动作为 4，动作被执行",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaAction 4"
+  },
+  {
+    "Project": "VPA",
+    "Songhua": "-",
+    "测试回数": "VPA动作为 5，动作被执行",
+    "2回目": "VPA动作为 5，动作被执行",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaAction 5"
+  },
+  {
+    "Project": "VPA",
+    "Songhua": "-",
+    "测试回数": "VPA动作为 6，动作被执行",
+    "2回目": "VPA动作为 6，动作被执行",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaAction 6"
+  },
+  {
+    "Project": "VPA",
+    "Songhua": "-",
+    "测试回数": "VPA动作为 7，动作被执行",
+    "2回目": "VPA动作为 7，动作被执行",
+    "3回目": "vurl val://Vehicle/static/VPA/v1/s0/setVpaAction 7"
+  },
+  {
+    "Project": "WecarFlow",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定名字的歌曲",
+    "2回目": "任意歌曲名字",
+    "3回目": "vurl val://Vehicle/static/WecarFlow/v1/s0/setPlayMusic 小星星"
+  },
+  {
+    "Project": "WecarFlow",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定名字的小说",
+    "2回目": "任意小说名字",
+    "3回目": "vurl val://Vehicle/static/WecarFlow/v1/s0/playBook 雪中悍刀行"
+  },
+  {
+    "Project": "WecarFlow",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定名字的电台",
+    "2回目": "任意电台名字",
+    "3回目": "vurl val://Vehicle/static/WecarFlow/v1/s0/playAudio 浙江音乐调频"
+  },
+  {
+    "Project": "WecarFlow",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的音乐",
+    "2回目": "国风，说唱.摇滚，欧美，儿童，民谣，乡村，爵士，古典",
+    "3回目": "vurl val://Vehicle/static/WecarFlow/v1/s0/playSpecTypeMusic 1"
+  },
+  {
+    "Project": "PateoGame",
+    "Songhua": "3rd App",
+    "测试回数": "打开博泰游戏APP",
+    "2回目": "打开",
+    "3回目": "vurl val://Vehicle/static/PateoGame/v1/s0/openPateoApp"
+  },
+  {
+    "Project": "PateoGame",
+    "Songhua": "3rd App",
+    "测试回数": "打开游戏",
+    "2回目": "打开",
+    "3回目": "vurl val://Vehicle/static/PateoGame/v1/s0/openGame 五子棋"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的电台",
+    "2回目": "资讯",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTAudio 资讯"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的电台",
+    "2回目": "相声小品",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTAudio 文化"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的电台",
+    "2回目": "文化",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTAudio 音乐"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的电台",
+    "2回目": "广播剧",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTAudio 戏曲"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的广播",
+    "2回目": "资讯",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTBroadcast 文化"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的广播",
+    "2回目": "相声小品",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTBroadcast 音乐"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的广播",
+    "2回目": "文化",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTBroadcast 汽车"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定类型的广播",
+    "2回目": "广播剧",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTBroadcast 音乐"
+  },
+  {
+    "Project": "YunTing",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定名字的节目",
+    "2回目": "上海交通节目",
+    "3回目": "vurl val://Vehicle/static/YunTing/v1/s0/playYTProgram 广播电视"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "设置打开Map APP",
+    "2回目": "打开APP",
+    "3回目": "vurl val://Vehicle/static/Map/v1/s0/setOpenMap"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取到达目的地剩余时间",
+    "2回目": "导航中",
+    "3回目": "vurl val://Vehicle/static/Map/v1/s0/getLeftTime"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取到达目的地剩余时间",
+    "2回目": "导航中，仅通知一次",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取到达目的地剩余里程",
+    "3回目": "vurl val://Vehicle/static/Map/v1/s0/getLeftDistance"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取到达目的地剩余里程，剩余200米通知",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取导航目的地",
+    "3回目": "vurl val://Vehicle/static/Map/v1/s0/getDestPoi"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "通知导航目的地",
+    "2回目": "导航开始，通知一次",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取导航状态",
+    "3回目": "vurl val://Vehicle/static/Map/v1/s0/getNaviStatus"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取导航状态",
+    "3回目": "vurl val://Vehicle/static/Map/v1/s0/getNaviStatus"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "通知导航状态",
+    "2回目": "导航开始，通知一次",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "通知导航状态",
+    "2回目": "导航开始，通知一次",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "检索指定地点",
+    "2回目": "指定的地方",
+    "3回目": "vurl  val://Vehicle/static/Map/v1/s0/searchPoi 大悦城"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "导航到指定收藏地点",
+    "2回目": "收藏夹，家地址已添加",
+    "3回目": "vurl  val://Vehicle/static/Map/v1/s0/naviToFavorPoi 1"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "导航到指定收藏地点",
+    "2回目": "收藏夹，公司地址已添加",
+    "3回目": "vurl  val://Vehicle/static/Map/v1/s0/naviToFavorPoi 2"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取到达收藏地点的距离",
+    "2回目": "收藏夹，家地址已添加",
+    "3回目": "vurl  val://Vehicle/static/Map/v1/s0/getFavorPoiSts 1"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "获取到达收藏地点的距离",
+    "2回目": "收藏夹，公司地址已添加",
+    "3回目": "vurl  val://Vehicle/static/Map/v1/s0/getFavorPoiSts 2 "
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "通知到达收藏地点的距离",
+    "2回目": "收藏夹，家地址已添加",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Map",
+    "Songhua": "3rd App",
+    "测试回数": "通知到达收藏地点的距离",
+    "2回目": "收藏夹，公司地址已添加",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Weather",
+    "Songhua": "3rd App",
+    "测试回数": "获取恶劣天气",
+    "3回目": "vurl val://Vehicle/static/Weather/v1/s0/getAlarmType"
+  },
+  {
+    "Project": "Weather",
+    "Songhua": "3rd App",
+    "测试回数": "通知恶劣天气",
+    "2回目": "2h通知一次",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Weather",
+    "Songhua": "3rd App",
+    "测试回数": "获取实时天气状态",
+    "3回目": "vurl val://Vehicle/static/Weather/v1/s0/getWeatherInfo"
+  },
+  {
+    "Project": "Weather",
+    "Songhua": "3rd App",
+    "测试回数": "通知实时天气状态",
+    "2回目": "2h通知一次",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Weather",
+    "Songhua": "3rd App",
+    "测试回数": "播放实时天气",
+    "3回目": "vurl val://Vehicle/static/Weather/v1/s0/playWeatherInfo"
+  },
+  {
+    "Project": "Festival",
+    "Songhua": "3rd App",
+    "测试回数": "获取是否是当前节日",
+    "3回目": "vurl val://Vehicle/static/Festival/v1/s0/getFestivalArrivalSts 春节"
+  },
+  {
+    "Project": "Festival",
+    "Songhua": "3rd App",
+    "测试回数": "获取是否是当前节日",
+    "3回目": "vurl val://Vehicle/static/Festival/v1/s0/getFestivalArrivalSts 春节"
+  },
+  {
+    "Project": "Festival",
+    "Songhua": "3rd App",
+    "测试回数": "通知是否是当前节日",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Phone",
+    "Songhua": "3rd App",
+    "测试回数": "设置进行拨打电话",
+    "3回目": "vurl val://Vehicle/static/Phone/v1/s0/setMakeCallReq tel:112"
+  },
+  {
+    "Project": "BT",
+    "Songhua": "3rd App",
+    "测试回数": "获取蓝牙连接状态",
+    "3回目": "vurl val://Vehicle/static/BT/v1/s0/getBtConnectSts"
+  },
+  {
+    "Project": "BT",
+    "Songhua": "3rd App",
+    "测试回数": "获取蓝牙连接状态",
+    "3回目": "vurl val://Vehicle/static/BT/v1/s0/getBtConnectSts"
+  },
+  {
+    "Project": "BT",
+    "Songhua": "3rd App",
+    "测试回数": "通知蓝牙连接状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "BT",
+    "Songhua": "3rd App",
+    "测试回数": "通知蓝牙连接状态",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Camera",
+    "Songhua": "3rd App",
+    "测试回数": "视频拍摄",
+    "3回目": "vurl val://Vehicle/static/Camera/v1/s0/startRecording"
+  },
+  {
+    "Project": "Camera",
+    "Songhua": "3rd App",
+    "测试回数": "照片拍摄",
+    "3回目": "vurl val://Vehicle/static/Camera/v1/s0/takePhoto"
+  },
+  {
+    "Project": "Camera",
+    "Songhua": "3rd App",
+    "测试回数": "摄像头切换",
+    "3回目": "vurl val://Vehicle/static/Camera/v1/s0/switchCameraLens"
+  },
+  {
+    "Project": "Camera",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定相册",
+    "2回目": "播放默认相册",
+    "3回目": "vurl val://Vehicle/static/Camera/v1/s0/playAlbum 1"
+  },
+  {
+    "Project": "Camera",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定相册",
+    "2回目": "播放云端相册",
+    "3回目": "vurl val://Vehicle/static/Camera/v1/s0/playAlbum 2"
+  },
+  {
+    "Project": "Camera",
+    "Songhua": "3rd App",
+    "测试回数": "播放指定相册",
+    "2回目": "播放旅拍相册",
+    "3回目": "vurl val://Vehicle/static/Camera/v1/s0/playAlbum 3"
+  },
+  {
+    "Project": "Schedule",
+    "Songhua": "3rd App",
+    "测试回数": "获取临近日程提醒,有或者无",
+    "3回目": "vurl val://Vehicle/static/Schedule/v1/s0/getScheNotify"
+  },
+  {
+    "Project": "Schedule",
+    "Songhua": "3rd App",
+    "测试回数": "获取临近日程提醒,有或者无",
+    "3回目": "vurl val://Vehicle/static/Schedule/v1/s0/getScheNotify"
+  },
+  {
+    "Project": "Schedule",
+    "Songhua": "3rd App",
+    "测试回数": "通知临近日程提醒,有或者无",
+    "2回目": "1小时通知一此",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Schedule",
+    "Songhua": "3rd App",
+    "测试回数": "通知临近日程提醒,有或者无",
+    "2回目": "1小时通知一此",
+    "3回目": "vurl"
+  },
+  {
+    "Project": "Schedule",
+    "Songhua": "3rd App",
+    "测试回数": "跳转到日程画面",
+    "3回目": "vurl val://Vehicle/static/Schedule/v1/s0/changeToScreen"
+  }
+]

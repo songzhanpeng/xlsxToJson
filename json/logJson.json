@@ -1,0 +1,6375 @@
+{
+  "0x0001_0x0001": {
+    "desc": "获取查看车内【PM2.5/空气质量】 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "获取查看车内【PM2.5/空气质量】",
+    "params": [
+      {
+        "type": "Climate_enum_PM25Level",
+        "paramName": "level",
+        "desc": {
+          "displayContent": "等级",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getInCabinPm25Level",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_PM25Level": {
+        "dataTypeDescription": "pm2.5等级",
+        "tableValue": {
+          "0": "level_0",
+          "1": "level_1",
+          "2": "level_2",
+          "3": "level_3",
+          "4": "level_4",
+          "5": "level_5",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "优",
+          "1": "良",
+          "2": "轻度",
+          "3": "中度",
+          "4": "重度",
+          "5": "严重"
+        }
+      }
+    }
+  },
+  "0x0001_0x0002": {
+    "desc": "通知查看车内【PM2.5/空气质量】 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "通知查看车内【PM2.5/空气质量】",
+    "params": [
+      {
+        "type": "Climate_enum_PM25Level",
+        "paramName": "level",
+        "desc": {
+          "displayContent": "等级",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyInCabinPm25Level",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Climate_enum_PM25Level": {
+        "dataTypeDescription": "pm2.5等级",
+        "tableValue": {
+          "0": "level_0",
+          "1": "level_1",
+          "2": "level_2",
+          "3": "level_3",
+          "4": "level_4",
+          "5": "level_5",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "优",
+          "1": "良",
+          "2": "轻度",
+          "3": "中度",
+          "4": "重度",
+          "5": "严重"
+        }
+      }
+    }
+  },
+  "0x0001_0x0003": {
+    "desc": "${P0} 设置调节温度 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置调节温度",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setTemperature",
+        "isSet": true
+      },
+      {
+        "type": "float",
+        "paramName": "temperature",
+        "desc": {
+          "displayContent": "17.5~32.5摄氏度",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setTemperature",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      }
+    }
+  },
+  "0x0001_0x0004": {
+    "desc": "${P0} 获取调节温度 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "获取调节温度",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getTemperature",
+        "isSet": true
+      },
+      {
+        "type": "float",
+        "paramName": "temperature",
+        "desc": {
+          "displayContent": "17.5~32.5摄氏度",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getTemperature",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      }
+    }
+  },
+  "0x0001_0x0005": {
+    "desc": "${P0} 通知调节温度 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "通知调节温度",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyTemperature",
+        "isSet": false
+      },
+      {
+        "type": "float",
+        "paramName": "temperature",
+        "desc": {
+          "displayContent": "17.5~32.5摄氏度",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyTemperature",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      }
+    }
+  },
+  "0x0001_0x0006": {
+    "desc": "${P0} 设置调节风量档位 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置调节风量档位",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后、前排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setBlwLevel",
+        "isSet": true
+      },
+      {
+        "type": "Climate_enum_BlwLevel",
+        "paramName": "level",
+        "desc": {
+          "displayContent": "调节风量档位",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setBlwLevel",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Climate_enum_BlwLevel": {
+        "dataTypeDescription": "调节风量档位",
+        "tableValue": {
+          "0": "OFF",
+          "1": "LEVEL1",
+          "2": "LEVEL2",
+          "3": "LEVEL3",
+          "4": "LEVEL4",
+          "5": "LEVEL5",
+          "6": "LEVEL6",
+          "7": "LEVEL7",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "1档",
+          "2": "2档",
+          "3": "3档",
+          "4": "4档",
+          "5": "5档",
+          "6": "6档",
+          "7": "7档",
+          "65535": "无效"
+        }
+      }
+    }
+  },
+  "0x0001_0x0007": {
+    "desc": "${P0} 设置打开/关闭自动空调 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭自动空调",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后、前排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAutoAirCdMode",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setAutoAirCdMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0001_0x0008": {
+    "desc": "${P0} 获取调节风量档位 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "获取调节风量档位",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后、前排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getBlwLevel",
+        "isSet": true
+      },
+      {
+        "type": "Climate_enum_BlwLevel",
+        "paramName": "level",
+        "desc": {
+          "displayContent": "调节风量档位",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getBlwLevel",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Climate_enum_BlwLevel": {
+        "dataTypeDescription": "调节风量档位",
+        "tableValue": {
+          "0": "OFF",
+          "1": "LEVEL1",
+          "2": "LEVEL2",
+          "3": "LEVEL3",
+          "4": "LEVEL4",
+          "5": "LEVEL5",
+          "6": "LEVEL6",
+          "7": "LEVEL7",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "1档",
+          "2": "2档",
+          "3": "3档",
+          "4": "4档",
+          "5": "5档",
+          "6": "6档",
+          "7": "7档",
+          "65535": "无效"
+        }
+      }
+    }
+  },
+  "0x0001_0x0009": {
+    "desc": "${P0} 通知调节风量档位 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "通知调节风量档位",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后、前排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyBlwLevel",
+        "isSet": false
+      },
+      {
+        "type": "Climate_enum_BlwLevel",
+        "paramName": "level",
+        "desc": {
+          "displayContent": "调节风量档位",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyBlwLevel",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Climate_enum_BlwLevel": {
+        "dataTypeDescription": "调节风量档位",
+        "tableValue": {
+          "0": "OFF",
+          "1": "LEVEL1",
+          "2": "LEVEL2",
+          "3": "LEVEL3",
+          "4": "LEVEL4",
+          "5": "LEVEL5",
+          "6": "LEVEL6",
+          "7": "LEVEL7",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "1档",
+          "2": "2档",
+          "3": "3档",
+          "4": "4档",
+          "5": "5档",
+          "6": "6档",
+          "7": "7档",
+          "65535": "无效"
+        }
+      }
+    }
+  },
+  "0x0001_0x000A": {
+    "desc": "${P0} 设置打开/关闭空调 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭空调",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：前排、后排、全部",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setWholeCabinAirCd",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setWholeCabinAirCd",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0001_0x000B": {
+    "desc": "${P0} 设置打开/关闭A/C ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭A/C",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：前排、后排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAirCdAcMode",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setAirCdAcMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0001_0x000C": {
+    "desc": "设置打开/关闭内外循环 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭内外循环",
+    "params": [
+      {
+        "type": "Climate_enum_RecycleDoorMode",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "内外循环",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setRecycleDoorMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_RecycleDoorMode": {
+        "dataTypeDescription": "内外循环",
+        "tableValue": {
+          "0": "LOOP_OUTSIDE",
+          "1": "LOOP_INNER"
+        },
+        "cnTableValue": {
+          "0": "外循环",
+          "1": "内循环"
+        }
+      }
+    }
+  },
+  "0x0001_0x000D": {
+    "desc": "${P0} 设置调节吹风模式 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置调节吹风模式",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setBlwDirect",
+        "isSet": true
+      },
+      {
+        "type": "Climate_enum_BlwDirect",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "调节吹风模式",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setBlwDirect",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Climate_enum_BlwDirect": {
+        "dataTypeDescription": "调节吹风模式",
+        "tableValue": {
+          "0": "NONE",
+          "1": "FACE",
+          "2": "FLOOR",
+          "3": "FACE_FLOOR",
+          "4": "DEFROST",
+          "6": "FLOOR_DEFROST",
+          "7": "ALL",
+          "8": "FACE_DEFROST"
+        },
+        "cnTableValue": {
+          "0": "无",
+          "1": "吹脸",
+          "2": "吹脚",
+          "3": "吹脸吹脚",
+          "4": "吹窗",
+          "6": "吹脚吹窗",
+          "7": "吹脸吹脚吹窗",
+          "8": "吹脸吹窗"
+        }
+      }
+    }
+  },
+  "0x0001_0x000E": {
+    "desc": "设置空调自动循环空气净化 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置空调自动循环空气净化",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAqsIonizer",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0001_0x000F": {
+    "desc": "设置负离子自动开启 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置负离子自动开启",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAutoIonMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0001_0x0010": {
+    "desc": "设置打开/关闭加热后视镜 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭加热后视镜",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setOutsideRearViewMirrorHeat",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0001_0x0011": {
+    "desc": "${P0} 设置座椅加热 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置座椅加热",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatHeat",
+        "isSet": true
+      },
+      {
+        "type": "Climate_enum_SeatHeatVent",
+        "paramName": "heat",
+        "desc": {
+          "displayContent": "座椅通风，加热",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatHeat",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Climate_enum_SeatHeatVent": {
+        "dataTypeDescription": "座椅通风,加热",
+        "tableValue": {
+          "0": "OFF",
+          "1": "LOW",
+          "2": "MID",
+          "3": "HIGH"
+        },
+        "cnTableValue": {
+          "0": "关",
+          "1": "低",
+          "2": "中",
+          "3": "高"
+        }
+      }
+    }
+  },
+  "0x0001_0x0012": {
+    "desc": "${P0} 设置座椅通风 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供空调系统控制服务",
+    "serviceInterfaceElementDescription": "设置座椅通风",
+    "params": [
+      {
+        "type": "Climate_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatVent",
+        "isSet": true
+      },
+      {
+        "type": "Climate_enum_SeatHeatVent",
+        "paramName": "vent",
+        "desc": {
+          "displayContent": "座椅通风，加热",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatVent",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Climate_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车(前后排)"
+        }
+      },
+      "Climate_enum_SeatHeatVent": {
+        "dataTypeDescription": "座椅通风,加热",
+        "tableValue": {
+          "0": "OFF",
+          "1": "LOW",
+          "2": "MID",
+          "3": "HIGH"
+        },
+        "cnTableValue": {
+          "0": "关",
+          "1": "低",
+          "2": "中",
+          "3": "高"
+        }
+      }
+    }
+  },
+  "0x0002_0x0001": {
+    "desc": "${P0} 设置座椅按摩档位 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置座椅按摩档位",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatMassage",
+        "isSet": true
+      },
+      {
+        "type": "Comforts_enum_SeatMassageLevel",
+        "paramName": "level",
+        "desc": {
+          "displayContent": "按摩强度",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatMassage",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Comforts_enum_SeatMassageLevel": {
+        "dataTypeDescription": "按摩强度",
+        "tableValue": {
+          "0": "NOREQUEST",
+          "1": "OFF",
+          "2": "SEATMASSGINTEN1",
+          "3": "SEATMASSGINTEN2",
+          "4": "SEATMASSGINTEN3"
+        },
+        "cnTableValue": {
+          "0": "无",
+          "1": "关闭",
+          "2": "强度1",
+          "3": "强度2",
+          "4": "强度3"
+        }
+      }
+    }
+  },
+  "0x0002_0x0002": {
+    "desc": "${P0} 设置座椅按摩模式 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置座椅按摩模式",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatMassageMode",
+        "isSet": true
+      },
+      {
+        "type": "Comforts_enum_SeatMassageMode",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "按摩模式",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatMassageMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Comforts_enum_SeatMassageMode": {
+        "dataTypeDescription": "按摩模式",
+        "tableValue": {
+          "0": "WAVE",
+          "1": "ROLL"
+        },
+        "cnTableValue": {
+          "0": "波浪",
+          "1": "滚筒"
+        }
+      }
+    }
+  },
+  "0x0002_0x0003": {
+    "desc": "设置方向盘加热 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置方向盘加热",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSteeringWheelHeating",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0002_0x0004": {
+    "desc": "设置打开/关闭香氛 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭香氛",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setFragranceMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0002_0x0005": {
+    "desc": "设置香氛香型调节 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置香氛香型调节",
+    "params": [
+      {
+        "type": "Comforts_enum_FragranceTat",
+        "paramName": "tat",
+        "desc": {
+          "displayContent": "香氛香型",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setFragranceTat",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_FragranceTat": {
+        "dataTypeDescription": "香氛香型",
+        "tableValue": {
+          "0": "FCMTATREQ_NOREQUEST",
+          "1": "FCMTATREQ_TASTE_1",
+          "2": "FCMTATREQ_TASTE_2",
+          "3": "FCMTATREQ_TASTE_3"
+        },
+        "cnTableValue": {
+          "0": "无",
+          "1": "香型1",
+          "2": "香型2",
+          "3": "香型3"
+        }
+      }
+    }
+  },
+  "0x0002_0x0006": {
+    "desc": "设置香氛浓度调节 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置香氛浓度调节",
+    "params": [
+      {
+        "type": "Comforts_enum_FragranceCct",
+        "paramName": "cct",
+        "desc": {
+          "displayContent": "香氛浓度",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setFragranceCct",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_FragranceCct": {
+        "dataTypeDescription": "香氛浓度",
+        "tableValue": {
+          "0": "FCMCCTREQ_NOREQUEST",
+          "1": "FCMCCTREQ_LO",
+          "2": "FCMCCTREQ_MID",
+          "3": "FCMCCTREQ_HI"
+        },
+        "cnTableValue": {
+          "0": "无",
+          "1": "浓度低",
+          "2": "浓度中",
+          "3": "浓度高"
+        }
+      }
+    }
+  },
+  "0x0002_0x0007": {
+    "desc": "设置座椅记忆调取 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置座椅记忆调取",
+    "params": [
+      {
+        "type": "Comforts_enum_SeatMemoryPos",
+        "paramName": "position",
+        "desc": {
+          "displayContent": "记忆位置",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatMemoryRead",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_SeatMemoryPos": {
+        "dataTypeDescription": "记忆位置",
+        "tableValue": {
+          "1": "pos1",
+          "2": "pos2",
+          "3": "pos3"
+        },
+        "cnTableValue": {
+          "1": "位置1",
+          "2": "位置2",
+          "3": "位置3"
+        }
+      }
+    }
+  },
+  "0x0002_0x0008": {
+    "desc": "${P0} 设置腰托前后/上下调节 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置腰托前后/上下调节",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatLumbarSupport",
+        "isSet": true
+      },
+      {
+        "type": "Comforts_enum_VehicleDirection",
+        "paramName": "direction",
+        "desc": {
+          "displayContent": "车辆控制方向，参数范围：前、后、上、下",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatLumbarSupport",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Comforts_enum_VehicleDirection": {
+        "dataTypeDescription": "车辆控制方向",
+        "tableValue": {
+          "0": "FRONT",
+          "1": "REAR",
+          "2": "NONE",
+          "3": "UP",
+          "4": "DOWN"
+        },
+        "cnTableValue": {
+          "0": "前",
+          "1": "后",
+          "2": "无",
+          "3": "上",
+          "4": "下"
+        }
+      }
+    }
+  },
+  "0x0002_0x0009": {
+    "desc": "${P0} 设置坐垫角度/高度调节 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置坐垫角度/高度调节",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatCushion",
+        "isSet": true
+      },
+      {
+        "type": "Comforts_enum_VehicleDirection",
+        "paramName": "direction",
+        "desc": {
+          "displayContent": "车辆控制方向，参数范围：前、后、上、下",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatCushion",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Comforts_enum_VehicleDirection": {
+        "dataTypeDescription": "车辆控制方向",
+        "tableValue": {
+          "0": "FRONT",
+          "1": "REAR",
+          "2": "NONE",
+          "3": "UP",
+          "4": "DOWN"
+        },
+        "cnTableValue": {
+          "0": "前",
+          "1": "后",
+          "2": "无",
+          "3": "上",
+          "4": "下"
+        }
+      }
+    }
+  },
+  "0x0002_0x000A": {
+    "desc": "${P0} 设置靠背角度调节 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置靠背角度调节",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatBack",
+        "isSet": true
+      },
+      {
+        "type": "Comforts_enum_VehicleDirection",
+        "paramName": "direction",
+        "desc": {
+          "displayContent": "车辆控制方向，参数范围：向前、向后",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatBack",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Comforts_enum_VehicleDirection": {
+        "dataTypeDescription": "车辆控制方向",
+        "tableValue": {
+          "0": "FRONT",
+          "1": "REAR",
+          "2": "NONE",
+          "3": "UP",
+          "4": "DOWN"
+        },
+        "cnTableValue": {
+          "0": "前",
+          "1": "后",
+          "2": "无",
+          "3": "上",
+          "4": "下"
+        }
+      }
+    }
+  },
+  "0x0002_0x000B": {
+    "desc": "${P0} 设置座椅一键复位 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置座椅一键复位",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：右后、副驾",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatOnekeyReset",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关，参数范围：开",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatOnekeyReset",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0002_0x000C": {
+    "desc": "设置无线充电开关 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置无线充电开关",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setWirelessChargingSwitch",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0002_0x0018": {
+    "desc": "${P0} 设置座椅前后调节 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置座椅前后调节",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatPosition",
+        "isSet": true
+      },
+      {
+        "type": "Comforts_enum_VehicleDirection",
+        "paramName": "direction",
+        "desc": {
+          "displayContent": "车辆控制方向，参数范围：向前、向后",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatPosition",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Comforts_enum_VehicleDirection": {
+        "dataTypeDescription": "车辆控制方向",
+        "tableValue": {
+          "0": "FRONT",
+          "1": "REAR",
+          "2": "NONE",
+          "3": "UP",
+          "4": "DOWN"
+        },
+        "cnTableValue": {
+          "0": "前",
+          "1": "后",
+          "2": "无",
+          "3": "上",
+          "4": "下"
+        }
+      }
+    }
+  },
+  "0x0002_0x0019": {
+    "desc": "设置车控仪表主题设置 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置车控仪表主题设置",
+    "params": [
+      {
+        "type": "Comforts_enum_InstrumentTheme",
+        "paramName": "theme",
+        "desc": {
+          "displayContent": "主题",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setInstrumentTheme",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_InstrumentTheme": {
+        "dataTypeDescription": "车控仪表主题",
+        "tableValue": {
+          "0": "SPORT",
+          "1": "CLASSIC",
+          "2": "SIMPLE"
+        },
+        "cnTableValue": {
+          "0": "运动",
+          "1": "经典",
+          "2": "简约"
+        }
+      }
+    }
+  },
+  "0x0002_0x001A": {
+    "desc": "${P0} 设置腿托调节 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置腿托调节",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatNormalFrontLeftLegMotor",
+        "isSet": true
+      },
+      {
+        "type": "Comforts_enum_VehicleDirection",
+        "paramName": "direction",
+        "desc": {
+          "displayContent": "车辆控制方向，上/下/停止",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatNormalFrontLeftLegMotor",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Comforts_enum_VehicleDirection": {
+        "dataTypeDescription": "车辆控制方向",
+        "tableValue": {
+          "0": "FRONT",
+          "1": "REAR",
+          "2": "NONE",
+          "3": "UP",
+          "4": "DOWN"
+        },
+        "cnTableValue": {
+          "0": "前",
+          "1": "后",
+          "2": "无",
+          "3": "上",
+          "4": "下"
+        }
+      }
+    }
+  },
+  "0x0002_0x001B": {
+    "desc": "${P0} 设置主副驾座椅记忆调取 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供舒适度控制服务",
+    "serviceInterfaceElementDescription": "设置主副驾座椅记忆调取",
+    "params": [
+      {
+        "type": "Comforts_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatMemoryReadLR",
+        "isSet": true
+      },
+      {
+        "type": "Comforts_enum_SeatMemoryPos",
+        "paramName": "position",
+        "desc": {
+          "displayContent": "记忆位置",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatMemoryReadLR",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Comforts_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后"
+        }
+      },
+      "Comforts_enum_SeatMemoryPos": {
+        "dataTypeDescription": "记忆位置",
+        "tableValue": {
+          "1": "pos1",
+          "2": "pos2",
+          "3": "pos3"
+        },
+        "cnTableValue": {
+          "1": "位置1",
+          "2": "位置2",
+          "3": "位置3"
+        }
+      }
+    }
+  },
+  "0x0003_0x0001": {
+    "desc": "${P0} 获取人员状态 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "获取人员状态",
+    "params": [
+      {
+        "type": "Dms_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、后排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFeatureSts",
+        "isSet": true
+      },
+      {
+        "type": "Dms_enum_PersonExistSts",
+        "paramName": "exist_sts",
+        "desc": {
+          "displayContent": "人员状态",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getFeatureSts",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Dms_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "6": "REAR_ROW",
+          "17": "1D1",
+          "18": "1D2",
+          "19": "1D3"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "6": "后排",
+          "17": "后一排ID1（左）",
+          "18": "后一排ID2（中）",
+          "19": "后一排ID3（右）"
+        }
+      },
+      "Dms_enum_PersonExistSts": {
+        "dataTypeDescription": "人员状态",
+        "tableValue": {
+          "1": "Exist",
+          "2": "UnExist",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "存在人员",
+          "2": "不存在人员",
+          "255": "无效值"
+        }
+      }
+    }
+  },
+  "0x0003_0x0002": {
+    "desc": "${P0} 通知人员状态 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "通知人员状态",
+    "params": [
+      {
+        "type": "Dms_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、后排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFeatureSts",
+        "isSet": false
+      },
+      {
+        "type": "Dms_enum_PersonExistSts",
+        "paramName": "exist_sts",
+        "desc": {
+          "displayContent": "人员状态",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyFeatureSts",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Dms_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "6": "REAR_ROW",
+          "17": "1D1",
+          "18": "1D2",
+          "19": "1D3"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "6": "后排",
+          "17": "后一排ID1（左）",
+          "18": "后一排ID2（中）",
+          "19": "后一排ID3（右）"
+        }
+      },
+      "Dms_enum_PersonExistSts": {
+        "dataTypeDescription": "人员状态",
+        "tableValue": {
+          "1": "Exist",
+          "2": "UnExist",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "存在人员",
+          "2": "不存在人员",
+          "255": "无效值"
+        }
+      }
+    }
+  },
+  "0x0003_0x0003": {
+    "desc": "${P0} 获取人员年龄类型 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "获取人员年龄类型",
+    "params": [
+      {
+        "type": "Dms_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFeatureAgeType",
+        "isSet": true
+      },
+      {
+        "type": "Dms_enum_AgeType",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "人员年龄类型",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getFeatureAgeType",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Dms_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "6": "REAR_ROW",
+          "17": "1D1",
+          "18": "1D2",
+          "19": "1D3"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "6": "后排",
+          "17": "后一排ID1（左）",
+          "18": "后一排ID2（中）",
+          "19": "后一排ID3（右）"
+        }
+      },
+      "Dms_enum_AgeType": {
+        "dataTypeDescription": "年龄类型",
+        "tableValue": {
+          "0": "Default",
+          "1": "Older",
+          "2": "Major",
+          "3": "Child",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "老人",
+          "2": "成年人",
+          "3": "孩子"
+        }
+      }
+    }
+  },
+  "0x0003_0x0004": {
+    "desc": "${P0} 通知人员年龄类型 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "通知人员年龄类型",
+    "params": [
+      {
+        "type": "Dms_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFeatureAgeType",
+        "isSet": false
+      },
+      {
+        "type": "Dms_enum_AgeType",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "人员年龄类型",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyFeatureAgeType",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Dms_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "6": "REAR_ROW",
+          "17": "1D1",
+          "18": "1D2",
+          "19": "1D3"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "6": "后排",
+          "17": "后一排ID1（左）",
+          "18": "后一排ID2（中）",
+          "19": "后一排ID3（右）"
+        }
+      },
+      "Dms_enum_AgeType": {
+        "dataTypeDescription": "年龄类型",
+        "tableValue": {
+          "0": "Default",
+          "1": "Older",
+          "2": "Major",
+          "3": "Child",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "老人",
+          "2": "成年人",
+          "3": "孩子"
+        }
+      }
+    }
+  },
+  "0x0003_0x0005": {
+    "desc": "${P0} 获取人员情绪类型 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "获取人员情绪类型",
+    "params": [
+      {
+        "type": "Dms_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFeatureEmotionSts",
+        "isSet": true
+      },
+      {
+        "type": "Dms_enum_EmotionSts",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "人员情绪类型",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getFeatureEmotionSts",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Dms_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "6": "REAR_ROW",
+          "17": "1D1",
+          "18": "1D2",
+          "19": "1D3"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "6": "后排",
+          "17": "后一排ID1（左）",
+          "18": "后一排ID2（中）",
+          "19": "后一排ID3（右）"
+        }
+      },
+      "Dms_enum_EmotionSts": {
+        "dataTypeDescription": "情绪类型",
+        "tableValue": {
+          "0": "default",
+          "1": "type1",
+          "2": "type2",
+          "3": "type3",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "开心",
+          "2": "悲伤",
+          "3": "生气"
+        }
+      }
+    }
+  },
+  "0x0003_0x0006": {
+    "desc": "${P0} 通知人员情绪类型 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "通知人员情绪类型",
+    "params": [
+      {
+        "type": "Dms_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFeatureEmotionSts",
+        "isSet": false
+      },
+      {
+        "type": "Dms_enum_EmotionSts",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "人员情绪类型",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyFeatureEmotionSts",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Dms_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "6": "REAR_ROW",
+          "17": "1D1",
+          "18": "1D2",
+          "19": "1D3"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "6": "后排",
+          "17": "后一排ID1（左）",
+          "18": "后一排ID2（中）",
+          "19": "后一排ID3（右）"
+        }
+      },
+      "Dms_enum_EmotionSts": {
+        "dataTypeDescription": "情绪类型",
+        "tableValue": {
+          "0": "default",
+          "1": "type1",
+          "2": "type2",
+          "3": "type3",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "开心",
+          "2": "悲伤",
+          "3": "生气"
+        }
+      }
+    }
+  },
+  "0x0003_0x0007": {
+    "desc": "${P0} 获取后排人员年龄类型 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "获取后排人员年龄类型",
+    "params": [
+      {
+        "type": "Dms_enum_RearSeatPosition",
+        "paramName": "position",
+        "desc": {
+          "displayContent": "后排人员位置,参数范围：左、中、右",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFeatureRearAgeType",
+        "isSet": true
+      },
+      {
+        "type": "Dms_enum_AgeType",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "后排人员年龄类型",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getFeatureRearAgeType",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Dms_enum_RearSeatPosition": {
+        "dataTypeDescription": "后排人员座椅位置",
+        "tableValue": {
+          "1": "1D1",
+          "2": "1D2",
+          "3": "1D3",
+          "4": "1D4",
+          "5": "1D5",
+          "6": "1D6"
+        },
+        "cnTableValue": {
+          "1": "后一排ID1（左）",
+          "2": "后一排ID2（中）",
+          "3": "后一排ID3（右）",
+          "4": "后二排ID4（左）",
+          "5": "后二排ID5（中）",
+          "6": "后二排ID6（右）"
+        }
+      },
+      "Dms_enum_AgeType": {
+        "dataTypeDescription": "年龄类型",
+        "tableValue": {
+          "0": "Default",
+          "1": "Older",
+          "2": "Major",
+          "3": "Child",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "老人",
+          "2": "成年人",
+          "3": "孩子"
+        }
+      }
+    }
+  },
+  "0x0003_0x0008": {
+    "desc": "${P0} 通知后排人员年龄类型 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "通知后排人员年龄类型",
+    "params": [
+      {
+        "type": "Dms_enum_RearSeatPosition",
+        "paramName": "position",
+        "desc": {
+          "displayContent": "后排人员位置,参数范围：左、中、右",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFeatureRearAgeType",
+        "isSet": false
+      },
+      {
+        "type": "Dms_enum_AgeType",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "后排人年龄类型",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyFeatureRearAgeType",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Dms_enum_RearSeatPosition": {
+        "dataTypeDescription": "后排人员座椅位置",
+        "tableValue": {
+          "1": "1D1",
+          "2": "1D2",
+          "3": "1D3",
+          "4": "1D4",
+          "5": "1D5",
+          "6": "1D6"
+        },
+        "cnTableValue": {
+          "1": "后一排ID1（左）",
+          "2": "后一排ID2（中）",
+          "3": "后一排ID3（右）",
+          "4": "后二排ID4（左）",
+          "5": "后二排ID5（中）",
+          "6": "后二排ID6（右）"
+        }
+      },
+      "Dms_enum_AgeType": {
+        "dataTypeDescription": "年龄类型",
+        "tableValue": {
+          "0": "Default",
+          "1": "Older",
+          "2": "Major",
+          "3": "Child",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "老人",
+          "2": "成年人",
+          "3": "孩子"
+        }
+      }
+    }
+  },
+  "0x0003_0x0009": {
+    "desc": "${P0} 获取后排人员情绪类型 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "获取后排人员情绪类型",
+    "params": [
+      {
+        "type": "Dms_enum_RearSeatPosition",
+        "paramName": "position",
+        "desc": {
+          "displayContent": "后排人员位置,参数范围：左、中、右",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFeatureRearEmotionSts",
+        "isSet": true
+      },
+      {
+        "type": "Dms_enum_EmotionSts",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "后排人员情绪类型",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getFeatureRearEmotionSts",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Dms_enum_RearSeatPosition": {
+        "dataTypeDescription": "后排人员座椅位置",
+        "tableValue": {
+          "1": "1D1",
+          "2": "1D2",
+          "3": "1D3",
+          "4": "1D4",
+          "5": "1D5",
+          "6": "1D6"
+        },
+        "cnTableValue": {
+          "1": "后一排ID1（左）",
+          "2": "后一排ID2（中）",
+          "3": "后一排ID3（右）",
+          "4": "后二排ID4（左）",
+          "5": "后二排ID5（中）",
+          "6": "后二排ID6（右）"
+        }
+      },
+      "Dms_enum_EmotionSts": {
+        "dataTypeDescription": "情绪类型",
+        "tableValue": {
+          "0": "default",
+          "1": "type1",
+          "2": "type2",
+          "3": "type3",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "开心",
+          "2": "悲伤",
+          "3": "生气"
+        }
+      }
+    }
+  },
+  "0x0003_0x000A": {
+    "desc": "${P0} 通知后排人员情绪类型 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供DMS系统控制服务",
+    "serviceInterfaceElementDescription": "通知后排人员情绪类型",
+    "params": [
+      {
+        "type": "Dms_enum_RearSeatPosition",
+        "paramName": "position",
+        "desc": {
+          "displayContent": "后排人员位置,参数范围：左、中、右",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFeatureRearEmotionSts",
+        "isSet": false
+      },
+      {
+        "type": "Dms_enum_EmotionSts",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "后排人员情绪类型",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyFeatureRearEmotionSts",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Dms_enum_RearSeatPosition": {
+        "dataTypeDescription": "后排人员座椅位置",
+        "tableValue": {
+          "1": "1D1",
+          "2": "1D2",
+          "3": "1D3",
+          "4": "1D4",
+          "5": "1D5",
+          "6": "1D6"
+        },
+        "cnTableValue": {
+          "1": "后一排ID1（左）",
+          "2": "后一排ID2（中）",
+          "3": "后一排ID3（右）",
+          "4": "后二排ID4（左）",
+          "5": "后二排ID5（中）",
+          "6": "后二排ID6（右）"
+        }
+      },
+      "Dms_enum_EmotionSts": {
+        "dataTypeDescription": "情绪类型",
+        "tableValue": {
+          "0": "default",
+          "1": "type1",
+          "2": "type2",
+          "3": "type3",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "开心",
+          "2": "悲伤",
+          "3": "生气"
+        }
+      }
+    }
+  },
+  "0x0004_0x0001": {
+    "desc": "获取档位 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "获取档位",
+    "params": [
+      {
+        "type": "Driving_enum_DrvInfoGearPosition",
+        "paramName": "gear_info",
+        "desc": {
+          "displayContent": "档位",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getDrvInfoGearPosition",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Driving_enum_DrvInfoGearPosition": {
+        "dataTypeDescription": "档位",
+        "tableValue": {
+          "0": "PARKING",
+          "1": "REVERSE",
+          "2": "NEUTRAL",
+          "3": "DRIVING",
+          "4": "SPORT",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "P档",
+          "1": "R档",
+          "2": "N档",
+          "3": "D档",
+          "4": "S档",
+          "255": "无效"
+        }
+      }
+    }
+  },
+  "0x0004_0x0002": {
+    "desc": "通知档位 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "通知档位",
+    "params": [
+      {
+        "type": "Driving_enum_DrvInfoGearPosition",
+        "paramName": "gear_info",
+        "desc": {
+          "displayContent": "档位",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyDrvInfoGearPosition",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Driving_enum_DrvInfoGearPosition": {
+        "dataTypeDescription": "档位",
+        "tableValue": {
+          "0": "PARKING",
+          "1": "REVERSE",
+          "2": "NEUTRAL",
+          "3": "DRIVING",
+          "4": "SPORT",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "P档",
+          "1": "R档",
+          "2": "N档",
+          "3": "D档",
+          "4": "S档",
+          "255": "无效"
+        }
+      }
+    }
+  },
+  "0x0004_0x0003": {
+    "desc": "获取车速 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "获取车速",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "speed",
+        "desc": {
+          "displayContent": "车速",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getDrvInfoSpeedInfo",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0004_0x0004": {
+    "desc": "通知车速 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "通知车速",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "speed",
+        "desc": {
+          "displayContent": "车速",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyDrvInfoSpeedInfo",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x0004_0x0005": {
+    "desc": "设置驾驶模式 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "设置驾驶模式",
+    "params": [
+      {
+        "type": "Driving_enum_DrvMode",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "驾驶模式",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setDrvMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Driving_enum_DrvMode": {
+        "dataTypeDescription": "驾驶模式",
+        "tableValue": {
+          "1": "ECO",
+          "2": "COMFORT",
+          "3": "SPORT",
+          "10": "INDIVIDUAL",
+          "12": "SNOW"
+        },
+        "cnTableValue": {
+          "1": "经济模式",
+          "2": "舒适模式",
+          "3": "运动模式",
+          "10": "个性化",
+          "12": "雪地模式"
+        }
+      }
+    }
+  },
+  "0x0004_0x0006": {
+    "desc": "设置能量回收等级 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "设置能量回收等级",
+    "params": [
+      {
+        "type": "Driving_enum_RegenMode",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "能量回收等级",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setDrvBrkRegenMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Driving_enum_RegenMode": {
+        "dataTypeDescription": " 能量回收等级",
+        "tableValue": {
+          "0": "NORMAL",
+          "1": "LOW_LEVEL",
+          "2": "STRONG",
+          "6": "OFF",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "正常",
+          "1": "低",
+          "2": "强",
+          "6": "关闭",
+          "65535": "无效"
+        }
+      }
+    }
+  },
+  "0x0004_0x0007": {
+    "desc": "设置动力模式 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "设置动力模式",
+    "params": [
+      {
+        "type": "Driving_enum_SOCSet",
+        "paramName": "soc_mode",
+        "desc": {
+          "displayContent": "动力模式",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setDrvSocset",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Driving_enum_SOCSet": {
+        "dataTypeDescription": "动力模式",
+        "tableValue": {
+          "0": "SMART_MODE",
+          "1": "EV_MODE",
+          "2": "REV_MODE"
+        },
+        "cnTableValue": {
+          "0": "smartmode",
+          "1": "evmode",
+          "2": "revmode"
+        }
+      }
+    }
+  },
+  "0x0004_0x0008": {
+    "desc": "${P0} 获取安全带锁扣总体状态 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "获取安全带锁扣总体状态",
+    "params": [
+      {
+        "type": "Driving_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后、后中",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getSeatbeltLockStatus",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "安全带锁扣开关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getSeatbeltLockStatus",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Driving_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "12": "REAR_CENTER"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "12": "后中"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0004_0x0009": {
+    "desc": "${P0} 通知安全带锁扣总体状态 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "通知安全带锁扣总体状态",
+    "params": [
+      {
+        "type": "Driving_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后、后中",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifySeatbeltLockStatus",
+        "isSet": false
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "安全带锁扣开关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifySeatbeltLockStatus",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Driving_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "12": "REAR_CENTER"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "12": "后中"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0004_0x000A": {
+    "desc": "设置语言设置 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "设置语言设置",
+    "params": [
+      {
+        "type": "Driving_enum_LanguageSet",
+        "paramName": "language",
+        "desc": {
+          "displayContent": "语言",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setLanguageSettings",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Driving_enum_LanguageSet": {
+        "dataTypeDescription": "ivi 语言设置",
+        "tableValue": {
+          "0": "Chinese",
+          "1": "English"
+        },
+        "cnTableValue": {
+          "0": "简体中文",
+          "1": "英文"
+        }
+      }
+    }
+  },
+  "0x0004_0x000B": {
+    "desc": "设置屏幕清洁模式 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "设置屏幕清洁模式",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "清洁模式",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setClearScreenMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0004_0x000C": {
+    "desc": "设置悬架调节状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供行车系统控制服务",
+    "serviceInterfaceElementDescription": "设置悬架调节状态",
+    "params": [
+      {
+        "type": "Driving_enum_SuspensionAdjustStatus",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "悬架状态",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setDrvSuspensionAdjustStatus",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Driving_enum_SuspensionAdjustStatus": {
+        "dataTypeDescription": "悬架调节状态",
+        "tableValue": {
+          "0": "SCSYSSTS_AXISLIFTING",
+          "1": "ISCSYSSTS_FUNCTION_SHUTDOWN"
+        },
+        "cnTableValue": {
+          "0": "升高",
+          "1": "恢复"
+        }
+      }
+    }
+  },
+  "0x0005_0x0001": {
+    "desc": "获取WLTP续航里程 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "获取WLTP续航里程",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "mileage",
+        "desc": {
+          "displayContent": "续航里程",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getRemainingMileageStandard",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0002": {
+    "desc": "通知WLTP续航里程 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "通知WLTP续航里程",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "mileage",
+        "desc": {
+          "displayContent": "续航里程",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyRemainingMileageStandard",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0003": {
+    "desc": "获取燃油续航里程 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "获取燃油续航里程",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "mileage",
+        "desc": {
+          "displayContent": "续航里程",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFuelRemainRange",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0004": {
+    "desc": "通知燃油续航里程 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "通知燃油续航里程",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "mileage",
+        "desc": {
+          "displayContent": "续航里程",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFuelRemainRange",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0005": {
+    "desc": "获取油量百分比 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "获取油量百分比",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "percent",
+        "desc": {
+          "displayContent": "油量百分比",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFuelPercent",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0006": {
+    "desc": "通知油量百分比 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "通知油量百分比",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "percent",
+        "desc": {
+          "displayContent": "油量百分比",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFuelPercent",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0007": {
+    "desc": "获取当前实际SOC ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "获取当前实际SOC",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "percent",
+        "desc": {
+          "displayContent": "电池电量百分比",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getHvPercent",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0008": {
+    "desc": "通知当前实际SOC ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "通知当前实际SOC",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "percent",
+        "desc": {
+          "displayContent": "电池电量百分比",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyHvPercent",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0009": {
+    "desc": "获取充电状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "获取充电状态",
+    "params": [
+      {
+        "type": "ElecPower_enum_ChargeSts",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "充电状态，参数范围：充电中、充电完成，未充电",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getChargeState",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "ElecPower_enum_ChargeSts": {
+        "dataTypeDescription": " 充电状态",
+        "tableValue": {
+          "0": "CSD_CHARGING",
+          "1": "CSD_CHARGEFINISH",
+          "2": "CSD_GRIDWITHOUTPWRSUPLY",
+          "3": "CSD_CHARGEERR",
+          "4": "CSD_CHARGEHEATING",
+          "65535": "Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0005_0x000A": {
+    "desc": "通知充电状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "通知充电状态",
+    "params": [
+      {
+        "type": "ElecPower_enum_ChargeSts",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "充电状态",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyChargeState",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "ElecPower_enum_ChargeSts": {
+        "dataTypeDescription": " 充电状态",
+        "tableValue": {
+          "0": "CSD_CHARGING",
+          "1": "CSD_CHARGEFINISH",
+          "2": "CSD_GRIDWITHOUTPWRSUPLY",
+          "3": "CSD_CHARGEERR",
+          "4": "CSD_CHARGEHEATING",
+          "65535": "Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0005_0x000B": {
+    "desc": "设置放电设置 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "设置放电设置",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "percent",
+        "desc": {
+          "displayContent": "放电设置百分比",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setElecPowerDischargeSocCfg",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x000C": {
+    "desc": "设置停止充电 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "设置停止充电",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关，参数范围：关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setElecPowerUserStopChg",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0005_0x000D": {
+    "desc": "获取混动剩余里程 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "获取混动剩余里程",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "mileage",
+        "desc": {
+          "displayContent": "续航里程",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getMixRemainRange",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x000E": {
+    "desc": "通知混动剩余里程 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "通知混动剩余里程",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "mileage",
+        "desc": {
+          "displayContent": "续航里程",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyMixRemainRange",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x000F": {
+    "desc": "获取混动充电剩余时间 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "获取混动充电剩余时间",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "time",
+        "desc": {
+          "displayContent": "充电剩余时间",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getMixRemainTime",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0005_0x0010": {
+    "desc": "通知混动充电剩余时间 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供充电系统控制服务",
+    "serviceInterfaceElementDescription": "通知混动充电剩余时间",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "time",
+        "desc": {
+          "displayContent": "充电剩余时间",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyMixRemainTime",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x0006_0x0001": {
+    "desc": "${P0} 设置打开/关闭尾门（电动） ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭尾门（电动）",
+    "params": [
+      {
+        "type": "EntryLocks_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：后尾门",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setDoor",
+        "isSet": true
+      },
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "open_close",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setDoor",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "7": "ALL",
+          "8": "OUTSIDE_REAR"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "7": "全车",
+          "8": "后尾门"
+        }
+      },
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x0002": {
+    "desc": "${P0} 获取车门开闭状态（以及尾灯） ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "获取车门开闭状态（以及尾灯）",
+    "params": [
+      {
+        "type": "EntryLocks_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前，右前，左后，右后，后尾门",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getDoor",
+        "isSet": true
+      },
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getDoor",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "7": "ALL",
+          "8": "OUTSIDE_REAR"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "7": "全车",
+          "8": "后尾门"
+        }
+      },
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x0003": {
+    "desc": "${P0} 通知车门开闭状态 （以及尾灯） ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "通知车门开闭状态 （以及尾灯）",
+    "params": [
+      {
+        "type": "EntryLocks_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前，右前，左后，右后，后尾门",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyDoor",
+        "isSet": false
+      },
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyDoor",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "7": "ALL",
+          "8": "OUTSIDE_REAR"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "7": "全车",
+          "8": "后尾门"
+        }
+      },
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x0004": {
+    "desc": "设置打开/关闭车门锁 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭车门锁",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setDoorLock",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x0005": {
+    "desc": "获取打开/关闭车门锁 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "获取打开/关闭车门锁",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getDoorLock",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x0006": {
+    "desc": "通知打开/关闭车门锁 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "通知打开/关闭车门锁",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyDoorLock",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x0007": {
+    "desc": "${P0} 设置打开/关闭儿童锁 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭儿童锁",
+    "params": [
+      {
+        "type": "EntryLocks_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：全车",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setLocksChildSecDoorLock",
+        "isSet": true
+      },
+      {
+        "type": "EntryLocks_enum_LockUnlock",
+        "paramName": "lock",
+        "desc": {
+          "displayContent": "解锁上锁",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setLocksChildSecDoorLock",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "7": "ALL",
+          "8": "OUTSIDE_REAR"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "7": "全车",
+          "8": "后尾门"
+        }
+      },
+      "EntryLocks_enum_LockUnlock": {
+        "dataTypeDescription": "解锁上锁",
+        "tableValue": {
+          "0": "LOCKED",
+          "1": "UNLOCKED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "上锁",
+          "1": "解锁"
+        }
+      }
+    }
+  },
+  "0x0006_0x0008": {
+    "desc": "${P0} 获取打开/关闭儿童锁 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "获取打开/关闭儿童锁",
+    "params": [
+      {
+        "type": "EntryLocks_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：全车",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getLocksChildSecDoorLock",
+        "isSet": true
+      },
+      {
+        "type": "EntryLocks_enum_LockUnlock",
+        "paramName": "lock",
+        "desc": {
+          "displayContent": "解锁上锁",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getLocksChildSecDoorLock",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "7": "ALL",
+          "8": "OUTSIDE_REAR"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "7": "全车",
+          "8": "后尾门"
+        }
+      },
+      "EntryLocks_enum_LockUnlock": {
+        "dataTypeDescription": "解锁上锁",
+        "tableValue": {
+          "0": "LOCKED",
+          "1": "UNLOCKED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "上锁",
+          "1": "解锁"
+        }
+      }
+    }
+  },
+  "0x0006_0x0009": {
+    "desc": "${P0} 通知打开/关闭儿童锁 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "通知打开/关闭儿童锁",
+    "params": [
+      {
+        "type": "EntryLocks_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：全车",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyLocksChildSecDoorLock",
+        "isSet": false
+      },
+      {
+        "type": "EntryLocks_enum_LockUnlock",
+        "paramName": "lock",
+        "desc": {
+          "displayContent": "解锁上锁",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyLocksChildSecDoorLock",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "7": "ALL",
+          "8": "OUTSIDE_REAR"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "7": "全车",
+          "8": "后尾门"
+        }
+      },
+      "EntryLocks_enum_LockUnlock": {
+        "dataTypeDescription": "解锁上锁",
+        "tableValue": {
+          "0": "LOCKED",
+          "1": "UNLOCKED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "上锁",
+          "1": "解锁"
+        }
+      }
+    }
+  },
+  "0x0006_0x000A": {
+    "desc": "设置打开/关闭加油口盖 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭加油口盖",
+    "params": [
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "open_close",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setFuelPort",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x000B": {
+    "desc": "获取加油盖 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "获取加油盖",
+    "params": [
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "open_close",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFuelPort",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x000C": {
+    "desc": "通知加油盖 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "通知加油盖",
+    "params": [
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "open_close",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFuelPort",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x000D": {
+    "desc": "设置充电口盖 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "设置充电口盖",
+    "params": [
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "open_close",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setChargePort",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x000E": {
+    "desc": "获取充电口盖 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "获取充电口盖",
+    "params": [
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "open_close",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getChargePort",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x000F": {
+    "desc": "通知充电口盖 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "通知充电口盖",
+    "params": [
+      {
+        "type": "EntryLocks_enum_OpenClose",
+        "paramName": "open_close",
+        "desc": {
+          "displayContent": "打开关闭",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyChargePort",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_OpenClose": {
+        "dataTypeDescription": "打开关闭",
+        "tableValue": {
+          "0": "CLOSED",
+          "1": "OPENED",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0006_0x0010": {
+    "desc": "设置主驾解锁/全部车门解锁 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "设置主驾解锁/全部车门解锁",
+    "params": [
+      {
+        "type": "EntryLocks_enum_LocksGearParkUnlockMode",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "主驾解锁/全部车门解锁",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setLocksGearParkUnlockMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "EntryLocks_enum_LocksGearParkUnlockMode": {
+        "dataTypeDescription": "主驾解锁/全部车门解锁",
+        "tableValue": {
+          "0": "DISABLE",
+          "1": "ALL_DOOR_UNLOCK",
+          "2": "DRV_DOOR_UNLOCKED_ONLY"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0006_0x0011": {
+    "desc": "设置迎宾解锁 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车门锁控制服务",
+    "serviceInterfaceElementDescription": "设置迎宾解锁",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setLocksModeApproachUnlock",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0007_0x0001": {
+    "desc": "设置Android通用状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供多媒体系统控制服务",
+    "serviceInterfaceElementDescription": "设置Android通用状态",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "vol",
+        "desc": {
+          "displayContent": "系统音量",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setGeneralStsAndroid",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0007_0x0002": {
+    "desc": "设置发动机声浪音效模拟开关 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供多媒体系统控制服务",
+    "serviceInterfaceElementDescription": "设置发动机声浪音效模拟开关",
+    "params": [
+      {
+        "type": "Infotainment_enum_ESEONOFFSts",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "发动机声浪音效模拟",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAseMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Infotainment_enum_ESEONOFFSts": {
+        "dataTypeDescription": "发动机声浪音效模拟",
+        "tableValue": {
+          "0": "ESEONOFFSTS_DEFAULT",
+          "1": "ESEONOFFSTS_OFF",
+          "2": "ESEONOFFSTS_SOUNDEFFECT1",
+          "3": "ESEONOFFSTS_SOUNDEFFECT2",
+          "255": "ESEONOFFSTS_Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0007_0x0003": {
+    "desc": "设置声场位置 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供多媒体系统控制服务",
+    "serviceInterfaceElementDescription": "设置声场位置",
+    "params": [
+      {
+        "type": "Infotainment_enum_SoundField",
+        "paramName": "sound_field",
+        "desc": {
+          "displayContent": " 声场位置",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAmpSoundField",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Infotainment_enum_SoundField": {
+        "dataTypeDescription": " 声场位置",
+        "tableValue": {
+          "0": "ALL_PASSENGER",
+          "1": "DRIVER",
+          "2": "FRONT_PASSENGER",
+          "3": "BACKROW_PASSENGER",
+          "4": "CUSTOM",
+          "5": "SURROUND"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0007_0x0004": {
+    "desc": "通知媒体音量设置 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供多媒体系统控制服务",
+    "serviceInterfaceElementDescription": "通知媒体音量设置",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "vol",
+        "desc": {
+          "displayContent": "31 steps， 0， ...， 30",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyAudioAmpMainVol",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x0007_0x0005": {
+    "desc": "获取媒体音量设置 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供多媒体系统控制服务",
+    "serviceInterfaceElementDescription": "获取媒体音量设置",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "vol",
+        "desc": {
+          "displayContent": "31 steps， 0， ...， 30",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getAudioAmpMainVol",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0007_0x0007": {
+    "desc": "设置媒体音量设置 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供多媒体系统控制服务",
+    "serviceInterfaceElementDescription": "设置媒体音量设置",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "vol",
+        "desc": {
+          "displayContent": "音量设置",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAudioAmpMainVol",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0008_0x0001": {
+    "desc": "获取日夜模式 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "获取日夜模式",
+    "params": [
+      {
+        "type": "Lighting_enum_DayNightMode",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "日夜模式，参数范围：白天、黑夜",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getDayNightMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Lighting_enum_DayNightMode": {
+        "dataTypeDescription": " 日夜模式",
+        "tableValue": {
+          "0": "DAY",
+          "1": "OTHERS",
+          "2": "DARK",
+          "3": "TUNNEL",
+          "4": "DARKSTART",
+          "65535": "Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0008_0x0002": {
+    "desc": "通知日夜模式 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "通知日夜模式",
+    "params": [
+      {
+        "type": "Lighting_enum_DayNightMode",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "日夜模式，参数范围：白天、黑夜",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyDayNightMode",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Lighting_enum_DayNightMode": {
+        "dataTypeDescription": " 日夜模式",
+        "tableValue": {
+          "0": "DAY",
+          "1": "OTHERS",
+          "2": "DARK",
+          "3": "TUNNEL",
+          "4": "DARKSTART",
+          "65535": "Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0008_0x0003": {
+    "desc": "设置调节前照灯高度 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置调节前照灯高度",
+    "params": [
+      {
+        "type": "Lighting_enum_ExtLightHeight",
+        "paramName": "height",
+        "desc": {
+          "displayContent": "前照灯高度",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setExtLightHeightAuto",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Lighting_enum_ExtLightHeight": {
+        "dataTypeDescription": "前照灯高度",
+        "tableValue": {
+          "0": "NOREQUEST",
+          "1": "LOW",
+          "2": "MIDLOW",
+          "3": "MID",
+          "4": "MIDHIGH",
+          "5": "HIGH"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0008_0x0004": {
+    "desc": "设置远光灯状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置远光灯状态",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "3s，6s，9s",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setHighBeam",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0008_0x0005": {
+    "desc": "${P0} 设置打开/关闭雾灯 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭雾灯",
+    "params": [
+      {
+        "type": "Lighting_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：全车",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setTelltaleFogLamp",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setTelltaleFogLamp",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Lighting_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "7": "全车"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0008_0x0006": {
+    "desc": "设置迎宾灯光 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置迎宾灯光",
+    "params": [
+      {
+        "type": "Lighting_enum_EXLWlcOnOffRequest",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "迎宾灯光",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setExtLightWelcomeMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Lighting_enum_EXLWlcOnOffRequest": {
+        "dataTypeDescription": " 迎宾灯光",
+        "tableValue": {
+          "0": "OFF",
+          "1": "MODE1",
+          "2": "MODE2",
+          "3": "MODE3",
+          "4": "MODE4",
+          "5": "MODE5",
+          "6": "MODE6",
+          "7": "MODE7",
+          "8": "MODE8",
+          "9": "MODE9",
+          "10": "MODE10"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0008_0x0007": {
+    "desc": "${P0} 设置阅读灯控制 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置阅读灯控制",
+    "params": [
+      {
+        "type": "Lighting_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后，所有",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setCabinLightOnOff",
+        "isSet": true
+      },
+      {
+        "type": "Lighting_enum_ReadingLampLevel",
+        "paramName": "level",
+        "desc": {
+          "displayContent": "阅读灯",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setCabinLightOnOff",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Lighting_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "7": "全车"
+        }
+      },
+      "Lighting_enum_ReadingLampLevel": {
+        "dataTypeDescription": " 阅读灯",
+        "tableValue": {
+          "0": "OFF",
+          "1": "LOWLEVEL",
+          "2": "HIGHLEVEL",
+          "3": "NOREQUEST",
+          "255": "Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0008_0x0008": {
+    "desc": "设置调节氛围灯颜色 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置调节氛围灯颜色",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "color",
+        "desc": {
+          "displayContent": "0：NoCommand， 1~128：color1~color128",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAmbLightColor",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0008_0x0009": {
+    "desc": "设置调节氛围灯亮度 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置调节氛围灯亮度",
+    "params": [
+      {
+        "type": "Lighting_enum_H53AmbLightBrightness",
+        "paramName": "brightness",
+        "desc": {
+          "displayContent": "氛围灯亮度",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAmbLightBrightness",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Lighting_enum_H53AmbLightBrightness": {
+        "dataTypeDescription": "氛围灯亮度",
+        "tableValue": {
+          "1": "BRIGHTNESS_LEVEL_1",
+          "2": "BRIGHTNESS_LEVEL_2",
+          "3": "BRIGHTNESS_LEVEL_3",
+          "4": "BRIGHTNESS_LEVEL_4",
+          "5": "BRIGHTNESS_LEVEL_5",
+          "6": "BRIGHTNESS_LEVEL_6",
+          "7": "BRIGHTNESS_LEVEL_7",
+          "8": "BRIGHTNESS_LEVEL_8",
+          "9": "BRIGHTNESS_LEVEL_9",
+          "10": "BRIGHTNESS_LEVEL_10"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0008_0x000A": {
+    "desc": "设置氛围灯色域调节 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置氛围灯色域调节",
+    "params": [
+      {
+        "type": "Lighting_enum_ColorGamut",
+        "paramName": "gamut",
+        "desc": {
+          "displayContent": "氛围灯色域",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAmbLightGamut",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Lighting_enum_ColorGamut": {
+        "dataTypeDescription": " 氛围灯色域",
+        "tableValue": {
+          "1": "COOLCOLOR",
+          "2": "NEUTRALCOLOR",
+          "3": "WARMCOLOR",
+          "4": "SEVEN_COLORS"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0008_0x0015": {
+    "desc": "设置打开关闭氛围灯总开关  ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置打开关闭氛围灯总开关 ",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setInteriorLightAmbientLight",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0008_0x0018": {
+    "desc": "设置打开/关闭前照灯/大灯/近光灯 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置打开/关闭前照灯/大灯/近光灯",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "3s，6s，9s",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setTelltaleLowBeam",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0008_0x001A": {
+    "desc": "设置氛围灯模式 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供灯光系统控制服务",
+    "serviceInterfaceElementDescription": "设置氛围灯模式",
+    "params": [
+      {
+        "type": "Lighting_enum_AmbLightMode",
+        "paramName": "mode",
+        "desc": {
+          "displayContent": "氛围灯模式，范围：静态、律动、随驾",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAmbLightMode",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Lighting_enum_AmbLightMode": {
+        "dataTypeDescription": "氛围灯模式",
+        "tableValue": {
+          "0": "MODE_STATIC",
+          "1": "MODE_DYNAMIC",
+          "2": "MODE_DRIVE_MODE",
+          "3": "MODE_GAME"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x0009_0x0001": {
+    "desc": "${P0} 设置座椅一键自适应 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车辆系统控制服务",
+    "serviceInterfaceElementDescription": "设置座椅一键自适应",
+    "params": [
+      {
+        "type": "Signal_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "参数范围：右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSeatOnekeyAdaptive",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSeatOnekeyAdaptive",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Signal_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "4": "REAR_RIGHT"
+        },
+        "cnTableValue": {
+          "4": "右后"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0009_0x0002": {
+    "desc": "设置亮度控制请求（安卓） ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车辆系统控制服务",
+    "serviceInterfaceElementDescription": "设置亮度控制请求（安卓）",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "value",
+        "desc": {
+          "displayContent": "亮度1~100",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setBrightctlreq",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0009_0x0003": {
+    "desc": "设置隐私模式开关状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车辆系统控制服务",
+    "serviceInterfaceElementDescription": "设置隐私模式开关状态",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setPrivacyModeStatus",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0009_0x0004": {
+    "desc": "设置油箱盖解闭锁 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车辆系统控制服务",
+    "serviceInterfaceElementDescription": "设置油箱盖解闭锁",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setFcaplockcmdFdd",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x0009_0x0005": {
+    "desc": "设置寻车报警",
+    "defaultValue": "",
+    "serviceDescription": "提供车辆系统控制服务",
+    "serviceInterfaceElementDescription": "设置寻车报警",
+    "params": [],
+    "enums": {}
+  },
+  "0x0009_0x0006": {
+    "desc": "设置寻车",
+    "defaultValue": "",
+    "serviceDescription": "提供车辆系统控制服务",
+    "serviceInterfaceElementDescription": "设置寻车",
+    "params": [],
+    "enums": {}
+  },
+  "0x0009_0x0007": {
+    "desc": "设置停止播放媒体音频",
+    "defaultValue": "",
+    "serviceDescription": "提供车辆系统控制服务",
+    "serviceInterfaceElementDescription": "设置停止播放媒体音频",
+    "params": [],
+    "enums": {}
+  },
+  "0x000A_0x0001": {
+    "desc": "获取车内温度 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车身系统控制服务",
+    "serviceInterfaceElementDescription": "获取车内温度",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "temperature",
+        "desc": {
+          "displayContent": "摄氏度-50～130",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getInsideTemperature",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x000A_0x0002": {
+    "desc": "通知车内温度 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车身系统控制服务",
+    "serviceInterfaceElementDescription": "通知车内温度",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "temperature",
+        "desc": {
+          "displayContent": "摄氏度-50～130",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyInsideTemperature",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x000A_0x0003": {
+    "desc": "获取车外温度 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车身系统控制服务",
+    "serviceInterfaceElementDescription": "获取车外温度",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "temperature",
+        "desc": {
+          "displayContent": "摄氏度-50～130",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getOutsideTemperature",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x000A_0x0004": {
+    "desc": "通知车外温度 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车身系统控制服务",
+    "serviceInterfaceElementDescription": "通知车外温度",
+    "params": [
+      {
+        "type": "float",
+        "paramName": "temperature",
+        "desc": {
+          "displayContent": "摄氏度-50～130",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyOutsideTemperature",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x000A_0x0005": {
+    "desc": "获取胎压信息 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车身系统控制服务",
+    "serviceInterfaceElementDescription": "获取胎压信息",
+    "params": [
+      {
+        "type": "VehicleBody_enum_TPMSPrsWarning",
+        "paramName": "tpms",
+        "desc": {
+          "displayContent": "胎压信息",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getTirePressure",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "VehicleBody_enum_TPMSPrsWarning": {
+        "dataTypeDescription": "胎压警报信息",
+        "tableValue": {
+          "0": "status0",
+          "1": "status1",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "胎压_无报警",
+          "1": "胎压_报警"
+        }
+      }
+    }
+  },
+  "0x000A_0x0006": {
+    "desc": "通知胎压信息 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车身系统控制服务",
+    "serviceInterfaceElementDescription": "通知胎压信息",
+    "params": [
+      {
+        "type": "VehicleBody_enum_TPMSPrsWarning",
+        "paramName": "tpms",
+        "desc": {
+          "displayContent": "胎压信息",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyTirePressure",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "VehicleBody_enum_TPMSPrsWarning": {
+        "dataTypeDescription": "胎压警报信息",
+        "tableValue": {
+          "0": "status0",
+          "1": "status1",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "胎压_无报警",
+          "1": "胎压_报警"
+        }
+      }
+    }
+  },
+  "0x000A_0x0007": {
+    "desc": "${P0} 设置雨刮单次刮刷 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车身系统控制服务",
+    "serviceInterfaceElementDescription": "设置雨刮单次刮刷",
+    "params": [
+      {
+        "type": "VehicleBody_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "参数范围：前排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setWiperTip",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setWiperTip",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "VehicleBody_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW"
+        },
+        "cnTableValue": {
+          "0": "前排"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x000B_0x0001": {
+    "desc": "${P0} 设置天窗遮阳帘 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车窗控制服务",
+    "serviceInterfaceElementDescription": "设置天窗遮阳帘",
+    "params": [
+      {
+        "type": "Windows_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：前排、后排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setSunshade",
+        "isSet": true
+      },
+      {
+        "type": "int32_t",
+        "paramName": "value",
+        "desc": {
+          "displayContent": "100全开、0全关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setSunshade",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Windows_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "5": "OUTSIDE_TOP",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车"
+        }
+      }
+    }
+  },
+  "0x000B_0x0002": {
+    "desc": "${P0} 获取天窗遮阳帘 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车窗控制服务",
+    "serviceInterfaceElementDescription": "获取天窗遮阳帘",
+    "params": [
+      {
+        "type": "Windows_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：前排、后排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getSunshade",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "开、关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getSunshade",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Windows_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "5": "OUTSIDE_TOP",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x000B_0x0003": {
+    "desc": "${P0} 通知天窗遮阳帘 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车窗控制服务",
+    "serviceInterfaceElementDescription": "通知天窗遮阳帘",
+    "params": [
+      {
+        "type": "Windows_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：前排、后排",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifySunshade",
+        "isSet": false
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "开、关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifySunshade",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Windows_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "5": "OUTSIDE_TOP",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x000B_0x0004": {
+    "desc": "${P0} 设置车窗控制 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车窗控制服务",
+    "serviceInterfaceElementDescription": "设置车窗控制",
+    "params": [
+      {
+        "type": "Windows_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后、全车",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setWindow",
+        "isSet": true
+      },
+      {
+        "type": "int32_t",
+        "paramName": "value",
+        "desc": {
+          "displayContent": "0~100， 100全开、0全关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setWindow",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Windows_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "5": "OUTSIDE_TOP",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车"
+        }
+      }
+    }
+  },
+  "0x000B_0x0005": {
+    "desc": "${P0} 获取车窗控制 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车窗控制服务",
+    "serviceInterfaceElementDescription": "获取车窗控制",
+    "params": [
+      {
+        "type": "Windows_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getWindow",
+        "isSet": true
+      },
+      {
+        "type": "int32_t",
+        "paramName": "value",
+        "desc": {
+          "displayContent": "0~100， 100全开、0全关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getWindow",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Windows_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "5": "OUTSIDE_TOP",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车"
+        }
+      }
+    }
+  },
+  "0x000B_0x0006": {
+    "desc": "${P0} 通知车窗控制 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供车窗控制服务",
+    "serviceInterfaceElementDescription": "通知车窗控制",
+    "params": [
+      {
+        "type": "Windows_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：左前、右前、左后、右后",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyWindow",
+        "isSet": false
+      },
+      {
+        "type": "int32_t",
+        "paramName": "value",
+        "desc": {
+          "displayContent": "0~100， 100全开、0全关",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyWindow",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Windows_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "0": "FRONT_ROW",
+          "1": "FRONT_LEFT",
+          "2": "FRONT_RIGHT",
+          "3": "REAR_LEFT",
+          "4": "REAR_RIGHT",
+          "5": "OUTSIDE_TOP",
+          "6": "REAR_ROW",
+          "7": "ALL"
+        },
+        "cnTableValue": {
+          "0": "前排",
+          "1": "左前",
+          "2": "右前",
+          "3": "左后",
+          "4": "右后",
+          "6": "后排",
+          "7": "全车"
+        }
+      }
+    }
+  },
+  "0x000C_0x0001": {
+    "desc": "${P0} 设置打开/收起后视镜 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供后视镜控制服务",
+    "serviceInterfaceElementDescription": "设置打开/收起后视镜",
+    "params": [
+      {
+        "type": "Cabin_enum_VehicleArea",
+        "paramName": "vehicle_area",
+        "desc": {
+          "displayContent": "车辆控制位置，参数范围：全部",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setRearViewMirrorFoldControl",
+        "isSet": true
+      },
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "收起on，打开off",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "setRearViewMirrorFoldControl",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Cabin_enum_VehicleArea": {
+        "dataTypeDescription": "车辆控制位置",
+        "tableValue": {
+          "9": "OUTSIDE_LEFT",
+          "10": "OUTSIDE_RIGHT",
+          "11": "NONE"
+        },
+        "cnTableValue": {
+          "9": "外左测",
+          "10": "外右测",
+          "11": "全部"
+        }
+      },
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x000D_0x0001": {
+    "desc": "设置语音开启/关闭 AVM 功能 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "泊车Apa控制服务",
+    "serviceInterfaceElementDescription": "设置语音开启/关闭 AVM 功能",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAvmVoiceOnoffReq",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x000E_0x0001": {
+    "desc": "设置低速行人警示 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供车辆运动控制服务",
+    "serviceInterfaceElementDescription": "设置低速行人警示",
+    "params": [
+      {
+        "type": "Basic_enum_OnOffInvalid",
+        "paramName": "onoff",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setAcousticVehAlert",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Basic_enum_OnOffInvalid": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "OFF",
+          "1": "ON",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "关闭",
+          "1": "打开"
+        }
+      }
+    }
+  },
+  "0x000F_0x0001": {
+    "desc": "设置数据埋点数据 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供数据埋点服务",
+    "serviceInterfaceElementDescription": "设置数据埋点数据",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "data",
+        "desc": {
+          "displayContent": "数据埋点数据",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setDataTrace",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x0010_0x0001": {
+    "desc": "获取配置字信息 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供配置字获取服务",
+    "serviceInterfaceElementDescription": "获取配置字信息",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "config_string",
+        "desc": {
+          "displayContent": "配置字信息",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getConfigInfo",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1001_0x0001": {
+    "desc": "获取ktv话筒连接状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "KTV控制",
+    "serviceInterfaceElementDescription": "获取ktv话筒连接状态",
+    "params": [
+      {
+        "type": "KTV_enum_ConnectSts",
+        "paramName": "connect_status",
+        "desc": {
+          "displayContent": "话筒连接状态",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getKtvConnectStatus",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "KTV_enum_ConnectSts": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "UnConnect",
+          "1": "Connect",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "未连接",
+          "1": "连接",
+          "255": "无效值"
+        }
+      }
+    }
+  },
+  "0x1001_0x0002": {
+    "desc": "通知ktv话筒连接状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "KTV控制",
+    "serviceInterfaceElementDescription": "通知ktv话筒连接状态",
+    "params": [
+      {
+        "type": "KTV_enum_ConnectSts",
+        "paramName": "connect_status",
+        "desc": {
+          "displayContent": "话筒连接状态",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyKtvConnectStatus",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "KTV_enum_ConnectSts": {
+        "dataTypeDescription": "开关",
+        "tableValue": {
+          "0": "UnConnect",
+          "1": "Connect",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "未连接",
+          "1": "连接",
+          "255": "无效值"
+        }
+      }
+    }
+  },
+  "0x1001_0x0003": {
+    "desc": "获取ktv mv开始播放状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "KTV控制",
+    "serviceInterfaceElementDescription": "获取ktv mv开始播放状态",
+    "params": [
+      {
+        "type": "KTV_enum_PlaySts",
+        "paramName": "play_status",
+        "desc": {
+          "displayContent": "播放状态",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getKtvMvStatus",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "KTV_enum_PlaySts": {
+        "dataTypeDescription": "播放状态",
+        "tableValue": {
+          "0": "play",
+          "1": "stop",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "播放",
+          "1": "停止",
+          "255": "无效值"
+        }
+      }
+    }
+  },
+  "0x1001_0x0004": {
+    "desc": "通知ktv mv播放状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "KTV控制",
+    "serviceInterfaceElementDescription": "通知ktv mv播放状态",
+    "params": [
+      {
+        "type": "KTV_enum_PlaySts",
+        "paramName": "play_status",
+        "desc": {
+          "displayContent": "播放状态",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyKtvMvStatus",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "KTV_enum_PlaySts": {
+        "dataTypeDescription": "播放状态",
+        "tableValue": {
+          "0": "play",
+          "1": "stop",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "播放",
+          "1": "停止",
+          "255": "无效值"
+        }
+      }
+    }
+  },
+  "0x1001_0x0005": {
+    "desc": "打开雷石KTV",
+    "defaultValue": "",
+    "serviceDescription": "KTV控制",
+    "serviceInterfaceElementDescription": "打开雷石KTV",
+    "params": [],
+    "enums": {}
+  },
+  "0x1002_0x0001": {
+    "desc": "设置vpa语音播报 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "VPA控制",
+    "serviceInterfaceElementDescription": "设置vpa语音播报",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "text",
+        "desc": {
+          "displayContent": "语音内容",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setVpaSpeakText",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1002_0x0002": {
+    "desc": "设置vpa动作 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "VPA控制",
+    "serviceInterfaceElementDescription": "设置vpa动作",
+    "params": [
+      {
+        "type": "VPA_enum_VPAAction",
+        "paramName": "action",
+        "desc": {
+          "displayContent": "VPA动作",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setVpaAction",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "VPA_enum_VPAAction": {
+        "dataTypeDescription": "VPA动作枚举值",
+        "tableValue": {
+          "0": "VPA_WAKEUP",
+          "1": "VPA_LISTENING",
+          "2": "VPA_SPEAKING",
+          "3": "VPA_DOUBT",
+          "4": "VPA_TOUCH_HEAD",
+          "5": "\tVPA_UNDERSTAND",
+          "6": "VPA_LOOK_UP",
+          "7": "VPA_IDLE"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x1003_0x0001": {
+    "desc": "播放指定名字的歌曲 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供爱趣听服务",
+    "serviceInterfaceElementDescription": "播放指定名字的歌曲",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "name",
+        "desc": {
+          "displayContent": "歌曲名字",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setPlayMusic",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1003_0x0002": {
+    "desc": "播放指定名字的小说 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供爱趣听服务",
+    "serviceInterfaceElementDescription": "播放指定名字的小说",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "name",
+        "desc": {
+          "displayContent": "小说名字",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "playBook",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1003_0x0003": {
+    "desc": "播放指定名字的电台 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供爱趣听服务",
+    "serviceInterfaceElementDescription": "播放指定名字的电台",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "name",
+        "desc": {
+          "displayContent": "开关",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "playAudio",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1003_0x0004": {
+    "desc": "播放指定类型的音乐 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供爱趣听服务",
+    "serviceInterfaceElementDescription": "播放指定类型的音乐",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "类型名字",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "playSpecTypeMusic",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1004_0x0001": {
+    "desc": "打开博泰游戏列表",
+    "defaultValue": "",
+    "serviceDescription": "提供博泰游戏服务",
+    "serviceInterfaceElementDescription": "打开博泰游戏列表",
+    "params": [],
+    "enums": {}
+  },
+  "0x1004_0x0002": {
+    "desc": "打开博泰游戏APP",
+    "defaultValue": "",
+    "serviceDescription": "提供博泰游戏服务",
+    "serviceInterfaceElementDescription": "打开博泰游戏APP",
+    "params": [],
+    "enums": {}
+  },
+  "0x1004_0x0003": {
+    "desc": "打开指定游戏 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供博泰游戏服务",
+    "serviceInterfaceElementDescription": "打开指定游戏",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "game_name",
+        "desc": {
+          "displayContent": "游戏名",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "openGame",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1005_0x0001": {
+    "desc": "播放指定类型的电台 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供云听APP服务",
+    "serviceInterfaceElementDescription": "播放指定类型的电台",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "类型名字",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "playYTAudio",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1005_0x0002": {
+    "desc": "播放指定类型的广播 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供云听APP服务",
+    "serviceInterfaceElementDescription": "播放指定类型的广播",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "类型名字",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "playYTBroadcast",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1005_0x0003": {
+    "desc": "播放指定名字的节目 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供云听APP服务",
+    "serviceInterfaceElementDescription": "播放指定名字的节目",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "指定节目名字",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "playYTProgram",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x0001": {
+    "desc": "设置打开MapAPP",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "设置打开MapAPP ",
+    "params": [],
+    "enums": {}
+  },
+  "0x1006_0x0008": {
+    "desc": "获取到达目的地剩余时间 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "获取到达目的地剩余时间",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "left_time",
+        "desc": {
+          "displayContent": "剩余时间（单位分钟）",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getLeftTime",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x0009": {
+    "desc": "通知到达目的地剩余时间 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "通知到达目的地剩余时间",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "left_time",
+        "desc": {
+          "displayContent": "剩余时间（单位分钟）",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyLeftlTime",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x000A": {
+    "desc": "获取到达目的地剩余里程 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "获取到达目的地剩余里程",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "left_distance",
+        "desc": {
+          "displayContent": "剩余里程（单位米）",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getLeftDistance",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x000B": {
+    "desc": "通知到达目的地剩余里程 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "通知到达目的地剩余里程",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "left_distance",
+        "desc": {
+          "displayContent": "剩余里程（单位米）",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyLeftDistance",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x000C": {
+    "desc": "获取导航目的地 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "获取导航目的地",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "dest_poi",
+        "desc": {
+          "displayContent": "导航目的地",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getDestPoi",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x000D": {
+    "desc": "通知导航目的地 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "通知导航目的地",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "dest_poi",
+        "desc": {
+          "displayContent": "导航目的地",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyDestPoi",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x000E": {
+    "desc": "获取导航状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "获取导航状态",
+    "params": [
+      {
+        "type": "Map_enum_NaviStatus",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "导航状态",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getNaviStatus",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Map_enum_NaviStatus": {
+        "dataTypeDescription": "导航状态",
+        "tableValue": {
+          "0": "UnNavi",
+          "1": "Naving",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "非导航",
+          "1": "导航中"
+        }
+      }
+    }
+  },
+  "0x1006_0x000F": {
+    "desc": "通知导航状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "通知导航状态",
+    "params": [
+      {
+        "type": "Map_enum_NaviStatus",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "导航状态",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyNaviStatus",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Map_enum_NaviStatus": {
+        "dataTypeDescription": "导航状态",
+        "tableValue": {
+          "0": "UnNavi",
+          "1": "Naving",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "0": "非导航",
+          "1": "导航中"
+        }
+      }
+    }
+  },
+  "0x1006_0x0010": {
+    "desc": "检索指定地点 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "检索指定地点",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "poi",
+        "desc": {
+          "displayContent": "检索指定地点",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "searchPoi",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x0011": {
+    "desc": "导航到指定收藏地点 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "导航到指定收藏地点",
+    "params": [
+      {
+        "type": "Map_enum_FavPoiType",
+        "paramName": "fav_poi",
+        "desc": {
+          "displayContent": "收藏点,参数范围：家、公司",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "naviToFavorPoi",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Map_enum_FavPoiType": {
+        "dataTypeDescription": "收藏地点",
+        "tableValue": {
+          "1": "Home",
+          "2": "Company",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "家",
+          "2": "公司"
+        }
+      }
+    }
+  },
+  "0x1006_0x0012": {
+    "desc": "${P0} 获取到达收藏地点的距离 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "获取到达收藏地点的距离",
+    "params": [
+      {
+        "type": "Map_enum_FavPoiType",
+        "paramName": "fav_poi",
+        "desc": {
+          "displayContent": "收藏点,参数范围：家、公司",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFavorPoiSts",
+        "isSet": true
+      },
+      {
+        "type": "int32_t",
+        "paramName": "distance",
+        "desc": {
+          "displayContent": "行程距离",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getFavorPoiSts",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Map_enum_FavPoiType": {
+        "dataTypeDescription": "收藏地点",
+        "tableValue": {
+          "1": "Home",
+          "2": "Company",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "家",
+          "2": "公司"
+        }
+      }
+    }
+  },
+  "0x1006_0x0013": {
+    "desc": "${P0} 通知到达收藏地点的距离 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "通知到达收藏地点的距离",
+    "params": [
+      {
+        "type": "Map_enum_FavPoiType",
+        "paramName": "fav_poi",
+        "desc": {
+          "displayContent": "收藏点,参数范围：家、公司",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFavorPoiSts",
+        "isSet": false
+      },
+      {
+        "type": "int32_t",
+        "paramName": "distance",
+        "desc": {
+          "displayContent": "行程距离",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "notifyFavorPoiSts",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Map_enum_FavPoiType": {
+        "dataTypeDescription": "收藏地点",
+        "tableValue": {
+          "1": "Home",
+          "2": "Company",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "家",
+          "2": "公司"
+        }
+      }
+    }
+  },
+  "0x1006_0x0016": {
+    "desc": "获取当前路况 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "获取当前路况",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "distance",
+        "desc": {
+          "displayContent": "路况距离",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getRoadCondition",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1006_0x0017": {
+    "desc": "通知当前路况 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供导航APP服务",
+    "serviceInterfaceElementDescription": "通知当前路况",
+    "params": [
+      {
+        "type": "int32_t",
+        "paramName": "distance",
+        "desc": {
+          "displayContent": "路况距离",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyRoadCondition",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x1007_0x0001": {
+    "desc": "获取恶劣天气 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供天气APP服务",
+    "serviceInterfaceElementDescription": "获取恶劣天气",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "恶劣天气类型",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getAlarmType",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1007_0x0002": {
+    "desc": "通知恶劣天气 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供天气APP服务",
+    "serviceInterfaceElementDescription": "通知恶劣天气",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "type",
+        "desc": {
+          "displayContent": "恶劣天气类型",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyAlarmType",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x1007_0x0003": {
+    "desc": "获取实时天气状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供天气APP服务",
+    "serviceInterfaceElementDescription": "获取实时天气状态",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "weather",
+        "desc": {
+          "displayContent": "天气信息",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getWeatherInfo",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x1007_0x0004": {
+    "desc": "通知实时天气状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供天气APP服务",
+    "serviceInterfaceElementDescription": "通知实时天气状态",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "weather",
+        "desc": {
+          "displayContent": "天气信息",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyWeatherInfo",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x1007_0x0005": {
+    "desc": "播报实时天气状态",
+    "defaultValue": "",
+    "serviceDescription": "提供天气APP服务",
+    "serviceInterfaceElementDescription": "播报实时天气状态",
+    "params": [],
+    "enums": {}
+  },
+  "0x1008_0x0001": {
+    "desc": "${P0} 获取是否是当前节日 ${P1}",
+    "defaultValue": "",
+    "serviceDescription": "提供节日节气服务",
+    "serviceInterfaceElementDescription": "获取是否是当前节日",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "festival",
+        "desc": {
+          "displayContent": "节日、节气",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getFestivalArrivalSts",
+        "isSet": true
+      },
+      {
+        "type": "Festival_enum_FestivalArrivalSts",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "获取节日、节气是否到达",
+          "value": "${P1}"
+        },
+        "serviceMethodType": "getFestivalArrivalSts",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Festival_enum_FestivalArrivalSts": {
+        "dataTypeDescription": "节日是否来临",
+        "tableValue": {
+          "1": "YES",
+          "2": "NO",
+          "65535": "Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x1008_0x0002": {
+    "desc": "通知当前节日，节气 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供节日节气服务",
+    "serviceInterfaceElementDescription": "通知当前节日，节气",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "festival",
+        "desc": {
+          "displayContent": "通知当前节日",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyFestivalSts",
+        "isSet": false
+      }
+    ],
+    "enums": {}
+  },
+  "0x1009_0x0001": {
+    "desc": "设置进行拨打电话 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供电话功能服务",
+    "serviceInterfaceElementDescription": "设置进行拨打电话",
+    "params": [
+      {
+        "type": "String",
+        "paramName": "call_nums",
+        "desc": {
+          "displayContent": "电话号码",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "setMakeCallReq",
+        "isSet": true
+      }
+    ],
+    "enums": {}
+  },
+  "0x100A_0x0001": {
+    "desc": "获取蓝牙电话通话状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供蓝牙功能服务",
+    "serviceInterfaceElementDescription": "获取蓝牙电话通话状态",
+    "params": [
+      {
+        "type": "BT_enum_ConnectivitySts",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "蓝牙电话通话状态，参数范围：连接、断开",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getBtConnectSts",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "BT_enum_ConnectivitySts": {
+        "dataTypeDescription": "蓝牙连接状态",
+        "tableValue": {
+          "1": "Connect",
+          "2": "UnConnect",
+          "65535": "Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x100A_0x0002": {
+    "desc": "通知蓝牙电话通话状态 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供蓝牙功能服务",
+    "serviceInterfaceElementDescription": "通知蓝牙电话通话状态",
+    "params": [
+      {
+        "type": "BT_enum_ConnectivitySts",
+        "paramName": "status",
+        "desc": {
+          "displayContent": "蓝牙电话通话状态，参数范围：连接、断开",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifyBtConnectSts",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "BT_enum_ConnectivitySts": {
+        "dataTypeDescription": "蓝牙连接状态",
+        "tableValue": {
+          "1": "Connect",
+          "2": "UnConnect",
+          "65535": "Invalid"
+        },
+        "cnTableValue": null
+      }
+    }
+  },
+  "0x100B_0x0001": {
+    "desc": "视频拍摄",
+    "defaultValue": "",
+    "serviceDescription": "提供拍摄服务",
+    "serviceInterfaceElementDescription": "视频拍摄",
+    "params": [],
+    "enums": {}
+  },
+  "0x100B_0x0002": {
+    "desc": "照片拍摄",
+    "defaultValue": "",
+    "serviceDescription": "提供拍摄服务",
+    "serviceInterfaceElementDescription": "照片拍摄",
+    "params": [],
+    "enums": {}
+  },
+  "0x100B_0x0003": {
+    "desc": "摄像头切换",
+    "defaultValue": "",
+    "serviceDescription": "提供拍摄服务",
+    "serviceInterfaceElementDescription": "摄像头切换",
+    "params": [],
+    "enums": {}
+  },
+  "0x100B_0x0004": {
+    "desc": "播放指定相册 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供拍摄服务",
+    "serviceInterfaceElementDescription": "播放指定相册",
+    "params": [
+      {
+        "type": "Camera_enum_Album",
+        "paramName": "album_name",
+        "desc": {
+          "displayContent": "相册名字，参数范围：相册、旅拍、云端",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "playAlbum",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Camera_enum_Album": {
+        "dataTypeDescription": "相册类型",
+        "tableValue": {
+          "1": "Local_Album",
+          "2": "Air_Album",
+          "3": "Travel_Album"
+        },
+        "cnTableValue": {
+          "1": "相册",
+          "2": "云端",
+          "3": "旅拍"
+        }
+      }
+    }
+  },
+  "0x100C_0x0001": {
+    "desc": "获取临近日程提醒，有或者无 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供日程服务",
+    "serviceInterfaceElementDescription": "获取临近日程提醒，有或者无",
+    "params": [
+      {
+        "type": "Schedule_enum_NotifyExiststs",
+        "paramName": "exist_sts",
+        "desc": {
+          "displayContent": "是否存在提醒",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "getScheNotify",
+        "isSet": true
+      }
+    ],
+    "enums": {
+      "Schedule_enum_NotifyExiststs": {
+        "dataTypeDescription": "日程提醒是否存在",
+        "tableValue": {
+          "1": "Exist",
+          "2": "UnExist",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "存在",
+          "2": "不存在人员",
+          "255": "无效值"
+        }
+      }
+    }
+  },
+  "0x100C_0x0002": {
+    "desc": "通知临近日程提醒，有或者无 ${P0}",
+    "defaultValue": "",
+    "serviceDescription": "提供日程服务",
+    "serviceInterfaceElementDescription": "通知临近日程提醒，有或者无",
+    "params": [
+      {
+        "type": "Schedule_enum_NotifyExiststs",
+        "paramName": "exist_sts",
+        "desc": {
+          "displayContent": "是否存在提醒",
+          "value": "${P0}"
+        },
+        "serviceMethodType": "notifySchedule",
+        "isSet": false
+      }
+    ],
+    "enums": {
+      "Schedule_enum_NotifyExiststs": {
+        "dataTypeDescription": "日程提醒是否存在",
+        "tableValue": {
+          "1": "Exist",
+          "2": "UnExist",
+          "65535": "Invalid"
+        },
+        "cnTableValue": {
+          "1": "存在",
+          "2": "不存在人员",
+          "255": "无效值"
+        }
+      }
+    }
+  },
+  "0x100C_0x0003": {
+    "desc": "跳转到日程画面",
+    "defaultValue": "",
+    "serviceDescription": "提供日程服务",
+    "serviceInterfaceElementDescription": "跳转到日程画面",
+    "params": [],
+    "enums": {}
+  }
+}
