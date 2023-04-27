@@ -4,6 +4,13 @@ const path = require('path');
 
 // 写文件
 const mekeJson = (dest_file, resultJson) => {
+    // 创建输出目录（如果不存在）
+    const destDir = path.dirname(dest_file);
+    if (!fs.existsSync(destDir)) {
+        fs.mkdirSync(destDir, { recursive: true });
+    }
+
+    // 输出JSON到指定文件
     fs.writeFile(dest_file, resultJson, err => {
         if (err) {
             console.error("error：", err);
@@ -12,6 +19,7 @@ const mekeJson = (dest_file, resultJson) => {
         console.log('exported json  -->  ', path.basename(dest_file));
     });
 }
+
 
 // 将sheet转换为JSON格式
 function convertSheetToJson(sheet) {
@@ -65,10 +73,18 @@ function convertHex(str) {
     }
 }
 
+function getModeEnv() {
+    const args = process.argv.slice(2);
+    const modeIndex = args.findIndex(arg => arg.startsWith('--mode='));
+    const mode = modeIndex !== -1 ? args[modeIndex].split('=')[1] : null;
+    return mode
+}
+
 module.exports = {
     convertSheetToJson,
     mekeJson,
     parse,
     cnParse,
-    convertHex
+    convertHex,
+    getModeEnv
 }

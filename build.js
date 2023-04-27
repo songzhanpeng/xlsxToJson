@@ -1,11 +1,12 @@
 const path = require('path');
 
-const { mekeJson, parse, cnParse, convertHex } = require('./utils');
-const config = require('./config/index.json');
+const { mekeJson, parse, cnParse, convertHex, getModeEnv } = require('./utils');
+const config = require(`./config/index.json`)[getModeEnv()];
 
-const serviceInterfaceDefinitionJson = require('./base/ServiceInterface Definition.json');
-const dataTypeDefinition = require('./base/DataType Definition.json');
+const serviceInterfaceDefinitionJson = require(`${config.xlsx.dest}/ServiceInterface Definition.json`);
+const dataTypeDefinition = require(`${config.xlsx.dest}/DataType Definition.json`);
 
+console.log(`生成 ${getModeEnv()} ...`);
 // 处理 DataType
 function convertJson(jsonData) {
     const result = {};

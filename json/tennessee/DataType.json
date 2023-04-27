@@ -1,0 +1,851 @@
+{
+  "Climate_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "0": "FRONT_ROW",
+      "1": "FRONT_LEFT",
+      "2": "FRONT_RIGHT",
+      "3": "REAR_LEFT",
+      "4": "REAR_RIGHT",
+      "6": "REAR_ROW",
+      "7": "ALL"
+    },
+    "cnTableValue": {
+      "0": "前排",
+      "1": "左前",
+      "2": "右前",
+      "3": "左后",
+      "4": "右后",
+      "6": "后排",
+      "7": "全车(前后排)"
+    }
+  },
+  "Basic_enum_OnOffInvalid": {
+    "dataTypeDescription": "开关",
+    "tableValue": {
+      "0": "OFF",
+      "1": "ON",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "关闭",
+      "1": "打开"
+    }
+  },
+  "Climate_enum_BlwLevel": {
+    "dataTypeDescription": "调节风量档位",
+    "tableValue": {
+      "0": "OFF",
+      "1": "LEVEL1",
+      "2": "LEVEL2",
+      "3": "LEVEL3",
+      "4": "LEVEL4",
+      "5": "LEVEL5",
+      "6": "LEVEL6",
+      "7": "LEVEL7",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "关闭",
+      "1": "1档",
+      "2": "2档",
+      "3": "3档",
+      "4": "4档",
+      "5": "5档",
+      "6": "6档",
+      "7": "7档",
+      "65535": "无效"
+    }
+  },
+  "Climate_enum_BlwDirect": {
+    "dataTypeDescription": "调节吹风模式",
+    "tableValue": {
+      "0": "NONE",
+      "1": "FACE",
+      "2": "FLOOR",
+      "3": "FACE_FLOOR",
+      "4": "DEFROST",
+      "6": "FLOOR_DEFROST",
+      "7": "ALL",
+      "8": "FACE_DEFROST"
+    },
+    "cnTableValue": {
+      "0": "无",
+      "1": "吹脸",
+      "2": "吹脚",
+      "3": "吹脸吹脚",
+      "4": "吹窗",
+      "6": "吹脚吹窗",
+      "7": "吹脸吹脚吹窗",
+      "8": "吹脸吹窗"
+    }
+  },
+  "Climate_enum_RecycleDoorMode": {
+    "dataTypeDescription": "内外循环",
+    "tableValue": {
+      "0": "LOOP_OUTSIDE",
+      "1": "LOOP_INNER"
+    },
+    "cnTableValue": {
+      "0": "外循环",
+      "1": "内循环"
+    }
+  },
+  "Climate_enum_SeatHeatVent": {
+    "dataTypeDescription": "座椅通风,加热",
+    "tableValue": {
+      "0": "OFF",
+      "1": "LOW",
+      "2": "MID",
+      "3": "HIGH"
+    },
+    "cnTableValue": {
+      "0": "关",
+      "1": "低",
+      "2": "中",
+      "3": "高"
+    }
+  },
+  "Comforts_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "1": "FRONT_LEFT",
+      "2": "FRONT_RIGHT",
+      "3": "REAR_LEFT",
+      "4": "REAR_RIGHT"
+    },
+    "cnTableValue": {
+      "1": "左前",
+      "2": "右前",
+      "3": "左后",
+      "4": "右后"
+    }
+  },
+  "Comforts_enum_VehicleDirection": {
+    "dataTypeDescription": "车辆控制方向",
+    "tableValue": {
+      "0": "FRONT",
+      "1": "REAR",
+      "2": "NONE",
+      "3": "UP",
+      "4": "DOWN"
+    },
+    "cnTableValue": {
+      "0": "前",
+      "1": "后",
+      "2": "无",
+      "3": "上",
+      "4": "下"
+    }
+  },
+  "Comforts_enum_FragranceTat": {
+    "dataTypeDescription": "香氛香型",
+    "tableValue": {
+      "0": "FCMTATREQ_NOREQUEST",
+      "1": "FCMTATREQ_TASTE_1",
+      "2": "FCMTATREQ_TASTE_2",
+      "3": "FCMTATREQ_TASTE_3"
+    },
+    "cnTableValue": {
+      "0": "无",
+      "1": "香型1",
+      "2": "香型2",
+      "3": "香型3"
+    }
+  },
+  "Comforts_enum_FragranceCct": {
+    "dataTypeDescription": "香氛浓度",
+    "tableValue": {
+      "0": "FCMCCTREQ_NOREQUEST",
+      "1": "FCMCCTREQ_LO",
+      "2": "FCMCCTREQ_MID",
+      "3": "FCMCCTREQ_HI"
+    },
+    "cnTableValue": {
+      "0": "无",
+      "1": "浓度低",
+      "2": "浓度中",
+      "3": "浓度高"
+    }
+  },
+  "Comforts_enum_SeatMassageLevel": {
+    "dataTypeDescription": "按摩强度",
+    "tableValue": {
+      "0": "NOREQUEST",
+      "1": "OFF",
+      "2": "SEATMASSGINTEN1",
+      "3": "SEATMASSGINTEN2",
+      "4": "SEATMASSGINTEN3"
+    },
+    "cnTableValue": {
+      "0": "无",
+      "1": "关闭",
+      "2": "强度1",
+      "3": "强度2",
+      "4": "强度3"
+    }
+  },
+  "Comforts_enum_SeatMassageMode": {
+    "dataTypeDescription": "按摩模式",
+    "tableValue": {
+      "0": "WAVE",
+      "1": "ROLL"
+    },
+    "cnTableValue": {
+      "0": "波浪",
+      "1": "滚筒"
+    }
+  },
+  "Comforts_enum_SeatMemoryPos": {
+    "dataTypeDescription": "记忆位置",
+    "tableValue": {
+      "1": "pos1",
+      "2": "pos2",
+      "3": "pos3"
+    },
+    "cnTableValue": {
+      "1": "位置1",
+      "2": "位置2",
+      "3": "位置3"
+    }
+  },
+  "Driving_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "1": "FRONT_LEFT",
+      "2": "FRONT_RIGHT",
+      "3": "REAR_LEFT",
+      "4": "REAR_RIGHT",
+      "12": "REAR_CENTER"
+    },
+    "cnTableValue": {
+      "1": "左前",
+      "2": "右前",
+      "3": "左后",
+      "4": "右后",
+      "12": "后中"
+    }
+  },
+  "Driving_enum_DrvInfoGearPosition": {
+    "dataTypeDescription": "档位",
+    "tableValue": {
+      "0": "PARKING",
+      "1": "REVERSE",
+      "2": "NEUTRAL",
+      "3": "DRIVING",
+      "4": "SPORT",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "P档",
+      "1": "R档",
+      "2": "N档",
+      "3": "D档",
+      "4": "S档",
+      "255": "无效"
+    }
+  },
+  "Driving_enum_DrvMode": {
+    "dataTypeDescription": "驾驶模式",
+    "tableValue": {
+      "1": "ECO",
+      "2": "COMFORT",
+      "3": "SPORT",
+      "10": "INDIVIDUAL",
+      "12": "SNOW"
+    },
+    "cnTableValue": {
+      "1": "经济模式",
+      "2": "舒适模式",
+      "3": "运动模式",
+      "10": "个性化",
+      "12": "雪地模式"
+    }
+  },
+  "Driving_enum_RegenMode": {
+    "dataTypeDescription": " 能量回收等级",
+    "tableValue": {
+      "0": "NORMAL",
+      "1": "LOW_LEVEL",
+      "2": "STRONG",
+      "6": "OFF",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "正常",
+      "1": "低",
+      "2": "强",
+      "6": "关闭",
+      "65535": "无效"
+    }
+  },
+  "Driving_enum_SOCSet": {
+    "dataTypeDescription": "动力模式",
+    "tableValue": {
+      "0": "SMART_MODE",
+      "1": "EV_MODE",
+      "2": "REV_MODE"
+    },
+    "cnTableValue": {
+      "0": "smartmode",
+      "1": "evmode",
+      "2": "revmode"
+    }
+  },
+  "ElecPower_enum_ChargeSts": {
+    "dataTypeDescription": " 充电状态",
+    "tableValue": {
+      "0": "CSD_CHARGING",
+      "1": "CSD_CHARGEFINISH",
+      "2": "CSD_GRIDWITHOUTPWRSUPLY",
+      "3": "CSD_CHARGEERR",
+      "4": "CSD_CHARGEHEATING",
+      "65535": "Invalid"
+    },
+    "cnTableValue": null
+  },
+  "EntryLocks_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "1": "FRONT_LEFT",
+      "2": "FRONT_RIGHT",
+      "3": "REAR_LEFT",
+      "4": "REAR_RIGHT",
+      "7": "ALL",
+      "8": "OUTSIDE_REAR"
+    },
+    "cnTableValue": {
+      "1": "左前",
+      "2": "右前",
+      "3": "左后",
+      "4": "右后",
+      "7": "全车",
+      "8": "后尾门"
+    }
+  },
+  "EntryLocks_enum_OpenClose": {
+    "dataTypeDescription": "打开关闭",
+    "tableValue": {
+      "0": "CLOSED",
+      "1": "OPENED",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "关闭",
+      "1": "打开"
+    }
+  },
+  "EntryLocks_enum_LockUnlock": {
+    "dataTypeDescription": "解锁上锁",
+    "tableValue": {
+      "0": "LOCKED",
+      "1": "UNLOCKED",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "上锁",
+      "1": "解锁"
+    }
+  },
+  "EntryLocks_enum_LocksGearParkUnlockMode": {
+    "dataTypeDescription": "主驾解锁/全部车门解锁",
+    "tableValue": {
+      "0": "DISABLE",
+      "1": "ALL_DOOR_UNLOCK",
+      "2": "DRV_DOOR_UNLOCKED_ONLY"
+    },
+    "cnTableValue": null
+  },
+  "Infotainment_enum_ESEONOFFSts": {
+    "dataTypeDescription": "发动机声浪音效模拟",
+    "tableValue": {
+      "0": "ESEONOFFSTS_DEFAULT",
+      "1": "ESEONOFFSTS_OFF",
+      "2": "ESEONOFFSTS_SOUNDEFFECT1",
+      "3": "ESEONOFFSTS_SOUNDEFFECT2",
+      "255": "ESEONOFFSTS_Invalid"
+    },
+    "cnTableValue": null
+  },
+  "Infotainment_enum_SoundField": {
+    "dataTypeDescription": " 声场位置",
+    "tableValue": {
+      "0": "ALL_PASSENGER",
+      "1": "DRIVER",
+      "2": "FRONT_PASSENGER",
+      "3": "BACKROW_PASSENGER",
+      "4": "CUSTOM",
+      "5": "SURROUND"
+    },
+    "cnTableValue": null
+  },
+  "Lighting_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "1": "FRONT_LEFT",
+      "2": "FRONT_RIGHT",
+      "3": "REAR_LEFT",
+      "4": "REAR_RIGHT",
+      "7": "ALL"
+    },
+    "cnTableValue": {
+      "1": "左前",
+      "2": "右前",
+      "3": "左后",
+      "4": "右后",
+      "7": "全车"
+    }
+  },
+  "Lighting_enum_AmbLightMode": {
+    "dataTypeDescription": "氛围灯模式",
+    "tableValue": {
+      "0": "MODE_STATIC",
+      "1": "MODE_DYNAMIC",
+      "2": "MODE_DRIVE_MODE",
+      "3": "MODE_GAME"
+    },
+    "cnTableValue": null
+  },
+  "Lighting_enum_DayNightMode": {
+    "dataTypeDescription": " 日夜模式",
+    "tableValue": {
+      "0": "DAY",
+      "1": "OTHERS",
+      "2": "DARK",
+      "3": "TUNNEL",
+      "4": "DARKSTART",
+      "65535": "Invalid"
+    },
+    "cnTableValue": null
+  },
+  "Lighting_enum_ExtLightHeight": {
+    "dataTypeDescription": "前照灯高度",
+    "tableValue": {
+      "0": "NOREQUEST",
+      "1": "LOW",
+      "2": "MIDLOW",
+      "3": "MID",
+      "4": "MIDHIGH",
+      "5": "HIGH"
+    },
+    "cnTableValue": null
+  },
+  "Lighting_enum_EXLWlcOnOffRequest": {
+    "dataTypeDescription": " 迎宾灯光",
+    "tableValue": {
+      "0": "OFF",
+      "1": "MODE1",
+      "2": "MODE2",
+      "3": "MODE3",
+      "4": "MODE4",
+      "5": "MODE5",
+      "6": "MODE6",
+      "7": "MODE7",
+      "8": "MODE8",
+      "9": "MODE9",
+      "10": "MODE10"
+    },
+    "cnTableValue": null
+  },
+  "Lighting_enum_ReadingLampLevel": {
+    "dataTypeDescription": " 阅读灯",
+    "tableValue": {
+      "0": "OFF",
+      "1": "LOWLEVEL",
+      "2": "HIGHLEVEL",
+      "3": "NOREQUEST",
+      "255": "Invalid"
+    },
+    "cnTableValue": null
+  },
+  "Lighting_enum_H53AmbLightBrightness": {
+    "dataTypeDescription": "氛围灯亮度",
+    "tableValue": {
+      "1": "BRIGHTNESS_LEVEL_1",
+      "2": "BRIGHTNESS_LEVEL_2",
+      "3": "BRIGHTNESS_LEVEL_3",
+      "4": "BRIGHTNESS_LEVEL_4",
+      "5": "BRIGHTNESS_LEVEL_5",
+      "6": "BRIGHTNESS_LEVEL_6",
+      "7": "BRIGHTNESS_LEVEL_7",
+      "8": "BRIGHTNESS_LEVEL_8",
+      "9": "BRIGHTNESS_LEVEL_9",
+      "10": "BRIGHTNESS_LEVEL_10"
+    },
+    "cnTableValue": null
+  },
+  "Lighting_enum_ColorGamut": {
+    "dataTypeDescription": " 氛围灯色域",
+    "tableValue": {
+      "1": "COOLCOLOR",
+      "2": "NEUTRALCOLOR",
+      "3": "WARMCOLOR",
+      "4": "SEVEN_COLORS"
+    },
+    "cnTableValue": null
+  },
+  "Signal_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "4": "REAR_RIGHT"
+    },
+    "cnTableValue": {
+      "4": "右后"
+    }
+  },
+  "VPA_enum_VPAAction": {
+    "dataTypeDescription": "VPA动作枚举值",
+    "tableValue": {
+      "0": "VPA_WAKEUP",
+      "1": "VPA_LISTENING",
+      "2": "VPA_SPEAKING",
+      "3": "VPA_DOUBT",
+      "4": "VPA_TOUCH_HEAD",
+      "5": "\tVPA_UNDERSTAND",
+      "6": "VPA_LOOK_UP",
+      "7": "VPA_IDLE"
+    },
+    "cnTableValue": null
+  },
+  "VPA_enum_InstructonsRegistSts": {
+    "dataTypeDescription": "快捷指令注册状态",
+    "tableValue": {
+      "0": "False",
+      "1": "True",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "取消注册",
+      "1": "注册"
+    }
+  },
+  "VPA_enum_InstructonsExistSts": {
+    "dataTypeDescription": "快捷指令匹配状态",
+    "tableValue": {
+      "0": "NO",
+      "1": "YES",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "不匹配",
+      "1": "匹配"
+    }
+  },
+  "VehicleBody_enum_TPMSPrsWarning": {
+    "dataTypeDescription": "胎压警报信息",
+    "tableValue": {
+      "0": "status0",
+      "1": "status1",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "胎压_无报警",
+      "1": "胎压_报警"
+    }
+  },
+  "VehicleBody_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "0": "FRONT_ROW"
+    },
+    "cnTableValue": {
+      "0": "前排"
+    }
+  },
+  "Map_enum_NaviStatus": {
+    "dataTypeDescription": "导航状态",
+    "tableValue": {
+      "0": "UnNavi",
+      "1": "Naving",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "非导航",
+      "1": "导航中"
+    }
+  },
+  "Map_enum_FavPoiType": {
+    "dataTypeDescription": "收藏地点",
+    "tableValue": {
+      "1": "Home",
+      "2": "Company",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "1": "家",
+      "2": "公司"
+    }
+  },
+  "Map_enum_ArraSts": {
+    "dataTypeDescription": "到达状态",
+    "tableValue": {
+      "1": "Arrived",
+      "2": "NoArrived",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "1": "到达",
+      "2": "未到达"
+    }
+  },
+  "Comforts_enum_InstrumentTheme": {
+    "dataTypeDescription": "车控仪表主题",
+    "tableValue": {
+      "0": "SPORT",
+      "1": "CLASSIC",
+      "2": "SIMPLE"
+    },
+    "cnTableValue": {
+      "0": "运动",
+      "1": "经典",
+      "2": "简约"
+    }
+  },
+  "Driving_enum_LanguageSet": {
+    "dataTypeDescription": "ivi 语言设置",
+    "tableValue": {
+      "0": "Chinese",
+      "1": "English"
+    },
+    "cnTableValue": {
+      "0": "简体中文",
+      "1": "英文"
+    }
+  },
+  "Driving_enum_SuspensionAdjustStatus": {
+    "dataTypeDescription": "悬架调节状态",
+    "tableValue": {
+      "0": "SCSYSSTS_AXISLIFTING",
+      "1": "ISCSYSSTS_FUNCTION_SHUTDOWN"
+    },
+    "cnTableValue": {
+      "0": "升高",
+      "1": "恢复"
+    }
+  },
+  "Windows_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "0": "FRONT_ROW",
+      "1": "FRONT_LEFT",
+      "2": "FRONT_RIGHT",
+      "3": "REAR_LEFT",
+      "4": "REAR_RIGHT",
+      "5": "OUTSIDE_TOP",
+      "6": "REAR_ROW",
+      "7": "ALL"
+    },
+    "cnTableValue": {
+      "0": "前排",
+      "1": "左前",
+      "2": "右前",
+      "3": "左后",
+      "4": "右后",
+      "6": "后排",
+      "7": "全车"
+    }
+  },
+  "Cabin_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "9": "OUTSIDE_LEFT",
+      "10": "OUTSIDE_RIGHT",
+      "11": "NONE"
+    },
+    "cnTableValue": {
+      "9": "外左测",
+      "10": "外右测",
+      "11": "全部"
+    }
+  },
+  "KTV_enum_ConnectSts": {
+    "dataTypeDescription": "开关",
+    "tableValue": {
+      "0": "UnConnect",
+      "1": "Connect",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "未连接",
+      "1": "连接",
+      "255": "无效值"
+    }
+  },
+  "KTV_enum_PlaySts": {
+    "dataTypeDescription": "播放状态",
+    "tableValue": {
+      "0": "play",
+      "1": "stop",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "播放",
+      "1": "停止",
+      "255": "无效值"
+    }
+  },
+  "Festival_enum_FestivalArrivalSts": {
+    "dataTypeDescription": "节日是否来临",
+    "tableValue": {
+      "1": "YES",
+      "2": "NO",
+      "65535": "Invalid"
+    },
+    "cnTableValue": null
+  },
+  "BT_enum_ConnectivitySts": {
+    "dataTypeDescription": "蓝牙连接状态",
+    "tableValue": {
+      "1": "Connect",
+      "2": "UnConnect",
+      "65535": "Invalid"
+    },
+    "cnTableValue": null
+  },
+  "Dms_enum_PersonExistSts": {
+    "dataTypeDescription": "人员状态",
+    "tableValue": {
+      "1": "Exist",
+      "2": "UnExist",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "1": "存在人员",
+      "2": "不存在人员",
+      "255": "无效值"
+    }
+  },
+  "Dms_enum_RearSeatPosition": {
+    "dataTypeDescription": "后排人员座椅位置",
+    "tableValue": {
+      "1": "1D1",
+      "2": "1D2",
+      "3": "1D3",
+      "4": "1D4",
+      "5": "1D5",
+      "6": "1D6"
+    },
+    "cnTableValue": {
+      "1": "后一排ID1（左）",
+      "2": "后一排ID2（中）",
+      "3": "后一排ID3（右）",
+      "4": "后二排ID4（左）",
+      "5": "后二排ID5（中）",
+      "6": "后二排ID6（右）"
+    }
+  },
+  "Dms_enum_AgeType": {
+    "dataTypeDescription": "年龄类型",
+    "tableValue": {
+      "0": "Default",
+      "1": "Older",
+      "2": "Major",
+      "3": "Child",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "1": "老人",
+      "2": "成年人",
+      "3": "孩子"
+    }
+  },
+  "Dms_enum_EmotionSts": {
+    "dataTypeDescription": "情绪类型",
+    "tableValue": {
+      "0": "default",
+      "1": "type1",
+      "2": "type2",
+      "3": "type3",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "1": "开心",
+      "2": "悲伤",
+      "3": "生气"
+    }
+  },
+  "Dms_enum_VehicleArea": {
+    "dataTypeDescription": "车辆控制位置",
+    "tableValue": {
+      "1": "FRONT_LEFT",
+      "2": "FRONT_RIGHT",
+      "6": "REAR_ROW",
+      "17": "1D1",
+      "18": "1D2",
+      "19": "1D3"
+    },
+    "cnTableValue": {
+      "1": "左前",
+      "2": "右前",
+      "6": "后排",
+      "17": "后一排ID1（左）",
+      "18": "后一排ID2（中）",
+      "19": "后一排ID3（右）"
+    }
+  },
+  "Schedule_enum_NotifyExiststs": {
+    "dataTypeDescription": "日程提醒是否存在",
+    "tableValue": {
+      "1": "Exist",
+      "2": "UnExist",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "1": "存在",
+      "2": "不存在人员",
+      "255": "无效值"
+    }
+  },
+  "Climate_enum_PM25Level": {
+    "dataTypeDescription": "pm2.5等级",
+    "tableValue": {
+      "0": "level_0",
+      "1": "level_1",
+      "2": "level_2",
+      "3": "level_3",
+      "4": "level_4",
+      "5": "level_5",
+      "65535": "Invalid"
+    },
+    "cnTableValue": {
+      "0": "优",
+      "1": "良",
+      "2": "轻度",
+      "3": "中度",
+      "4": "重度",
+      "5": "严重"
+    }
+  },
+  "Basic_enum_SuccessFailSts": {
+    "dataTypeDescription": "执行结果",
+    "tableValue": {
+      "0": "FAILED",
+      "1": "SUCCESS",
+      "2": "UnConnected",
+      "3": "DataEmpty",
+      "5": "UnAuth",
+      "100": "EXCEPTION"
+    },
+    "cnTableValue": {
+      "0": "执行失败",
+      "1": "执行成功",
+      "2": "未连接",
+      "3": "数据空",
+      "4": "未授权",
+      "100": "抛出异常"
+    }
+  },
+  "Camera_enum_Album": {
+    "dataTypeDescription": "相册类型",
+    "tableValue": {
+      "1": "Local_Album",
+      "2": "Air_Album",
+      "3": "Travel_Album"
+    },
+    "cnTableValue": {
+      "1": "相册",
+      "2": "云端",
+      "3": "旅拍"
+    }
+  }
+}

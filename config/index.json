@@ -1,9 +1,20 @@
 {
-    "xlsx": {
-        "src": "./excel/**/[^~$]*.xlsx",
-        "dest": "./base"
+    "songhua": {
+        "xlsx": {
+            "src": "./excel/songhua/**/[^~$]*.xlsx",
+            "dest": "./base/songhua"
+        },
+        "output": {
+            "dest": "./json/songhua"
+        }
     },
-    "output": {
-        "dest": "./json"
+    "tennessee": {
+        "xlsx": {
+            "src": "./excel/tennessee/**/[^~$]*.xlsx",
+            "dest": "./base/tennessee"
+        },
+        "output": {
+            "dest": "./json/tennessee"
+        }
     }
 }
