@@ -3,8 +3,8 @@ const path = require('path');
 const { mekeJson, parse, cnParse, convertHex, getModeEnv } = require('./utils');
 const config = require(`./config/index.json`)[getModeEnv()];
 
-const serviceInterfaceDefinitionJson = require(`${config.xlsx.dest}/ServiceInterface Definition.json`);
-const dataTypeDefinition = require(`${config.xlsx.dest}/DataType Definition.json`);
+const serviceInterfaceDefinitionJson = require(`${config.xlsx.dest}/ServiceInterfaceDefinition.json`);
+const dataTypeDefinition = require(`${config.xlsx.dest}/DataTypeDefinition.json`);
 
 console.log(`生成 ${getModeEnv()} ...`);
 // 处理 DataType
@@ -12,12 +12,12 @@ function convertJson(jsonData) {
     const result = {};
     try {
         jsonData.forEach((item) => {
-            const enumName = item['Data Type Name\r\n数据类型名称'] || item['Data Type Name\n数据类型名称'];
-            const enumValues = parse(item['TableValue\r\n枚举值'] || item['TableValue\n枚举值']) || null;
-            const cnEnumValues = cnParse(item['Remark\r\n备注'] || item['Remark\n备注']) || null;
+            const enumName = item['DataTypeName数据类型名称'];
+            const enumValues = parse(item['TableValue枚举值']) || null;
+            const cnEnumValues = cnParse(item['Remark备注']) || null;
 
             result[enumName] = {
-                dataTypeDescription: item['Data Type Description\r\n数据类型描述'] || item['Data Type Description\n数据类型描述'],
+                dataTypeDescription: item['DataTypeDescription数据类型描述'],
                 tableValue: enumValues,
                 cnTableValue: cnEnumValues
             };

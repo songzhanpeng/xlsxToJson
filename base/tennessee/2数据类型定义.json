@@ -1,5 +1,5 @@
-{
-  "CS_Year": {
+[
+  {
     "DataTypeName": "CS_Year",
     "DataTypeDescription": "时间，年",
     "DataTypeCategory": "Integer",
@@ -10,10 +10,9 @@
     "PhysicalMax": 9999,
     "InitialValue": 2022,
     "InvalidValue": "0xFFFF",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_Month": {
+  {
     "DataTypeName": "CS_Month",
     "DataTypeDescription": "时间，月",
     "DataTypeCategory": "Integer",
@@ -24,10 +23,9 @@
     "PhysicalMax": 12,
     "InitialValue": 1,
     "InvalidValue": "0xFF",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_Day": {
+  {
     "DataTypeName": "CS_Day",
     "DataTypeDescription": "时间，日",
     "DataTypeCategory": "Integer",
@@ -38,10 +36,9 @@
     "PhysicalMax": 31,
     "InitialValue": 1,
     "InvalidValue": "0xFF",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_Hour": {
+  {
     "DataTypeName": "CS_Hour",
     "DataTypeDescription": "时间，时",
     "DataTypeCategory": "Integer",
@@ -52,10 +49,9 @@
     "PhysicalMax": 23,
     "InitialValue": 0,
     "InvalidValue": "0xFF",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_Minute": {
+  {
     "DataTypeName": "CS_Minute",
     "DataTypeDescription": "时间，分",
     "DataTypeCategory": "Integer",
@@ -66,10 +62,9 @@
     "PhysicalMax": 60,
     "InitialValue": 0,
     "InvalidValue": "0xFF",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_Second": {
+  {
     "DataTypeName": "CS_Second",
     "DataTypeDescription": "时间，秒",
     "DataTypeCategory": "Integer",
@@ -80,10 +75,9 @@
     "PhysicalMax": 60,
     "InitialValue": 0,
     "InvalidValue": "0xFF",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_Percent": {
+  {
     "DataTypeName": "CS_Percent",
     "DataTypeDescription": "百分比",
     "DataTypeCategory": "Integer",
@@ -95,10 +89,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFF",
     "Unit": "%",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_OnOffCmd": {
+  {
     "DataTypeName": "CS_OnOffCmd",
     "DataTypeDescription": "功能配置开关",
     "DataTypeCategory": "Enumeration",
@@ -106,14 +99,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: ON",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "ON"
-    }
+    "version": "V1.0"
   },
-  "CS_OnOffStatus": {
+  {
     "DataTypeName": "CS_OnOffStatus",
     "DataTypeDescription": "功能开关状态",
     "DataTypeCategory": "Enumeration",
@@ -121,22 +109,16 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: UNKOWN\r\n0x1: OFF\r\n0x2: ON",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "UNKOWN",
-      "1": "OFF",
-      "2": "ON"
-    }
+    "version": "V1.6"
   },
-  "CS_TrueFalse": {
+  {
     "DataTypeName": "CS_TrueFalse",
     "DataTypeDescription": "Bool型状态指示",
     "DataTypeCategory": "Boolean",
     "BaseDatatype": "boolean",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "CS_OpenCloseStop": {
+  {
     "DataTypeName": "CS_OpenCloseStop",
     "DataTypeDescription": "开关类型命令",
     "DataTypeCategory": "Enumeration",
@@ -144,15 +126,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OPEN\r\n0x2: CLOSE\r\n0x3: STOP",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OPEN",
-      "2": "CLOSE",
-      "3": "STOP"
-    }
+    "version": "V1.0"
   },
-  "CS_StartStop": {
+  {
     "DataTypeName": "CS_StartStop",
     "DataTypeDescription": "启动/停止类命令",
     "DataTypeCategory": "Enumeration",
@@ -160,14 +136,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: STOP\r\n0x2: START",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "STOP",
-      "2": "START"
-    }
+    "version": "V1.0"
   },
-  "CS_Time": {
+  {
     "DataTypeName": "CS_Time",
     "DataTypeDescription": "时间信息",
     "DataTypeCategory": "Struct",
@@ -175,18 +146,44 @@
     "MemberName": "year",
     "MemberDescription": "年",
     "MemberDatatypeReference": "CS_Year",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "undefined": {
+  {
     "MemberPosition": 1,
-    "MemberName": "AwayLockSw",
-    "MemberDescription": "离开自动闭锁功能配置",
-    "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "MemberName": "month",
+    "MemberDescription": "月",
+    "MemberDatatypeReference": "CS_Month",
+    "version": "V1.0"
   },
-  "CS_LockUnlock": {
+  {
+    "MemberPosition": 2,
+    "MemberName": "day",
+    "MemberDescription": "日",
+    "MemberDatatypeReference": "CS_Day",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "hour",
+    "MemberDescription": "时",
+    "MemberDatatypeReference": "CS_Hour",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "minute",
+    "MemberDescription": "分",
+    "MemberDatatypeReference": "CS_Minute",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "second",
+    "MemberDescription": "秒",
+    "MemberDatatypeReference": "CS_Second",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "CS_LockUnlock",
     "DataTypeDescription": "门窗解闭锁操作",
     "DataTypeCategory": "Enumeration",
@@ -194,14 +191,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: LOCK\r\n0x2: UNLOCK",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "LOCK",
-      "2": "UNLOCK"
-    }
+    "version": "V1.0"
   },
-  "CS_LockStatus": {
+  {
     "DataTypeName": "CS_LockStatus",
     "DataTypeDescription": "锁的状态",
     "DataTypeCategory": "Enumeration",
@@ -209,15 +201,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: LOCKED\r\n0x1: UNLOCK\r\n0x2: SUPER_LOCKED\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "LOCKED",
-      "1": "UNLOCK",
-      "2": "SUPER_LOCKED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "CS_ReturnCode": {
+  {
     "DataTypeName": "CS_ReturnCode",
     "DataTypeDescription": "操作返回值",
     "DataTypeCategory": "Enumeration",
@@ -225,13 +211,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: SUCCESS\r\n0x1: FAILED",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "SUCCESS",
-      "1": "FAILED"
-    }
+    "version": "V1.0"
   },
-  "CallerId": {
+  {
     "DataTypeName": "CallerId",
     "DataTypeDescription": "服务调用者标识",
     "DataTypeCategory": "Enumeration",
@@ -243,14 +225,9 @@
     "InitialValue": 32769,
     "InvalidValue": 65535,
     "DiscreteValueDefination": "0x8001: CDC\r\n0x8201: ADS\r\n0x8401: TBOX",
-    "version": "V1.42",
-    "tableValue": {
-      "32769": "CDC",
-      "33281": "ADS",
-      "33793": "TBOX"
-    }
+    "version": "V1.42"
   },
-  "DoorFuncCfgInfo": {
+  {
     "DataTypeName": "DoorFuncCfgInfo",
     "DataTypeDescription": "车门相关的整体功能配置，参数配置需要记忆持久化",
     "DataTypeCategory": "Struct",
@@ -258,50 +235,74 @@
     "MemberName": "MaxTargetPosition",
     "MemberDescription": "设置门的最大开度",
     "MemberDatatypeReference": "MaxTargetPosition",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "MaxTargetPosition": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "DoorLightSwitch",
+    "MemberDescription": "Door档功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "MaxTargetPosition",
     "DataTypeDescription": "设置门的最大开度，对车门设置最大开度值时，仅对四门和尾门进行设置",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 5,
-    "MemberDatatypeReference": "DoorMaxTargetPosition",
-    "tableValue": null
+    "MemberDatatypeReference": "DoorMaxTargetPosition"
   },
-  "DoorMaxTargetPosition": {
+  {
     "DataTypeName": "DoorMaxTargetPosition",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "DoorId",
     "MemberDescription": "车门标识",
     "MemberDatatypeReference": "CS_DoorId",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "DoorLockOper": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "MaxPosition",
+    "MemberDescription": "车门的最大开度信息",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "DoorLockOper",
     "DataTypeDescription": "对车门的解闭锁操作",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 4,
-    "MemberDatatypeReference": "DoorInstanceLockOper",
-    "tableValue": null
+    "MemberDatatypeReference": "DoorInstanceLockOper"
   },
-  "DoorInstanceLockOper": {
+  {
     "DataTypeName": "DoorInstanceLockOper",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "DoorId",
     "MemberDescription": "车门标识",
     "MemberDatatypeReference": "CS_DoorId",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "CS_DoorId": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "LockSwitch",
+    "MemberDescription": "门锁指令",
+    "MemberDatatypeReference": "CS_LockUnlock",
+    "version": "V1.41"
+  },
+  {
+    "DataTypeDescription": "儿童锁状态仅对四门有效",
+    "MemberPosition": 2,
+    "MemberName": "ChildLockSwitch",
+    "MemberDescription": "儿童锁指令",
+    "MemberDatatypeReference": "CS_LockUnlock",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_DoorId",
     "DataTypeDescription": "车门标识定义，当消息中为无效值，表示不针对具体车门，相关的结构体无效",
     "DataTypeCategory": "Enumeration",
@@ -309,40 +310,34 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: DOOR_FL\r\n0x1: DOOR_FR\r\n0x2: DOOR_RL\r\n0x3: DOOR_RR\r\n0x4: DOOR_GATE\r\n0x5: DOOR_FRONTHATCH\r\n0x6: DOOR_CHARGE\r\n0x7: DOOR_FUEL\r\n0xFF: INVALID",
-    "version": "V1.41\r\nV1.42",
-    "tableValue": {
-      "0": "DOOR_FL",
-      "1": "DOOR_FR",
-      "2": "DOOR_RL",
-      "3": "DOOR_RR",
-      "4": "DOOR_GATE",
-      "5": "DOOR_FRONTHATCH",
-      "6": "DOOR_CHARGE",
-      "7": "DOOR_FUEL",
-      "255": "INVALID"
-    }
+    "version": "V1.41\r\nV1.42"
   },
-  "DoorOpenCtrl": {
+  {
     "DataTypeName": "DoorOpenCtrl",
     "DataTypeDescription": "车辆四个侧门的开关操作",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 4,
-    "MemberDatatypeReference": "DoorInstanceOpenCtrl",
-    "tableValue": null
+    "MemberDatatypeReference": "DoorInstanceOpenCtrl"
   },
-  "DoorInstanceOpenCtrl": {
+  {
     "DataTypeName": "DoorInstanceOpenCtrl",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "DoorId",
     "MemberDescription": "车门标识",
     "MemberDatatypeReference": "CS_DoorId",
-    "version": "V1.41\r\nV1.42",
-    "tableValue": null
+    "version": "V1.41\r\nV1.42"
   },
-  "CommOpenCloseOper": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "OperationType",
+    "MemberDescription": "车门的开关控制",
+    "MemberDatatypeReference": "CommOpenCloseOper",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "CommOpenCloseOper",
     "DataTypeDescription": "车门的开关控制\r\nTartgetPosition仅当OpenCloseCmd为NO_REQUEST时有效",
     "DataTypeCategory": "Struct",
@@ -350,10 +345,16 @@
     "MemberName": "OpenCloseCmd",
     "MemberDescription": "开关命令",
     "MemberDatatypeReference": "CS_OpenCloseStop",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "DoorStatusInfo": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "TargetPosition",
+    "MemberDescription": "车门目标开度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "DoorStatusInfo",
     "DataTypeDescription": "车门状态信息",
     "DataTypeCategory": "Struct",
@@ -361,10 +362,16 @@
     "MemberName": "CentralLockStatus",
     "MemberDescription": "中控锁状态",
     "MemberDatatypeReference": "CS_LockStatus",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "DoorStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "DoorStatus",
+    "MemberDescription": "车门状态",
+    "MemberDatatypeReference": "DoorStatus",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "DoorStatus",
     "DataTypeDescription": "车门状态",
     "DataTypeCategory": "Array",
@@ -372,20 +379,54 @@
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 8,
     "MemberDatatypeReference": "DoorInstanceStatus",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "DoorInstanceStatus": {
+  {
     "DataTypeName": "DoorInstanceStatus",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "DoorId",
     "MemberDescription": "车门标识",
     "MemberDatatypeReference": "CS_DoorId",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "CS_DoorRTPosition": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "FaultStatus",
+    "MemberDescription": "车门的故障状态",
+    "MemberDatatypeReference": "CS_DoorFaultStatus",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "RealTimePosition",
+    "MemberDescription": "车门实时开度信息",
+    "MemberDatatypeReference": "CS_DoorRTPosition",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "LockStatus",
+    "MemberDescription": "车门锁状态",
+    "MemberDatatypeReference": "CS_LockStatus",
+    "version": "V1.41"
+  },
+  {
+    "DataTypeDescription": "童锁状态仅针对四门有效",
+    "MemberPosition": 4,
+    "MemberName": "ChildLockStatus",
+    "MemberDescription": "车门童锁状态",
+    "MemberDatatypeReference": "CS_LockStatus",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "OpenStatus",
+    "MemberDescription": "车门的开关状态",
+    "MemberDatatypeReference": "CS_DoorOpenStatus",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_DoorRTPosition",
     "DataTypeDescription": "车门的实时开度信息",
     "DataTypeCategory": "Integer",
@@ -397,10 +438,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "Unit": "%",
-    "version": "V1.51",
-    "tableValue": null
+    "version": "V1.51"
   },
-  "CS_DoorOpenStatus": {
+  {
     "DataTypeName": "CS_DoorOpenStatus",
     "DataTypeDescription": "车门开关状态",
     "DataTypeCategory": "Enumeration",
@@ -408,16 +448,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: CLOSING\r\n0x1: OPENING\r\n0x2: CLOSED\r\n0x3: OPENED\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "CLOSING",
-      "1": "OPENING",
-      "2": "CLOSED",
-      "3": "OPENED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "CS_DoorFaultStatus": {
+  {
     "DataTypeName": "CS_DoorFaultStatus",
     "DataTypeDescription": "车门故障信息",
     "DataTypeCategory": "Enumeration",
@@ -425,13 +458,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NORMAL\r\n0x1: ABNORMAL",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NORMAL",
-      "1": "ABNORMAL"
-    }
+    "version": "V1.0"
   },
-  "PassengerWinRestrain": {
+  {
     "DataTypeName": "PassengerWinRestrain",
     "DataTypeDescription": "乘员舱车窗抑制",
     "DataTypeCategory": "Struct",
@@ -439,20 +468,25 @@
     "MemberName": "LeftWinRestrain",
     "MemberDescription": "左侧车窗抑制",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "WindowOpenCtrl": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightWinRestrain",
+    "MemberDescription": "右侧车窗抑制",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "WindowOpenCtrl",
     "DataTypeDescription": "车窗开关控制",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 4,
-    "MemberDatatypeReference": "WinInstanceOpenCtrl",
-    "tableValue": null
+    "MemberDatatypeReference": "WinInstanceOpenCtrl"
   },
-  "WinInstanceOpenCtrl": {
+  {
     "DataTypeName": "WinInstanceOpenCtrl",
     "DataTypeDescription": "TartgetPosition仅当OpenCloseCmd为NO_REQUEST时有效",
     "DataTypeCategory": "Struct",
@@ -460,10 +494,23 @@
     "MemberName": "WindowId",
     "MemberDescription": "车窗标识",
     "MemberDatatypeReference": "CS_WindowId",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "CS_WindowId": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "OpenCloseCmd",
+    "MemberDescription": "开关命令",
+    "MemberDatatypeReference": "CS_OpenCloseStop",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "TargetPosition",
+    "MemberDescription": "车窗目标开度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_WindowId",
     "DataTypeDescription": "车窗标识，当消息中为无效值，表示不针对具体车门，相关的结构体无效",
     "DataTypeCategory": "Enumeration",
@@ -471,36 +518,55 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: WINDOW_FL\r\n0x1: WINDOW_FR\r\n0x2: WINDOW_RL\r\n0x3: WINDOW_RR\r\n0xFF: INVALID",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "WINDOW_FL",
-      "1": "WINDOW_FR",
-      "2": "WINDOW_RL",
-      "3": "WINDOW_RR",
-      "255": "INVALID"
-    }
+    "version": "V1.41"
   },
-  "WindowStatus": {
+  {
     "DataTypeName": "WindowStatus",
     "DataTypeDescription": "车窗状态上报信息",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 4,
-    "MemberDatatypeReference": "WinInstanceStatus",
-    "tableValue": null
+    "MemberDatatypeReference": "WinInstanceStatus"
   },
-  "WinInstanceStatus": {
+  {
     "DataTypeName": "WinInstanceStatus",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "WindowId",
     "MemberDescription": "车窗标识",
     "MemberDatatypeReference": "CS_WindowId",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "CS_WinRTPostion": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "FaultStatus",
+    "MemberDescription": "车窗的故障状态",
+    "MemberDatatypeReference": "CS_WindowFaultStatus",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "RealTimePosition",
+    "MemberDescription": "车窗实时开度信息",
+    "MemberDatatypeReference": "CS_WinRTPostion",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "ActuateStatus",
+    "MemberDescription": "车窗的运动状态",
+    "MemberDatatypeReference": "CS_WindowActuateStatus",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "WindowRestrainStatus",
+    "MemberDescription": "乘客车窗抑制状态",
+    "MemberDatatypeReference": "WindowRestrainStatus",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_WinRTPostion",
     "DataTypeDescription": "车窗实时位置信息",
     "DataTypeCategory": "Integer",
@@ -512,63 +578,52 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "Unit": "%",
-    "version": "V1.51",
-    "tableValue": null
+    "version": "V1.51"
   },
-  "CS_WindowActuateStatus": {
+  {
     "DataTypeName": "CS_WindowActuateStatus",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: CLOSING\r\n0x1: OPENING\r\n0x2: CLOSED\r\n0x3: OPENED\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "CLOSING",
-      "1": "OPENING",
-      "2": "CLOSED",
-      "3": "OPENED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "CS_WindowFaultStatus": {
+  {
     "DataTypeName": "CS_WindowFaultStatus",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NORMAL\r\n0x1: ABNORMAL",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NORMAL",
-      "1": "ABNORMAL"
-    }
+    "version": "V1.0"
   },
-  "WindowRestrainStatus": {
+  {
     "DataTypeName": "WindowRestrainStatus",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "LeftWinRestrainStatus",
     "MemberDescription": "左侧车窗抑制状态",
     "MemberDatatypeReference": "CS_WinRestrainStatus",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "CS_WinRestrainStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightWinRestrainStatus",
+    "MemberDescription": "右侧车窗抑制状态",
+    "MemberDatatypeReference": "CS_WinRestrainStatus",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "CS_WinRestrainStatus",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: UNRESTRAINED\r\n0x1: RESTRAINED\r\n0xFF: UNKNOWN",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "UNRESTRAINED",
-      "1": "RESTRAINED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.6"
   },
-  "BeamPosition": {
+  {
     "DataTypeName": "BeamPosition",
     "DataTypeDescription": "大灯光束位置调节",
     "DataTypeCategory": "Struct",
@@ -576,10 +631,16 @@
     "MemberName": "XAngle",
     "MemberDescription": "设置灯的左右偏角的角度",
     "MemberDatatypeReference": "CS_Percent",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "BeamMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "ZAngle",
+    "MemberDescription": "设置灯的上下仰角的角度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "BeamMode",
     "DataTypeDescription": "大灯工作模式\r\n当设置为位置灯模式时，仅开启位置灯，不打开近光灯；\r\n当设置为近光灯模式时，同时打开近光灯和位置灯；",
     "DataTypeCategory": "Enumeration",
@@ -587,15 +648,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: POSITION_LIGHT\r\n0x2: LOW_BEAM\r\n0x3: AUTO_MODE",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "OFF",
-      "1": "POSITION_LIGHT",
-      "2": "LOW_BEAM",
-      "3": "AUTO_MODE"
-    }
+    "version": "V1.41"
   },
-  "SteerLightMode": {
+  {
     "DataTypeName": "SteerLightMode",
     "DataTypeDescription": "转向灯工作模式",
     "DataTypeCategory": "Enumeration",
@@ -603,17 +658,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: LEFT_LANE_CHANGE\r\n0x2: LEFT_TURN\r\n0x3: RIGHT_LANE_CHANGE\r\n0x4: RIGHT_TURN\r\n0x5: HAZARD",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "OFF",
-      "1": "LEFT_LANE_CHANGE",
-      "2": "LEFT_TURN",
-      "3": "RIGHT_LANE_CHANGE",
-      "4": "RIGHT_TURN",
-      "5": "HAZARD"
-    }
+    "version": "V1.41"
   },
-  "HightBeamMode": {
+  {
     "DataTypeName": "HightBeamMode",
     "DataTypeDescription": "远光灯工作模式",
     "DataTypeCategory": "Enumeration",
@@ -621,14 +668,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: ON\r\n0x2: FLASH",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "OFF",
-      "1": "ON",
-      "2": "FLASH"
-    }
+    "version": "V1.41"
   },
-  "FogLightCmd": {
+  {
     "DataTypeName": "FogLightCmd",
     "DataTypeDescription": "雾灯开关指令",
     "DataTypeCategory": "Struct",
@@ -636,10 +678,16 @@
     "MemberName": "FrontFogLightCmd",
     "MemberDescription": "前雾灯开关",
     "MemberDatatypeReference": "CS_LightCmd",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "InnerLightCmd": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RearFogLightCmd",
+    "MemberDescription": "后雾灯开关",
+    "MemberDatatypeReference": "CS_LightCmd",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "InnerLightCmd",
     "DataTypeDescription": "内控控制开关",
     "DataTypeCategory": "Struct",
@@ -647,10 +695,40 @@
     "MemberName": "ReadingLightCmd",
     "MemberDescription": "阅读灯开关",
     "MemberDatatypeReference": "CS_LightCmd",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "LightStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "FootLightCmd",
+    "MemberDescription": "照脚灯开关",
+    "MemberDatatypeReference": "CS_LightCmd",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "FrontLeftDoorLightCmd",
+    "MemberDescription": "左前车门门灯开关",
+    "MemberDatatypeReference": "CS_LightCmd"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "FrontRightDoorLightCmd",
+    "MemberDescription": "右前车门门灯开关",
+    "MemberDatatypeReference": "CS_LightCmd"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "RearLeftDoorLightCmd",
+    "MemberDescription": "左后车门门灯开关",
+    "MemberDatatypeReference": "CS_LightCmd"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "RearRightDoorLightCmd",
+    "MemberDescription": "右后车门门灯开关",
+    "MemberDatatypeReference": "CS_LightCmd"
+  },
+  {
     "DataTypeName": "LightStatus",
     "DataTypeDescription": "车灯相关状态上报",
     "DataTypeCategory": "Struct",
@@ -658,10 +736,16 @@
     "MemberName": "BeamPosition",
     "MemberDescription": "大灯的角度状态",
     "MemberDatatypeReference": "BeamPosition",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "LightOnOffSts": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "LightOnOffSts",
+    "MemberDescription": "车灯的开关状态",
+    "MemberDatatypeReference": "LightOnOffSts",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "LightOnOffSts",
     "DataTypeDescription": "车灯开关状态信息",
     "DataTypeCategory": "Struct",
@@ -669,10 +753,100 @@
     "MemberName": "LeftSteerLightSts",
     "MemberDescription": "左转向灯开关",
     "MemberDatatypeReference": "CS_LightStatus",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_LightCmd": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightSteerLightSts",
+    "MemberDescription": "右转向灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "LowBeamSts",
+    "MemberDescription": "近光灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "HighBeamSts",
+    "MemberDescription": "远光灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "PositionLightSts",
+    "MemberDescription": "位置灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "FrontFogLightSts",
+    "MemberDescription": "前雾灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 6,
+    "MemberName": "ReartFogLightSts",
+    "MemberDescription": "后雾灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 7,
+    "MemberName": "DaytimeLightSts",
+    "MemberDescription": "日间行车灯状态",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 8,
+    "MemberName": "ReadingLightSts",
+    "MemberDescription": "阅读灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 9,
+    "MemberName": "FootLightSts",
+    "MemberDescription": "照脚灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 10,
+    "MemberName": "FrontLeftDoorLightSts",
+    "MemberDescription": "左前车门门灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 11,
+    "MemberName": "FrontRightDoorLightSts",
+    "MemberDescription": "右前车门门灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 12,
+    "MemberName": "RearLeftDoorLightSts",
+    "MemberDescription": "左后车门门灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 13,
+    "MemberName": "RearRightDoorLightSts",
+    "MemberDescription": "右后车门门灯开关",
+    "MemberDatatypeReference": "CS_LightStatus",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "CS_LightCmd",
     "DataTypeDescription": "灯的配置开关",
     "DataTypeCategory": "Enumeration",
@@ -680,15 +854,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: ON\r\n0x3: FLASH",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "ON",
-      "3": "FLASH"
-    }
+    "version": "V1.6"
   },
-  "CS_LightStatus": {
+  {
     "DataTypeName": "CS_LightStatus",
     "DataTypeDescription": "灯的开关状态",
     "DataTypeCategory": "Enumeration",
@@ -696,15 +864,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: UNKOWN\r\n0x1: OFF\r\n0x2: ON\r\n0x3: FLASH",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "UNKOWN",
-      "1": "OFF",
-      "2": "ON",
-      "3": "FLASH"
-    }
+    "version": "V1.6"
   },
-  "RearViewFuncPara": {
+  {
     "DataTypeName": "RearViewFuncPara",
     "DataTypeDescription": "设置相关功能",
     "DataTypeCategory": "Struct",
@@ -712,25 +874,39 @@
     "MemberName": "AutoFoldSw",
     "MemberDescription": "后视镜离开锁车自动折叠",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_RearViewSelecResult": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AutoTurndownSw",
+    "MemberDescription": "后视倒车自动向下",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AutoAntiGlare",
+    "MemberDescription": "自动防炫目功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "MirrorSelectResult",
+    "MemberDescription": "后视镜调节左右选择结果",
+    "MemberDatatypeReference": "CS_RearViewSelecResult",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_RearViewSelecResult",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: NO_CHOOSE\r\n0x2: LEFT_REARVIEW\r\n0x3: RIGHT_REARVIEW",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "NO_CHOOSE",
-      "2": "LEFT_REARVIEW",
-      "3": "RIGHT_REARVIEW"
-    }
+    "version": "V1.41"
   },
-  "RearViewFold": {
+  {
     "DataTypeName": "RearViewFold",
     "DataTypeDescription": "外后视镜的折叠展开操作指令",
     "DataTypeCategory": "Struct",
@@ -738,10 +914,16 @@
     "MemberName": "LeftViewFoldCmd",
     "MemberDescription": "左侧后视镜折叠命令",
     "MemberDatatypeReference": "CS_FoldUnfold",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "CS_FoldUnfold": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightViewFoldCmd",
+    "MemberDescription": "右侧后视镜折叠命令",
+    "MemberDatatypeReference": "CS_FoldUnfold",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_FoldUnfold",
     "DataTypeDescription": "折叠操作类型",
     "DataTypeCategory": "Enumeration",
@@ -749,14 +931,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: UNFLOD\r\n0x2: FOLD",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "UNFLOD",
-      "2": "FOLD"
-    }
+    "version": "V1.0"
   },
-  "RearViewAngleInfo": {
+  {
     "DataTypeName": "RearViewAngleInfo",
     "DataTypeDescription": "后视镜角度调节",
     "DataTypeCategory": "Struct",
@@ -764,10 +941,16 @@
     "MemberName": "LeftViewAngle",
     "MemberDescription": "左侧后视镜角度",
     "MemberDatatypeReference": "RearViewAngle",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "RearViewAngle": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightViewAngle",
+    "MemberDescription": "右侧后视镜角度",
+    "MemberDatatypeReference": "RearViewAngle",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "RearViewAngle",
     "DataTypeDescription": "后视镜的角度\r\n0xFFFFFF无效值表示当前操作无效，不调整相关角度",
     "DataTypeCategory": "Struct",
@@ -775,10 +958,17 @@
     "MemberName": "XAngle",
     "MemberDescription": "调整横向角度",
     "MemberDatatypeReference": "CS_Percent",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "RearViewStepAdjust": {
+  {
+    "DataTypeDescription": "0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 1,
+    "MemberName": "YAngle",
+    "MemberDescription": "调整纵向角度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "RearViewStepAdjust",
     "DataTypeDescription": "步进式后视镜调节",
     "DataTypeCategory": "Struct",
@@ -786,10 +976,16 @@
     "MemberName": "LeftStepAdjustMode",
     "MemberDescription": "左后视镜步进式调节模式",
     "MemberDatatypeReference": "RearViewAdjustMode",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "RearViewAdjustMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightStepAdjustMode",
+    "MemberDescription": "右后视镜步进式调节模式",
+    "MemberDatatypeReference": "RearViewAdjustMode",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "RearViewAdjustMode",
     "DataTypeDescription": "后视镜步进式调节模式",
     "DataTypeCategory": "Enumeration",
@@ -797,17 +993,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: STOP\r\n0x2: RIGHT_DIRECTION_ADJUST\r\n0x3: LEFT_DIRECTION_ADJUST\r\n0x4: UP_DIRECTION_ADJUST\r\n0x5: DOWN_DIRECTION_ADJUST",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "STOP",
-      "2": "RIGHT_DIRECTION_ADJUST",
-      "3": "LEFT_DIRECTION_ADJUST",
-      "4": "UP_DIRECTION_ADJUST",
-      "5": "DOWN_DIRECTION_ADJUST"
-    }
+    "version": "V1.41"
   },
-  "RearViewHeating": {
+  {
     "DataTypeName": "RearViewHeating",
     "DataTypeDescription": "后视镜加热功能开关",
     "DataTypeCategory": "Struct",
@@ -815,10 +1003,16 @@
     "MemberName": "LeftViewHeatLevel",
     "MemberDescription": "左后视镜加热等级",
     "MemberDatatypeReference": "CS_RearViewHeatingLevel",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "CS_RearViewHeatingLevel": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightViewHeatLevel",
+    "MemberDescription": "右后视镜加热等级",
+    "MemberDatatypeReference": "CS_RearViewHeatingLevel",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_RearViewHeatingLevel",
     "DataTypeDescription": "后视镜加热等级",
     "DataTypeCategory": "Enumeration",
@@ -826,16 +1020,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: LEVEL1\r\n0x3: LEVEL2\r\n0x4: LEVEL3",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "LEVEL1",
-      "3": "LEVEL2",
-      "4": "LEVEL3"
-    }
+    "version": "V1.41"
   },
-  "RearViewWarnLightMode": {
+  {
     "DataTypeName": "RearViewWarnLightMode",
     "DataTypeDescription": "后视镜警示灯模式设置",
     "DataTypeCategory": "Struct",
@@ -843,10 +1030,16 @@
     "MemberName": "LeftWarnLightMode",
     "MemberDescription": "左后视镜警示灯模式",
     "MemberDatatypeReference": "CS_LightCmd",
-    "version": "V1.5",
-    "tableValue": null
+    "version": "V1.5"
   },
-  "RearViewStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightWarnLightMode",
+    "MemberDescription": "右后视镜警示灯模式",
+    "MemberDatatypeReference": "CS_LightCmd",
+    "version": "V1.5"
+  },
+  {
     "DataTypeName": "RearViewStatus",
     "DataTypeDescription": "后视镜状态",
     "DataTypeCategory": "Struct",
@@ -854,10 +1047,16 @@
     "MemberName": "LeftViewStatus",
     "MemberDescription": "左后视镜状态信息",
     "MemberDatatypeReference": "RearViewStatusInfo",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "RearViewStatusInfo": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RightViewStatus",
+    "MemberDescription": "有后视镜状态信息",
+    "MemberDatatypeReference": "RearViewStatusInfo",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "RearViewStatusInfo",
     "DataTypeDescription": "后视镜状态信息",
     "DataTypeCategory": "Struct",
@@ -865,10 +1064,30 @@
     "MemberName": "AngleInfo",
     "MemberDescription": "后视镜的角度信息",
     "MemberDatatypeReference": "RearViewAngle",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "CS_FoldUnfoldStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "FoldStatus",
+    "MemberDescription": "后视镜折叠状态",
+    "MemberDatatypeReference": "CS_FoldUnfoldStatus",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "HeatingStatus",
+    "MemberDescription": "后视镜加热状态",
+    "MemberDatatypeReference": "CS_RearViewHeatingStatus",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "WarnLightStatus",
+    "MemberDescription": "后视镜警示灯状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.51"
+  },
+  {
     "DataTypeName": "CS_FoldUnfoldStatus",
     "DataTypeDescription": "折叠状态",
     "DataTypeCategory": "Enumeration",
@@ -876,14 +1095,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: UNFOLDED\r\n0x1: FOLDED\r\n0xFF: UNKNOWN",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "UNFOLDED",
-      "1": "FOLDED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.41"
   },
-  "CS_RearViewHeatingStatus": {
+  {
     "DataTypeName": "CS_RearViewHeatingStatus",
     "DataTypeDescription": "后视镜加热状态",
     "DataTypeCategory": "Enumeration",
@@ -891,36 +1105,67 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: LEVEL1\r\n0x2: LEVEL2\r\n0x3: LEVEL3\r\n0xFF: UNKNOWN",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "OFF",
-      "1": "LEVEL1",
-      "2": "LEVEL2",
-      "3": "LEVEL3",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.6"
   },
-  "SeatPosition": {
+  {
     "DataTypeName": "SeatPosition",
     "DataTypeDescription": "设置座椅位置",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 5,
-    "MemberDatatypeReference": "SeatInstancePosition",
-    "tableValue": null
+    "MemberDatatypeReference": "SeatInstancePosition"
   },
-  "SeatInstancePosition": {
+  {
     "DataTypeName": "SeatInstancePosition",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "SeatId",
     "MemberDescription": "座椅标识",
     "MemberDatatypeReference": "CS_SeatId",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "CS_SeatId": {
+  {
+    "DataTypeDescription": "0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 1,
+    "MemberName": "MainXDir",
+    "MemberDescription": "调整座椅前后位置",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
+    "DataTypeDescription": "0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 2,
+    "MemberName": "MainZDir",
+    "MemberDescription": "调整座椅高度位置",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
+    "DataTypeDescription": "0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 3,
+    "MemberName": "FrontZDir",
+    "MemberDescription": "调整座椅的坐垫前部位高度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.41"
+  },
+  {
+    "DataTypeDescription": "0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 4,
+    "MemberName": "BackRestAngle",
+    "MemberDescription": "调整座椅靠背角度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
+    "DataTypeDescription": "0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 5,
+    "MemberName": "LegRestAngle",
+    "MemberDescription": "调整座椅脚托高度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "CS_SeatId",
     "DataTypeDescription": "座椅标识\r\n255为无效值，表示不针对具体座椅，相关的结构体无效",
     "DataTypeCategory": "Enumeration",
@@ -928,37 +1173,48 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: SEAT_FL\r\n0x1: SEAT_FR\r\n0x2: SEAT_RL\r\n0x3: SEAT_RM\r\n0x4: SEAT_RR\r\n0xFF: INVALID",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "SEAT_FL",
-      "1": "SEAT_FR",
-      "2": "SEAT_RL",
-      "3": "SEAT_RM",
-      "4": "SEAT_RR",
-      "255": "INVALID"
-    }
+    "version": "V1.41"
   },
-  "SeatEnhFunc": {
+  {
     "DataTypeName": "SeatEnhFunc",
     "DataTypeDescription": "设置座椅相关的附加功能",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 5,
-    "MemberDatatypeReference": "SeatInstanceEnhFunc",
-    "tableValue": null
+    "MemberDatatypeReference": "SeatInstanceEnhFunc"
   },
-  "SeatInstanceEnhFunc": {
+  {
     "DataTypeName": "SeatInstanceEnhFunc",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "SeatId",
     "MemberDescription": "座椅标识",
     "MemberDatatypeReference": "CS_SeatId",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "SeatMassagFuncCfg": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "HeatingLevel",
+    "MemberDescription": "加热功能配置",
+    "MemberDatatypeReference": "CS_SeatHeatingLevel",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "VentilationLevel",
+    "MemberDescription": "通风功能配置",
+    "MemberDatatypeReference": "CS_SeatVentilationLevel",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "MassagFuncCfg",
+    "MemberDescription": "按摩功能配置",
+    "MemberDatatypeReference": "SeatMassagFuncCfg",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "SeatMassagFuncCfg",
     "DataTypeDescription": "座椅按摩功能配置",
     "DataTypeCategory": "Struct",
@@ -966,10 +1222,16 @@
     "MemberName": "MassageStrength",
     "MemberDescription": "设置按摩强度",
     "MemberDatatypeReference": "CS_SeatMassagStrength",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_SeatHeatingLevel": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "MassagMode",
+    "MemberDescription": "设置按摩模式",
+    "MemberDatatypeReference": "CS_SeatMassagMode",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "CS_SeatHeatingLevel",
     "DataTypeDescription": "加热等级",
     "DataTypeCategory": "Enumeration",
@@ -977,18 +1239,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: LEVEL1\r\n0x3: LEVEL2\r\n0x4: LEVEL3\r\n0x5: LEVEL4\r\n0x6: LEVEL5",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "LEVEL1",
-      "3": "LEVEL2",
-      "4": "LEVEL3",
-      "5": "LEVEL4",
-      "6": "LEVEL5"
-    }
+    "version": "V1.0"
   },
-  "CS_SeatVentilationLevel": {
+  {
     "DataTypeName": "CS_SeatVentilationLevel",
     "DataTypeDescription": "通风等级",
     "DataTypeCategory": "Enumeration",
@@ -996,18 +1249,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: LEVEL1\r\n0x3: LEVEL2\r\n0x4: LEVEL3\r\n0x5: LEVEL4\r\n0x6: LEVEL5",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "LEVEL1",
-      "3": "LEVEL2",
-      "4": "LEVEL3",
-      "5": "LEVEL4",
-      "6": "LEVEL5"
-    }
+    "version": "V1.0"
   },
-  "CS_SeatMassagMode": {
+  {
     "DataTypeName": "CS_SeatMassagMode",
     "DataTypeDescription": "座椅按摩类型\r\n0: 揉捏\r\n1: 指压\r\n2: 捶打\r\n3: 推拿",
     "DataTypeCategory": "Enumeration",
@@ -1015,15 +1259,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: KNEAD\r\n0x1: SHIATSU\r\n0x2: BEAT\r\n0x3: MASSAGE",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "KNEAD",
-      "1": "SHIATSU",
-      "2": "BEAT",
-      "3": "MASSAGE"
-    }
+    "version": "V1.0"
   },
-  "CS_SeatMassagStrength": {
+  {
     "DataTypeName": "CS_SeatMassagStrength",
     "DataTypeDescription": "坐骑按摩强度",
     "DataTypeCategory": "Enumeration",
@@ -1031,36 +1269,69 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: SOFT\r\n0x3: MEDIUM\r\n0x4: HEAVY",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "SOFT",
-      "3": "MEDIUM",
-      "4": "HEAVY"
-    }
+    "version": "V1.0"
   },
-  "SeatStatus": {
+  {
     "DataTypeName": "SeatStatus",
     "DataTypeDescription": "上报座椅状态",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 5,
-    "MemberDatatypeReference": "SeatInstanceStatus",
-    "tableValue": null
+    "MemberDatatypeReference": "SeatInstanceStatus"
   },
-  "SeatInstanceStatus": {
+  {
     "DataTypeName": "SeatInstanceStatus",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "SeatId",
     "MemberDescription": "座椅标识",
     "MemberDatatypeReference": "CS_SeatId",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "SeatPositionStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "SeatPositionStatus",
+    "MemberDescription": "座椅位置信息",
+    "MemberDatatypeReference": "SeatPositionStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "SeatOccupiedStatus",
+    "MemberDescription": "座椅占用状态",
+    "MemberDatatypeReference": "CS_OccupiedStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "SeatSafetyBeltStatus",
+    "MemberDescription": "座椅安全带状态",
+    "MemberDatatypeReference": "CS_SafetyBeltStatus",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "SeatHeatingStatus",
+    "MemberDescription": "座椅加热状态",
+    "MemberDatatypeReference": "CS_SeatHeatingStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "SeatVentilationStatus",
+    "MemberDescription": "座椅通风状态",
+    "MemberDatatypeReference": "CS_SeatVentilationStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 6,
+    "MemberName": "SeatMassagStatus",
+    "MemberDescription": "座椅按摩状态",
+    "MemberDatatypeReference": "SeatMassagStatus",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "SeatPositionStatus",
     "DataTypeDescription": "座椅的位置信息",
     "DataTypeCategory": "Struct",
@@ -1068,10 +1339,37 @@
     "MemberName": "MainXDir",
     "MemberDescription": "座椅前后位置",
     "MemberDatatypeReference": "CS_Percent",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_OccupiedStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "MainZDir",
+    "MemberDescription": "座椅高度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "FrontZDir",
+    "MemberDescription": "坐垫高度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "BackRestAngle",
+    "MemberDescription": "靠背角度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "LegRestAngle",
+    "MemberDescription": "脚托角度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_OccupiedStatus",
     "DataTypeDescription": "座椅实际占用状态",
     "DataTypeCategory": "Enumeration",
@@ -1079,14 +1377,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: UNOCCUPIED\r\n0x1: OCCUPIED\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "UNOCCUPIED",
-      "1": "OCCUPIED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "CS_SafetyBeltStatus": {
+  {
     "DataTypeName": "CS_SafetyBeltStatus",
     "DataTypeDescription": "安全带卡扣状态",
     "DataTypeCategory": "Enumeration",
@@ -1094,14 +1387,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: BUCKLED\r\n0x1: UNBUCKLED\r\n0xFF: UNKNOWN",
-    "version": "V1.5",
-    "tableValue": {
-      "0": "BUCKLED",
-      "1": "UNBUCKLED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.5"
   },
-  "CS_SeatHeatingStatus": {
+  {
     "DataTypeName": "CS_SeatHeatingStatus",
     "DataTypeDescription": "座椅加热状态",
     "DataTypeCategory": "Enumeration",
@@ -1109,18 +1397,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: LEVEL1\r\n0x2: LEVEL2\r\n0x3: LEVEL3\r\n0x4: LEVEL4\r\n0x5: LEVEL5\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "OFF",
-      "1": "LEVEL1",
-      "2": "LEVEL2",
-      "3": "LEVEL3",
-      "4": "LEVEL4",
-      "5": "LEVEL5",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "CS_SeatVentilationStatus": {
+  {
     "DataTypeName": "CS_SeatVentilationStatus",
     "DataTypeDescription": "座椅通风状态",
     "DataTypeCategory": "Enumeration",
@@ -1128,18 +1407,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: LEVEL1\r\n0x2: LEVEL2\r\n0x3: LEVEL3\r\n0x4: LEVEL4\r\n0x5: LEVEL5\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "OFF",
-      "1": "LEVEL1",
-      "2": "LEVEL2",
-      "3": "LEVEL3",
-      "4": "LEVEL4",
-      "5": "LEVEL5",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "SeatMassagStatus": {
+  {
     "DataTypeName": "SeatMassagStatus",
     "DataTypeDescription": "座椅按摩状态",
     "DataTypeCategory": "Struct",
@@ -1147,10 +1417,16 @@
     "MemberName": "Strength",
     "MemberDescription": "工作强度",
     "MemberDatatypeReference": "CS_SeatMassagStrengthSts",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_SeatMassagStrengthSts": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "Mode",
+    "MemberDescription": "工作模式",
+    "MemberDatatypeReference": "CS_SeatMassagModeSts",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "CS_SeatMassagStrengthSts",
     "DataTypeDescription": "座椅按摩强度状态",
     "DataTypeCategory": "Enumeration",
@@ -1158,16 +1434,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: SOFT\r\n0x2: MEDIUM\r\n0x3: HEAVY\r\n0xFF: UNKNOWN",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "OFF",
-      "1": "SOFT",
-      "2": "MEDIUM",
-      "3": "HEAVY",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.41"
   },
-  "CS_SeatMassagModeSts": {
+  {
     "DataTypeName": "CS_SeatMassagModeSts",
     "DataTypeDescription": "座椅按摩模式状态",
     "DataTypeCategory": "Enumeration",
@@ -1175,16 +1444,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: KNEAD\r\n0x1: SHIATSU\r\n0x2: BEAT\r\n0x3: MASSAGE\r\n0xFF: UNKNOWN",
-    "version": "V1.41",
-    "tableValue": {
-      "0": "KNEAD",
-      "1": "SHIATSU",
-      "2": "BEAT",
-      "3": "MASSAGE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.41"
   },
-  "SunRoofOpenCtrl": {
+  {
     "DataTypeName": "SunRoofOpenCtrl",
     "DataTypeDescription": "天窗的开关操作",
     "DataTypeCategory": "Struct",
@@ -1192,10 +1454,25 @@
     "MemberName": "OpenCloseCmd",
     "MemberDescription": "开关命令",
     "MemberDatatypeReference": "CS_OpenCloseStop",
-    "version": "V1.5",
-    "tableValue": null
+    "version": "V1.5"
   },
-  "SunRoofStatus": {
+  {
+    "DataTypeDescription": "车窗打开到具体的开度位置，仅当SunRoofOpenCloseCtrl为No_Request时有效；\r\n0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 1,
+    "MemberName": "RoofPosition",
+    "MemberDescription": "调整天窗开度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.5"
+  },
+  {
+    "DataTypeDescription": "车窗打开到具体的开度位置，仅当SunRoofOpenCloseCtrl为No_Request时有效；\r\n0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 2,
+    "MemberName": "RoofAngle",
+    "MemberDescription": "调整天窗起翘位置",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.5"
+  },
+  {
     "DataTypeName": "SunRoofStatus",
     "DataTypeDescription": "天窗状态上报",
     "DataTypeCategory": "Struct",
@@ -1203,10 +1480,29 @@
     "MemberName": "SunRoofActuateStatus",
     "MemberDescription": "天窗运行状态",
     "MemberDatatypeReference": "CS_SunRoofActuateStatus",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_SunRoofActuateStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "SunRoofPositionStatus",
+    "MemberDescription": "天窗开度信息",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "SunRoofAngleStatus",
+    "MemberDescription": "天窗起翘角度",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "ShadeDegreeStatus",
+    "MemberDescription": "遮阳程度上报",
+    "MemberDatatypeReference": "CS_Percent"
+  },
+  {
     "DataTypeName": "CS_SunRoofActuateStatus",
     "DataTypeDescription": "运行状态定义",
     "DataTypeCategory": "Enumeration",
@@ -1214,17 +1510,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: IDLE\r\n0x1: CLOSEING\r\n0x2: OPENING\r\n0x3: CLOSED\r\n0x4: OPENED\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "IDLE",
-      "1": "CLOSEING",
-      "2": "OPENING",
-      "3": "CLOSED",
-      "4": "OPENED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "AdjSunShadeDegree": {
+  {
     "DataTypeName": "AdjSunShadeDegree",
     "DataTypeDescription": "对遮阳帘的控制操作",
     "DataTypeCategory": "Struct",
@@ -1232,10 +1520,17 @@
     "MemberName": "ShadeOpenClose",
     "MemberDescription": "遮阳帘开关操作",
     "MemberDatatypeReference": "CS_OpenCloseStop",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "WiperRunMode": {
+  {
+    "DataTypeDescription": "0xFFFFFF无效值表示当前操作无效，不调整相关角度",
+    "MemberPosition": 1,
+    "MemberName": "ShadeDegreeAdjust",
+    "MemberDescription": "遮阳帘遮阳程度调节",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "WiperRunMode",
     "DataTypeDescription": "雨刮运行模式",
     "DataTypeCategory": "Struct",
@@ -1243,10 +1538,23 @@
     "MemberName": "WiperId",
     "MemberDescription": "雨刮标识信息",
     "MemberDatatypeReference": "CS_WiperId",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "CS_WiperId": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RunMode",
+    "MemberDescription": "雨刮运行模式",
+    "MemberDatatypeReference": "CS_WiperRunMode",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "IntervalLevel",
+    "MemberDescription": "雨刮间隔运行等级",
+    "MemberDatatypeReference": "CS_WiperInteralLevel",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "CS_WiperId",
     "DataTypeDescription": "雨刮编号",
     "DataTypeCategory": "Enumeration",
@@ -1254,13 +1562,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: WIPER_FRONT\r\n0x1: WIPER_REAR",
-    "version": "V1.42",
-    "tableValue": {
-      "0": "WIPER_FRONT",
-      "1": "WIPER_REAR"
-    }
+    "version": "V1.42"
   },
-  "CS_WiperRunMode": {
+  {
     "DataTypeName": "CS_WiperRunMode",
     "DataTypeDescription": "雨刮运行模式",
     "DataTypeCategory": "Enumeration",
@@ -1268,18 +1572,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: STOP\r\n0x2: INTERVAL\r\n0x3: LOW_SPEED\r\n0x4: HIGH_SPEED\r\n0x5: WASH\r\n0x6: MAINTENANCE",
-    "version": "V1.42",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "STOP",
-      "2": "INTERVAL",
-      "3": "LOW_SPEED",
-      "4": "HIGH_SPEED",
-      "5": "WASH",
-      "6": "MAINTENANCE"
-    }
+    "version": "V1.42"
   },
-  "CS_WiperInteralLevel": {
+  {
     "DataTypeName": "CS_WiperInteralLevel",
     "DataTypeDescription": "雨刮间隔运行模式下的等级\r\n仅当RunMode为INTERVAL模式下时才有效\r\n0xFE标识当前操作无效，不调整",
     "DataTypeCategory": "Integer",
@@ -1290,10 +1585,9 @@
     "PhysicalMax": 254,
     "InitialValue": 0,
     "InvalidValue": 255,
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "WiperStatus": {
+  {
     "DataTypeName": "WiperStatus",
     "DataTypeDescription": "雨刮状态",
     "DataTypeCategory": "Struct",
@@ -1301,10 +1595,16 @@
     "MemberName": "FrontWiperStatus",
     "MemberDescription": "前雨刮状态",
     "MemberDatatypeReference": "CS_WiperStatus",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "CS_WiperStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RearWiperStatus",
+    "MemberDescription": "后雨刮状态",
+    "MemberDatatypeReference": "CS_WiperStatus",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "CS_WiperStatus",
     "DataTypeDescription": "雨刮状态信息",
     "DataTypeCategory": "Struct",
@@ -1312,10 +1612,16 @@
     "MemberName": "RunStatus",
     "MemberDescription": "雨刮运行模式",
     "MemberDatatypeReference": "CS_WiperRunStatus",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "CS_WiperRunStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "IntervalLevel",
+    "MemberDescription": "雨刮间隔运行等级",
+    "MemberDatatypeReference": "CS_WiperInteralLevel",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "CS_WiperRunStatus",
     "DataTypeDescription": "雨刮运行模式状态",
     "DataTypeCategory": "Enumeration",
@@ -1323,18 +1629,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: STOP\r\n0x1: INTERVAL\r\n0x2: LOW_SPEED\r\n0x3: HIGH_SPEED\r\n0x4: WASH\r\n0x5: MAINTENANCE\r\n0xFF: UNKNOWN",
-    "version": "V1.66",
-    "tableValue": {
-      "0": "STOP",
-      "1": "INTERVAL",
-      "2": "LOW_SPEED",
-      "3": "HIGH_SPEED",
-      "4": "WASH",
-      "5": "MAINTENANCE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.66"
   },
-  "TirePressInfo": {
+  {
     "DataTypeName": "TirePressInfo",
     "DataTypeDescription": "胎压信息",
     "DataTypeCategory": "Struct",
@@ -1342,10 +1639,30 @@
     "MemberName": "TirePress_LF",
     "MemberDescription": "左前胎压信息",
     "MemberDatatypeReference": "TirePressureInfo",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "TirePressureInfo": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "TirePress_LR",
+    "MemberDescription": "左后胎压信息",
+    "MemberDatatypeReference": "TirePressureInfo",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "TirePress_RF",
+    "MemberDescription": "右前胎压信息",
+    "MemberDatatypeReference": "TirePressureInfo",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "TirePress_RR",
+    "MemberDescription": "右后胎压信息",
+    "MemberDatatypeReference": "TirePressureInfo",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "TirePressureInfo",
     "DataTypeDescription": "轮胎压力状态信息",
     "DataTypeCategory": "Struct",
@@ -1353,10 +1670,23 @@
     "MemberName": "Pressure",
     "MemberDescription": "轮胎压",
     "MemberDatatypeReference": "CS_TireRessure",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "CS_TireRessure": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "PressueSts",
+    "MemberDescription": "轮胎压状态",
+    "MemberDatatypeReference": "CS_TirePressureSts",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "LeakageSts",
+    "MemberDescription": "轮胎漏气状态",
+    "MemberDatatypeReference": "CS_TireLeakageSts",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "CS_TireRessure",
     "DataTypeDescription": "胎压值",
     "DataTypeCategory": "Integer",
@@ -1368,10 +1698,9 @@
     "InitialValue": 0,
     "InvalidValue": 65535,
     "Unit": "bar",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "CS_TirePressureSts": {
+  {
     "DataTypeName": "CS_TirePressureSts",
     "DataTypeDescription": "胎压状态",
     "DataTypeCategory": "Enumeration",
@@ -1379,15 +1708,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NORMAL\r\n0x1: OVER_PRESSURE\r\n0x2: LOW_PRESSURE\r\n0xFF: UNKNOWN",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "NORMAL",
-      "1": "OVER_PRESSURE",
-      "2": "LOW_PRESSURE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3"
   },
-  "CS_TireLeakageSts": {
+  {
     "DataTypeName": "CS_TireLeakageSts",
     "DataTypeDescription": "漏气状态",
     "DataTypeCategory": "Enumeration",
@@ -1395,15 +1718,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NORMAL\r\n0x1: SLOW_LEAK\r\n0x2: QUICK_LEAK\r\n0xFF: UNKNOWN",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "NORMAL",
-      "1": "SLOW_LEAK",
-      "2": "QUICK_LEAK",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3"
   },
-  "CS_HornVolume": {
+  {
     "DataTypeName": "CS_HornVolume",
     "DataTypeDescription": "车辆喇叭控制请求\r\n0: 表示停止鸣笛\r\n1~100有效\r\n0xFF表示使用默认值音量",
     "DataTypeCategory": "Integer",
@@ -1415,10 +1732,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "Unit": "%",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "GlobalACSysPara": {
+  {
     "DataTypeName": "GlobalACSysPara",
     "DataTypeDescription": "空调系统全局参数",
     "DataTypeCategory": "Struct",
@@ -1426,10 +1742,85 @@
     "MemberName": "ACSwitch",
     "MemberDescription": "A/C开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "CS_RecircleMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RecircleMode",
+    "MemberDescription": "循环模式",
+    "MemberDatatypeReference": "CS_RecircleMode",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AreaSyncSwitch",
+    "MemberDescription": "温区同步开关",
+    "MemberDatatypeReference": "CS_OnOffCmd"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "MaxACSwitch",
+    "MemberDescription": "最大制冷开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "MaxHeatSwitch",
+    "MemberDescription": "最大制热开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "AutoDemistSwitch",
+    "MemberDescription": "自动除雾功能配置开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 6,
+    "MemberName": "ImmDemistSwitch",
+    "MemberDescription": "前档风玻璃立即除雾开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 7,
+    "MemberName": "ECOModeSwitch",
+    "MemberDescription": "ECO模式开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 8,
+    "MemberName": "AutoDrySwitch",
+    "MemberDescription": "空调自动干燥功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 9,
+    "MemberName": "TempExclusiveSwitch",
+    "MemberDescription": "温区独享功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 10,
+    "MemberName": "ParkAutoVeltilationSwitch",
+    "MemberDescription": "驻车自动通风功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 11,
+    "MemberName": "RearACLockSwitch",
+    "MemberDescription": "后排空调锁开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.5"
+  },
+  {
     "DataTypeName": "CS_RecircleMode",
     "DataTypeDescription": "循环模式定义",
     "DataTypeCategory": "Enumeration",
@@ -1438,16 +1829,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: INTERNAL_RECYCLE\r\n0x2: EXTRENAL_RECYCLE\r\n0x3: AUTO_RECYCLE\r\n0xFF: INVALID",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "INTERNAL_RECYCLE",
-      "2": "EXTRENAL_RECYCLE",
-      "3": "AUTO_RECYCLE",
-      "255": "INVALID"
-    }
+    "version": "V1.0"
   },
-  "ACBoxPara": {
+  {
     "DataTypeName": "ACBoxPara",
     "DataTypeDescription": "前后空调相关的功能设置",
     "DataTypeCategory": "Array",
@@ -1455,20 +1839,39 @@
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 3,
     "MemberDatatypeReference": "ACBoxInstancePara",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "ACBoxInstancePara": {
+  {
     "DataTypeName": "ACBoxInstancePara",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "ACBoxId",
     "MemberDescription": "存在多个空调时，具体空调标识",
     "MemberDatatypeReference": "CS_ACBoxId",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "CS_ACBoxId": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "WorkSwitch",
+    "MemberDescription": "空调开关设置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AutoModeSwitch",
+    "MemberDescription": "空调自动模式开关设置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "ACVentilationLevel",
+    "MemberDescription": "风量等级设置",
+    "MemberDatatypeReference": "CS_ACVentilationLevel",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "CS_ACBoxId",
     "DataTypeDescription": "0: 前排空调（默认）\r\n1: 后一排空调\r\n2: 后二排空调\r\n255: 无效值，表示设置相关参数",
     "DataTypeCategory": "Enumeration",
@@ -1476,14 +1879,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: ACBOX_FRONT\r\n0x1: ACBOX_REAR_1\r\n0x2: ACBOX_REAR_2",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "ACBOX_FRONT",
-      "1": "ACBOX_REAR_1",
-      "2": "ACBOX_REAR_2"
-    }
+    "version": "V1.3"
   },
-  "CS_ACVentilationLevel": {
+  {
     "DataTypeName": "CS_ACVentilationLevel",
     "DataTypeDescription": "空调出风等级",
     "DataTypeCategory": "Enumeration",
@@ -1491,24 +1889,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: LEVEL1\r\n0x3: LEVEL2\r\n0x4: LEVEL3\r\n0x5: LEVEL4\r\n0x6: LEVEL5\r\n0x7: LEVEL6\r\n0x8: LEVEL7\r\n0x9: LEVEL8\r\n0xA: LEVEL9\r\n0xB: LEVEL10\r\n0xFF: INVLAID",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "LEVEL1",
-      "3": "LEVEL2",
-      "4": "LEVEL3",
-      "5": "LEVEL4",
-      "6": "LEVEL5",
-      "7": "LEVEL6",
-      "8": "LEVEL7",
-      "9": "LEVEL8",
-      "10": "LEVEL9",
-      "11": "LEVEL10",
-      "255": "INVLAID"
-    }
+    "version": "V1.0"
   },
-  "ACZonePara": {
+  {
     "DataTypeName": "ACZonePara",
     "DataTypeDescription": "温区相关的功能设置",
     "DataTypeCategory": "Array",
@@ -1516,20 +1899,32 @@
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 4,
     "MemberDatatypeReference": "ACZoneInstancePara",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "ACZoneInstancePara": {
+  {
     "DataTypeName": "ACZoneInstancePara",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "ZoneId",
     "MemberDescription": "温区编号",
     "MemberDatatypeReference": "CS_ACZoneId",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "CS_ACZoneId": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "Temperature",
+    "MemberDescription": "空调的目标温度，支持按温区设置",
+    "MemberDatatypeReference": "CS_ACSysTemp",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AirMode",
+    "MemberDescription": "出风模式设置",
+    "MemberDatatypeReference": "CS_ACAirMode",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "CS_ACZoneId",
     "DataTypeDescription": "0: 前排左温区（主驾温区/或者前排温区）\r\n1: 前排右温区（副驾温区）\r\n2: 后排左温区（后排温区）\r\n3: 后排右温区\r\n255: 无效值，表示设置相关参数",
     "DataTypeCategory": "Enumeration",
@@ -1537,16 +1932,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: ACZONE_FRONT_LEFT\r\n0x1: ACZONE_FRONT_RIGH\r\n0x2: ACZONE_REAR_LEFT\r\n0x3: ACZONE_REAR_RIGHT\r\n0xFF: INVALID",
-    "version": "V1.42",
-    "tableValue": {
-      "0": "ACZONE_FRONT_LEFT",
-      "1": "ACZONE_FRONT_RIGH",
-      "2": "ACZONE_REAR_LEFT",
-      "3": "ACZONE_REAR_RIGHT",
-      "255": "INVALID"
-    }
+    "version": "V1.42"
   },
-  "CS_ACAirMode": {
+  {
     "DataTypeName": "CS_ACAirMode",
     "DataTypeDescription": "出风模式",
     "DataTypeCategory": "Enumeration",
@@ -1554,20 +1942,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: FACE\r\n0x2: FOOT\r\n0x3: DEFROST\r\n0x4: FACE_AND_FOOT\r\n0x5: FOOT_AND_DEFROST\r\n0x6: FACE_AND_DEFROST\r\n0x7: FACE_FOOT_AND_DEFROST\r\n0xFF: INVALID",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "FACE",
-      "2": "FOOT",
-      "3": "DEFROST",
-      "4": "FACE_AND_FOOT",
-      "5": "FOOT_AND_DEFROST",
-      "6": "FACE_AND_DEFROST",
-      "7": "FACE_FOOT_AND_DEFROST",
-      "255": "INVALID"
-    }
+    "version": "V1.0"
   },
-  "CS_ACSysTemp": {
+  {
     "DataTypeName": "CS_ACSysTemp",
     "DataTypeDescription": "温度定义\r\n127: 无效值\r\n1）对于设置类操作，表示当前无操作，即不设置当前温度，维持已有状态；\r\n2）对于状态上报类接口，表示获取不到有效温度",
     "DataTypeCategory": "Integer",
@@ -1579,10 +1956,9 @@
     "InitialValue": 0,
     "InvalidValue": 127,
     "Unit": "℃",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "AirOutletAdjust": {
+  {
     "DataTypeName": "AirOutletAdjust",
     "DataTypeDescription": "电动出风口调节",
     "DataTypeCategory": "Struct",
@@ -1590,10 +1966,16 @@
     "MemberName": "ElecAirOutletMode",
     "MemberDescription": "电动风口扫风模式",
     "MemberDatatypeReference": "CS_OutletAirMode",
-    "version": "V1.71",
-    "tableValue": null
+    "version": "V1.71"
   },
-  "CS_OutletAirMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AirOutletAdjustPara",
+    "MemberDescription": "电动出风口调节数组",
+    "MemberDatatypeReference": "AirOutletAdjustAry",
+    "version": "V1.71"
+  },
+  {
     "DataTypeName": "CS_OutletAirMode",
     "DataTypeDescription": "电动风口扫风模式",
     "DataTypeCategory": "Enumeration",
@@ -1601,16 +1983,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: FREE_MODE\r\n0x2: SWEEP_MODE\r\n0x3: MANUAL_MODE\r\n0xFF: INVALID",
-    "version": "V1.42",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "FREE_MODE",
-      "2": "SWEEP_MODE",
-      "3": "MANUAL_MODE",
-      "255": "INVALID"
-    }
+    "version": "V1.42"
   },
-  "AirOutletAdjustAry": {
+  {
     "DataTypeName": "AirOutletAdjustAry",
     "DataTypeDescription": "电动出风口调节数组",
     "DataTypeCategory": "Array",
@@ -1618,20 +1993,39 @@
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 4,
     "MemberDatatypeReference": "AirOutletInstanceAdjust",
-    "version": "V1.71",
-    "tableValue": null
+    "version": "V1.71"
   },
-  "AirOutletInstanceAdjust": {
+  {
     "DataTypeName": "AirOutletInstanceAdjust",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "AirOutletId",
     "MemberDescription": "电动出风口编号",
     "MemberDatatypeReference": "CS_AirOutletId",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "CS_AirOutletId": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AirOutletOpenCmd",
+    "MemberDescription": "出风口开闭指令",
+    "MemberDatatypeReference": "CS_OpenCloseStop",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "XDirAngle",
+    "MemberDescription": "出风口横向调节角度",
+    "MemberDatatypeReference": "CS_AirOurletAngle",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "YDirAngle",
+    "MemberDescription": "出风口纵向调节角度",
+    "MemberDatatypeReference": "CS_AirOurletAngle",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "CS_AirOutletId",
     "DataTypeDescription": "0: 主驾左出风口\r\n1: 主驾右出风口\r\n2: 副驾左出风口\r\n3: 副驾右出风口",
     "DataTypeCategory": "Enumeration",
@@ -1639,16 +2033,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: AIR_OUTLET_DRIVER_LEFT\r\n0x1: AIR_OUTLET_DRIVER_RIGHT\r\n0x2: AIR_OUTLET_FRONT_PASSENGER_LEFT\r\n0x3: AIR_OUTLET_FRONT_PASSENGER_RIGHT\r\n0xFF: INVALID",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "AIR_OUTLET_DRIVER_LEFT",
-      "1": "AIR_OUTLET_DRIVER_RIGHT",
-      "2": "AIR_OUTLET_FRONT_PASSENGER_LEFT",
-      "3": "AIR_OUTLET_FRONT_PASSENGER_RIGHT",
-      "255": "INVALID"
-    }
+    "version": "V1.6"
   },
-  "CS_AirOurletAngle": {
+  {
     "DataTypeName": "CS_AirOurletAngle",
     "DataTypeDescription": "电动出口口调度\r\n254: 无效值\r\n1）对于设置类操作，表示当前无操作，即不设置当前出风角度，维持已有状态；\r\n2）对于状态上报类接口，表示获取不到有效角度信息",
     "DataTypeCategory": "Integer",
@@ -1660,10 +2047,9 @@
     "InitialValue": 0,
     "InvalidValue": 254,
     "Unit": "%",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "ACWorkStatus": {
+  {
     "DataTypeName": "ACWorkStatus",
     "DataTypeDescription": "空调系统工作状态",
     "DataTypeCategory": "Struct",
@@ -1671,10 +2057,30 @@
     "MemberName": "GlobalACWorkStatus",
     "MemberDescription": "空调系统的全局功能工作状态",
     "MemberDatatypeReference": "GlobalACWorkStatus",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "GlobalACWorkStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "ACBoxWorkStatus",
+    "MemberDescription": "前后空调相关的工作状态",
+    "MemberDatatypeReference": "ACBoxWorkStatus",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "ACZoneWorkStatus",
+    "MemberDescription": "温区相关的工作状态",
+    "MemberDatatypeReference": "ACZoneWorkStatus",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "AirOutletStatus",
+    "MemberDescription": "电动出风口状态",
+    "MemberDatatypeReference": "AirOutletStatus",
+    "version": "V1.5"
+  },
+  {
     "DataTypeName": "GlobalACWorkStatus",
     "DataTypeDescription": "空调系统的全局功能工作状态",
     "DataTypeCategory": "Struct",
@@ -1682,10 +2088,86 @@
     "MemberName": "ACSwitchStatus",
     "MemberDescription": "A/C开关状态",
     "MemberDatatypeReference": "CS_OnOffStatus",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "ACBoxWorkStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RecircleStatus",
+    "MemberDescription": "循环状态",
+    "MemberDatatypeReference": "CS_RecircleMode",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AreaSyncStatus",
+    "MemberDescription": "温区同步开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "MaxACStatus",
+    "MemberDescription": "最大制冷开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "MaxHeatStatus",
+    "MemberDescription": "最大制热开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "AutoDemistStatus",
+    "MemberDescription": "自动除雾功能开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 6,
+    "MemberName": "ImmDemistStatus",
+    "MemberDescription": "前档风玻璃立即除雾开关",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 7,
+    "MemberName": "ECOModeStatus",
+    "MemberDescription": "ECO模式状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 8,
+    "MemberName": "AutoDryStatus",
+    "MemberDescription": "空调自动干燥功能开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 9,
+    "MemberName": "TempExclusiveStatus",
+    "MemberDescription": "温区独享功能开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 10,
+    "MemberName": "ParkAutoVeltilationStatus",
+    "MemberDescription": "驻车自动通风功能开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 11,
+    "MemberName": "RearACLockStatus",
+    "MemberDescription": "后排空调锁开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.5"
+  },
+  {
     "DataTypeName": "ACBoxWorkStatus",
     "DataTypeDescription": "前后空调相关的功能状态",
     "DataTypeCategory": "Array",
@@ -1693,20 +2175,39 @@
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 3,
     "MemberDatatypeReference": "ACBoxInstanceStatus",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "ACBoxInstanceStatus": {
+  {
     "DataTypeName": "ACBoxInstanceStatus",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "ACBoxId",
     "MemberDescription": "存在多个空调时，具体空调标识",
     "MemberDatatypeReference": "CS_ACBoxId",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "CS_ACVentilationLevelStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "WorkStatus",
+    "MemberDescription": "空调开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AutoModeStatus",
+    "MemberDescription": "空调自动模式开关状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "ACVentilationLevelStatus",
+    "MemberDescription": "风量等级设置",
+    "MemberDatatypeReference": "CS_ACVentilationLevelStatus",
+    "version": "V1.66"
+  },
+  {
     "DataTypeName": "CS_ACVentilationLevelStatus",
     "DataTypeDescription": "风量等级状态",
     "DataTypeCategory": "Enumeration",
@@ -1714,23 +2215,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: LEVEL1\r\n0x2: LEVEL2\r\n0x3: LEVEL3\r\n0x4: LEVEL4\r\n0x5: LEVEL5\r\n0x6: LEVEL6\r\n0x7: LEVEL7\r\n0x8: LEVEL8\r\n0x9: LEVEL9\r\n0xA: LEVEL10\r\n0xFF: INVLAID",
-    "version": "V1.66",
-    "tableValue": {
-      "0": "OFF",
-      "1": "LEVEL1",
-      "2": "LEVEL2",
-      "3": "LEVEL3",
-      "4": "LEVEL4",
-      "5": "LEVEL5",
-      "6": "LEVEL6",
-      "7": "LEVEL7",
-      "8": "LEVEL8",
-      "9": "LEVEL9",
-      "10": "LEVEL10",
-      "255": "INVLAID"
-    }
+    "version": "V1.66"
   },
-  "ACZoneWorkStatus": {
+  {
     "DataTypeName": "ACZoneWorkStatus",
     "DataTypeDescription": "温区相关的功能状态",
     "DataTypeCategory": "Array",
@@ -1738,10 +2225,9 @@
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 4,
     "MemberDatatypeReference": "ACZoneInstanceStatus",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "ACZoneInstanceStatus": {
+  {
     "DataTypeName": "ACZoneInstanceStatus",
     "DataTypeDescription": "温区相关的功能状态",
     "DataTypeCategory": "Struct",
@@ -1749,10 +2235,30 @@
     "MemberName": "ZoneId",
     "MemberDescription": "温区编号",
     "MemberDatatypeReference": "CS_ACZoneId",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "AirOutletStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "Temperature",
+    "MemberDescription": "空调的目标温度，支持按温区设置",
+    "MemberDatatypeReference": "CS_ACSysTemp",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AirMode",
+    "MemberDescription": "出风模式设置",
+    "MemberDatatypeReference": "CS_ACAirMode",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "ElecAirOutletMode",
+    "MemberDescription": "电动出风口模式",
+    "MemberDatatypeReference": "CS_OutletAirMode",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "AirOutletStatus",
     "DataTypeDescription": "电动出风口状态",
     "DataTypeCategory": "Struct",
@@ -1760,10 +2266,16 @@
     "MemberName": "ElecAirOutletMode",
     "MemberDescription": "电动出风口模式",
     "MemberDatatypeReference": "CS_OutletAirMode",
-    "version": "V1.71",
-    "tableValue": null
+    "version": "V1.71"
   },
-  "AirOutletAdjustStatusAry": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AirOutletAdjustStatus",
+    "MemberDescription": "电动出风口调节状态数组",
+    "MemberDatatypeReference": "AirOutletAdjustStatusAry",
+    "version": "V1.71"
+  },
+  {
     "DataTypeName": "AirOutletAdjustStatusAry",
     "DataTypeDescription": "电动出风口调节状态数组",
     "DataTypeCategory": "Array",
@@ -1771,20 +2283,39 @@
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 4,
     "MemberDatatypeReference": "AirOutletInstanceStatus",
-    "version": "V1.71",
-    "tableValue": null
+    "version": "V1.71"
   },
-  "AirOutletInstanceStatus": {
+  {
     "DataTypeName": "AirOutletInstanceStatus",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "AirOutletId",
     "MemberDescription": "电动出风口编号",
     "MemberDatatypeReference": "CS_AirOutletId",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "CS_AirOutletOpenStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AirOutletOpenStatus",
+    "MemberDescription": "出风口开闭状态",
+    "MemberDatatypeReference": "CS_AirOutletOpenStatus",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "XDirAngle",
+    "MemberDescription": "出风口横向调节角度",
+    "MemberDatatypeReference": "CS_AirOurletAngle",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "YDirAngle",
+    "MemberDescription": "出风口纵向调节角度",
+    "MemberDatatypeReference": "CS_AirOurletAngle",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "CS_AirOutletOpenStatus",
     "DataTypeDescription": "电动出风口开闭状态",
     "DataTypeCategory": "Enumeration",
@@ -1792,14 +2323,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: CLOSED\r\n0x1: OPENED\r\n0xFF: UNKNOWN",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "CLOSED",
-      "1": "OPENED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.6"
   },
-  "AirPurifyWorkPara": {
+  {
     "DataTypeName": "AirPurifyWorkPara",
     "DataTypeDescription": "设置空气净化工作参数",
     "DataTypeCategory": "Struct",
@@ -1807,10 +2333,23 @@
     "MemberName": "WorkSwith",
     "MemberDescription": "净化系统功能开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_UltravioletRayLevel": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "UltravioletRayLevel",
+    "MemberDescription": "紫外线开关强度",
+    "MemberDatatypeReference": "CS_UltravioletRayLevel",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AnionSwitch",
+    "MemberDescription": "负离子功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "CS_UltravioletRayLevel",
     "DataTypeDescription": "紫外线工作强度",
     "DataTypeCategory": "Enumeration",
@@ -1818,16 +2357,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: LEVEL1\r\n0x3: LEVEL2\r\n0xFF: UNKNOWN",
-    "version": "V1.51",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "LEVEL1",
-      "3": "LEVEL2",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.51"
   },
-  "AirPurifyStatus": {
+  {
     "DataTypeName": "AirPurifyStatus",
     "DataTypeDescription": "空气净化工作状态",
     "DataTypeCategory": "Struct",
@@ -1835,25 +2367,32 @@
     "MemberName": "WorkStatus",
     "MemberDescription": "净化系统工作状态",
     "MemberDatatypeReference": "CS_AirPurifyStatus",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_AirPurifyStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "UltravioletRayLevel",
+    "MemberDescription": "紫外线工作强度信息",
+    "MemberDatatypeReference": "CS_UltravioletRayLevel",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AnionSwitch",
+    "MemberDescription": "负离子功能工作状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "CS_AirPurifyStatus",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: RUNNING\r\n0x2: COMPELETE\r\n0xFF: UNKNOWN",
-    "version": "V1.4",
-    "tableValue": {
-      "0": "OFF",
-      "1": "RUNNING",
-      "2": "COMPELETE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.4"
   },
-  "FragrancePara": {
+  {
     "DataTypeName": "FragrancePara",
     "DataTypeDescription": "配置香氛工作参数",
     "DataTypeCategory": "Struct",
@@ -1861,10 +2400,30 @@
     "MemberName": "WorkSwitch",
     "MemberDescription": "香氛功能开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_FragranceLocation": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "WorkLocation",
+    "MemberDescription": "选择实际工作的香氛位置",
+    "MemberDatatypeReference": "CS_FragranceLocation",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "WorkConcentration",
+    "MemberDescription": "香氛浓度",
+    "MemberDatatypeReference": "CS_FragranceConcentrationLev",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "ExpiredStatus",
+    "MemberDescription": "香氛过期提醒",
+    "MemberDatatypeReference": "CS_FragranceExpiredStatus",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "CS_FragranceLocation",
     "DataTypeDescription": "香氛香型位置",
     "DataTypeCategory": "Integer",
@@ -1875,10 +2434,9 @@
     "PhysicalMax": 254,
     "InitialValue": 0,
     "InvalidValue": 255,
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_FragranceType": {
+  {
     "DataTypeName": "CS_FragranceType",
     "DataTypeDescription": "香型类型",
     "DataTypeCategory": "Enumeration",
@@ -1886,18 +2444,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: TYPE_1\r\n0x2: TYPE_2\r\n0x3: TYPE_3\r\n0x4: TYPE_4\r\n0x5: TYPE_5\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "TYPE_1",
-      "2": "TYPE_2",
-      "3": "TYPE_3",
-      "4": "TYPE_4",
-      "5": "TYPE_5",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "CS_FragranceConcentrationLev": {
+  {
     "DataTypeName": "CS_FragranceConcentrationLev",
     "DataTypeDescription": "香氛浓度等级",
     "DataTypeCategory": "Enumeration",
@@ -1905,16 +2454,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: LOW\r\n0x2: MEDIUM\r\n0x3: HIGH\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "LOW",
-      "2": "MEDIUM",
-      "3": "HIGH",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "CS_FragranceExpiredStatus": {
+  {
     "DataTypeName": "CS_FragranceExpiredStatus",
     "DataTypeDescription": "香氛首次上电后保质期为1年，在香氛过期1个月前，通过大屏提醒用户此香氛快过期；当香氛过期时，提醒用户香氛已过期\r\n0: 香氛有效期超过1个月\r\n1: 香氛有效期在1个月内\r\n2: 香氛已过期",
     "DataTypeCategory": "Enumeration",
@@ -1922,15 +2464,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NORMAL\r\n0x1: CLOSE_TO_EXPIRE\r\n0x2: EXPIRED\r\n0xFF: UNKNOWN\r\n",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NORMAL",
-      "1": "CLOSE_TO_EXPIRE",
-      "2": "EXPIRED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.6"
   },
-  "FragranceStatus": {
+  {
     "DataTypeName": "FragranceStatus",
     "DataTypeDescription": "香氛功能工作状态",
     "DataTypeCategory": "Struct",
@@ -1938,30 +2474,55 @@
     "MemberName": "FragranceTypeInfo",
     "MemberDescription": "车辆上的香氛类型",
     "MemberDatatypeReference": "FragranceTypeInfo",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "FragranceTypeInfo": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "WorkStatus",
+    "MemberDescription": "香氛工作状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "WorkConcentration",
+    "MemberDescription": "香氛实际工作浓度",
+    "MemberDatatypeReference": "CS_FragranceConcentrationLev",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "FragranceTypeInfo",
     "DataTypeDescription": "车辆上的香氛类型",
     "DataTypeCategory": "Array",
     "String/ArrayLengthType": "Fixed",
     "String/ArrayLengthMin": 1,
     "String/ArrayLengthMax": 3,
-    "MemberDatatypeReference": "FragranceLocationInfo",
-    "tableValue": null
+    "MemberDatatypeReference": "FragranceLocationInfo"
   },
-  "FragranceLocationInfo": {
+  {
     "DataTypeName": "FragranceLocationInfo",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "Location",
     "MemberDescription": "香型位置",
     "MemberDatatypeReference": "CS_FragranceLocation",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "EnvMonitorStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "FragranceType",
+    "MemberDescription": "香氛类型",
+    "MemberDatatypeReference": "CS_FragranceType",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "FragenceRemain",
+    "MemberDescription": "香氛剩余量",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "EnvMonitorStatus",
     "DataTypeDescription": "车内外环境信息监测状态",
     "DataTypeCategory": "Struct",
@@ -1969,10 +2530,23 @@
     "MemberName": "PM2d5Concentration",
     "MemberDescription": "PM2.5物浓度信息",
     "MemberDatatypeReference": "CS_ParticleConcentration",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "InteriorTemperature": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "ExteriorTemperature",
+    "MemberDescription": "车外环境温度",
+    "MemberDatatypeReference": "CS_ACSysTemp",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "InteriorTemperature",
+    "MemberDescription": "车内环境温度",
+    "MemberDatatypeReference": "InteriorTemperature",
+    "version": "V1.4"
+  },
+  {
     "DataTypeName": "InteriorTemperature",
     "DataTypeDescription": "车内实际温度",
     "DataTypeCategory": "Struct",
@@ -1980,10 +2554,16 @@
     "MemberName": "FrontTemperature",
     "MemberDescription": "前排温度（当车内只有一个温度传感器时，不上按照前排状态上报）",
     "MemberDatatypeReference": "CS_ACSysTemp",
-    "version": "V1.51",
-    "tableValue": null
+    "version": "V1.51"
   },
-  "CS_ParticleConcentration": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RearTemperature",
+    "MemberDescription": "后排温度",
+    "MemberDatatypeReference": "CS_ACSysTemp",
+    "version": "V1.51"
+  },
+  {
     "DataTypeName": "CS_ParticleConcentration",
     "DataTypeDescription": "空气颗粒度浓度（PM2.5）",
     "DataTypeCategory": "Integer",
@@ -1995,10 +2575,9 @@
     "InitialValue": 0,
     "InvalidValue": 63353,
     "Unit": "ug/m3",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "WindshieldHeat": {
+  {
     "DataTypeName": "WindshieldHeat",
     "DataTypeDescription": "挡风玻璃加热功能配置",
     "DataTypeCategory": "Struct",
@@ -2006,20 +2585,18 @@
     "MemberName": "RearWindshieldHeatSwt",
     "MemberDescription": "后防风玻璃加热开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "WindshieldHeatStatus": {
+  {
     "DataTypeName": "WindshieldHeatStatus",
     "DataTypeDescription": "挡风格玻璃加热状态",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "RearWindshieldHeatSts",
     "MemberDescription": "后防风玻璃加热状态",
-    "MemberDatatypeReference": "CS_OnOffCmd",
-    "tableValue": null
+    "MemberDatatypeReference": "CS_OnOffCmd"
   },
-  "DischargeCmd": {
+  {
     "DataTypeName": "DischargeCmd",
     "DataTypeDescription": "车辆放电功能设置",
     "DataTypeCategory": "Struct",
@@ -2027,10 +2604,16 @@
     "MemberName": "LvDischargeCmd",
     "MemberDescription": "车辆低压放电功能设置",
     "MemberDatatypeReference": "LvDischargeCmd",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "LvDischargeCmd": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "HvDischargeCmd",
+    "MemberDescription": "车辆高压放电功能设置",
+    "MemberDatatypeReference": "HvDischargeCmd",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "LvDischargeCmd",
     "DataTypeDescription": "车辆低压放电功能设置",
     "DataTypeCategory": "Struct",
@@ -2038,10 +2621,9 @@
     "MemberName": "WirelessDischargeSw",
     "MemberDescription": "无线充电面板配置开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "HvDischargeCmd": {
+  {
     "DataTypeName": "HvDischargeCmd",
     "DataTypeDescription": "车辆高压放电功能设置",
     "DataTypeCategory": "Struct",
@@ -2049,10 +2631,16 @@
     "MemberName": "V2VDischargeSw",
     "MemberDescription": "V2V开关配置",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "DischargeCfgInfo": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "V2LDischargeSw",
+    "MemberDescription": "V2L开关配置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "DischargeCfgInfo",
     "DataTypeDescription": "放电功能设置状态上报",
     "DataTypeCategory": "Struct",
@@ -2060,10 +2648,16 @@
     "MemberName": "LvDischargeSwStatus",
     "MemberDescription": "低压放电功能开关配置状态",
     "MemberDatatypeReference": "LvDischargeSwStatus",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "LvDischargeSwStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "HvDischargeSwStatus",
+    "MemberDescription": "高压放电功能开关配置状态",
+    "MemberDatatypeReference": "HvDischargeSwStatus",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "LvDischargeSwStatus",
     "DataTypeDescription": "低压放电功能开关配置状态",
     "DataTypeCategory": "Struct",
@@ -2071,10 +2665,9 @@
     "MemberName": "WirelessDischargeSw",
     "MemberDescription": "无线充电面板配置开关",
     "MemberDatatypeReference": "CS_OnOffStatus",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "HvDischargeSwStatus": {
+  {
     "DataTypeName": "HvDischargeSwStatus",
     "DataTypeDescription": "高压放电功能开关配置状态",
     "DataTypeCategory": "Struct",
@@ -2082,10 +2675,16 @@
     "MemberName": "V2VDischargeSw",
     "MemberDescription": "V2V开关配置",
     "MemberDatatypeReference": "CS_OnOffStatus",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "ChrgDchrgPara": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "V2LDischargeSw",
+    "MemberDescription": "V2L开关配置",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "ChrgDchrgPara",
     "DataTypeDescription": "充放电相关配置参数",
     "DataTypeCategory": "Struct",
@@ -2093,10 +2692,16 @@
     "MemberName": "ChargePara",
     "MemberDescription": "充电功能相关配置参数",
     "MemberDatatypeReference": "ChargePara",
-    "version": "V1.42",
-    "tableValue": null
+    "version": "V1.42"
   },
-  "ChargePara": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "DischargePara",
+    "MemberDescription": "放电功能相关配置参数",
+    "MemberDatatypeReference": "DischargePara",
+    "version": "V1.42"
+  },
+  {
     "DataTypeName": "ChargePara",
     "DataTypeDescription": "充电功能配置",
     "DataTypeCategory": "Struct",
@@ -2104,10 +2709,23 @@
     "MemberName": "ChargeEndSOC",
     "MemberDescription": "充电截止SOC",
     "MemberDatatypeReference": "CS_Percent",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "DischargePara": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "RemindeMileage",
+    "MemberDescription": "充电提醒里程",
+    "MemberDatatypeReference": "CS_Mileage",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "SchduelModeSwitch",
+    "MemberDescription": "预约充电模式开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "DischargePara",
     "DataTypeDescription": "车辆放电功能相关工作参数",
     "DataTypeCategory": "Struct",
@@ -2115,10 +2733,16 @@
     "MemberName": "DchrgEndSOC",
     "MemberDescription": "放电截止SOC值",
     "MemberDatatypeReference": "CS_Percent",
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "ChargeCmd": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "DchrgEndMieage",
+    "MemberDescription": "放电截止续航里程",
+    "MemberDatatypeReference": "CS_Mileage",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "ChargeCmd",
     "DataTypeDescription": "充电操作",
     "DataTypeCategory": "Struct",
@@ -2126,10 +2750,16 @@
     "MemberName": "ChargeCmd",
     "MemberDescription": "充电启停命令",
     "MemberDatatypeReference": "CS_StartStop",
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "CS_ChrgScene": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "OperateScene",
+    "MemberDescription": "启动充电/停止充电触发场景",
+    "MemberDatatypeReference": "CS_ChrgScene",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "CS_ChrgScene",
     "DataTypeDescription": "启动充电/停止充电触发场景\r\n0x00: 手动操作立即启动充电\r\n0x01: 预约开始时间到启动充电\r\n0x10:  手动操作立即停止充电\r\n0x11:  预约结束时间到停止充电\r\n0x12:  自动结束，停止充电，如达到截止SOC，故障等",
     "DataTypeCategory": "Enumeration",
@@ -2137,17 +2767,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: MANAUL_START\r\n0x1: SCHEDULE_START\r\n0x2: MANAUL_STOP\r\n0x3: SCHEDULE_STOP\r\n0x4: OTHER_STOP\r\n0xFF: UNKNOWN",
-    "version": "V1.3\r\nV1.42",
-    "tableValue": {
-      "0": "MANAUL_START",
-      "1": "SCHEDULE_START",
-      "2": "MANAUL_STOP",
-      "3": "SCHEDULE_STOP",
-      "4": "OTHER_STOP",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3\r\nV1.42"
   },
-  "ChrgDchrgStatus": {
+  {
     "DataTypeName": "ChrgDchrgStatus",
     "DataTypeDescription": "充放电状态",
     "DataTypeCategory": "Struct",
@@ -2155,10 +2777,43 @@
     "MemberName": "ChargePortStatus",
     "MemberDescription": "上报充电口状态",
     "MemberDatatypeReference": "ChargePortStatus",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "ChargePortStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "ChargeType",
+    "MemberDescription": "车辆充电类型",
+    "MemberDatatypeReference": "CS_ChargeType"
+  },
+  {
+    "MemberPosition": 1,
+    "MemberName": "ChargeStatus",
+    "MemberDescription": "车辆充电状态",
+    "MemberDatatypeReference": "CS_ChargeStatus",
+    "version": "V1.41"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "ChargeRemineTime",
+    "MemberDescription": "充电剩余时长",
+    "MemberDatatypeReference": "CS_ChrgDchrgTimeLength",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "DischargeStatus",
+    "MemberDescription": "车辆放电状态",
+    "MemberDatatypeReference": "CS_DischargeStatus",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "DisChargeTimeLength",
+    "MemberDescription": "放电时长",
+    "MemberDatatypeReference": "CS_ChrgDchrgTimeLength",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "ChargePortStatus",
     "DataTypeDescription": "充电口链接状态",
     "DataTypeCategory": "Struct",
@@ -2166,20 +2821,32 @@
     "MemberName": "DCPortStatus",
     "MemberDescription": "直流口状态",
     "MemberDatatypeReference": "PortStatus",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "PortStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "ACPortStatus",
+    "MemberDescription": "交流口状态",
+    "MemberDatatypeReference": "PortStatus",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "PortStatus",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "PlugType",
     "MemberDescription": "充电口插枪类型",
     "MemberDatatypeReference": "CS_ChargePlugType",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_ChargePlugType": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "Status",
+    "MemberDescription": "充电口的物理连接状态",
+    "MemberDatatypeReference": "CS_PortConnectStatus",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "CS_ChargePlugType",
     "DataTypeDescription": "充电口插枪类型",
     "DataTypeCategory": "Enumeration",
@@ -2187,14 +2854,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: CHARGE_GUN\r\n0x1: DISCHARGE_GUN\r\n0xFF: UNKNOWN",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "CHARGE_GUN",
-      "1": "DISCHARGE_GUN",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.0"
   },
-  "CS_PortConnectStatus": {
+  {
     "DataTypeName": "CS_PortConnectStatus",
     "DataTypeDescription": "充电口的物理连接状态\r\n0: INIT\r\n1: 表示检测到充电枪已经插入充电口并正确连接\r\n2: 未检测到充电枪插入充电口\r\n3: 检测到充电枪已经插入充电口但并未正确连接",
     "DataTypeCategory": "Enumeration",
@@ -2202,14 +2864,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: INIT\r\n0x1: PLUGIN\r\n0x2: UNPLUG",
-    "version": "V1.0",
-    "tableValue": {
-      "0": "INIT",
-      "1": "PLUGIN",
-      "2": "UNPLUG"
-    }
+    "version": "V1.0"
   },
-  "CS_ChargeType": {
+  {
     "DataTypeName": "CS_ChargeType",
     "DataTypeDescription": "充电类型",
     "DataTypeCategory": "Enumeration",
@@ -2217,16 +2874,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: INITIAL\r\n0x1: AC_CHARGE\r\n0x2: DC_CHARGE\r\n0x3: WIRELESS_CHARGE\r\n0x4: SUPER_CHARGEE",
-    "version": "V1.42",
-    "tableValue": {
-      "0": "INITIAL",
-      "1": "AC_CHARGE",
-      "2": "DC_CHARGE",
-      "3": "WIRELESS_CHARGE",
-      "4": "SUPER_CHARGEE"
-    }
+    "version": "V1.42"
   },
-  "CS_ChargeStatus": {
+  {
     "DataTypeName": "CS_ChargeStatus",
     "DataTypeDescription": "充电状态",
     "DataTypeCategory": "Enumeration",
@@ -2234,17 +2884,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: INITIAL\r\n0x1: CHARGE_PREPARING\r\n0x2: CHARGING\r\n0x3: CHARGE_PREHEATING\r\n0x4: CHARGE_END\r\n0x5: CHARGE_ABNORMAL",
-    "version": "V1.2\r\nV1.42",
-    "tableValue": {
-      "0": "INITIAL",
-      "1": "CHARGE_PREPARING",
-      "2": "CHARGING",
-      "3": "CHARGE_PREHEATING",
-      "4": "CHARGE_END",
-      "5": "CHARGE_ABNORMAL"
-    }
+    "version": "V1.2\r\nV1.42"
   },
-  "CS_DischargeStatus": {
+  {
     "DataTypeName": "CS_DischargeStatus",
     "DataTypeDescription": "放电状态",
     "DataTypeCategory": "Enumeration",
@@ -2252,16 +2894,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: INITIAL\r\n0x1: DISCHARGE_PREPARING\r\n0x2: DISCHARGING\r\n0x3: DISCHARGE_END\r\n0x4: DISCHARGE_FORBIDDEN",
-    "version": "V1.2",
-    "tableValue": {
-      "0": "INITIAL",
-      "1": "DISCHARGE_PREPARING",
-      "2": "DISCHARGING",
-      "3": "DISCHARGE_END",
-      "4": "DISCHARGE_FORBIDDEN"
-    }
+    "version": "V1.2"
   },
-  "CS_ChrgDchrgTimeLength": {
+  {
     "DataTypeName": "CS_ChrgDchrgTimeLength",
     "DataTypeDescription": "充电时长",
     "DataTypeCategory": "Integer",
@@ -2273,10 +2908,9 @@
     "InitialValue": 0,
     "InvalidValue": 65535,
     "Unit": "s",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "ChargePower": {
+  {
     "DataTypeName": "ChargePower",
     "DataTypeDescription": "充电的电压电流信息",
     "DataTypeCategory": "Struct",
@@ -2284,10 +2918,23 @@
     "MemberName": "Power",
     "MemberDescription": "充电功率",
     "MemberDatatypeReference": "CS_ChargePower",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_ChargePower": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "Voltage",
+    "MemberDescription": "充电电压",
+    "MemberDatatypeReference": "CS_ChargeVoltage",
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "Current",
+    "MemberDescription": "充电电流",
+    "MemberDatatypeReference": "CS_ChargeCurrent",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "CS_ChargePower",
     "DataTypeDescription": "充电功率",
     "DataTypeCategory": "Integer",
@@ -2299,10 +2946,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFFFFFF",
     "Unit": "W",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_ChargeVoltage": {
+  {
     "DataTypeName": "CS_ChargeVoltage",
     "DataTypeDescription": "充电电压",
     "DataTypeCategory": "Integer",
@@ -2314,10 +2960,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "V",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "CS_ChargeCurrent": {
+  {
     "DataTypeName": "CS_ChargeCurrent",
     "DataTypeDescription": "充电电流",
     "DataTypeCategory": "Integer",
@@ -2329,10 +2974,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "A",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "ChrgDchrgGuidInfo": {
+  {
     "DataTypeName": "ChrgDchrgGuidInfo",
     "DataTypeDescription": "充放电操作指引状态",
     "DataTypeCategory": "Struct",
@@ -2340,10 +2984,23 @@
     "MemberName": "ChrgOptGuidPrompt",
     "MemberDescription": "充电操作引导提示",
     "MemberDatatypeReference": "CS_ChrgOptGuidPrompt",
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "CS_ChrgOptGuidPrompt": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "StopCausePrompt",
+    "MemberDescription": "充放电停止原因提示",
+    "MemberDatatypeReference": "CS_StopCausePrompt",
+    "version": "V1.2"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "ChrgStatusPrompt",
+    "MemberDescription": "充电相关状态提示",
+    "MemberDatatypeReference": "CS_ChrgStatusPrompt",
+    "version": "V1.2"
+  },
+  {
     "DataTypeName": "CS_ChrgOptGuidPrompt",
     "DataTypeDescription": "充电操作指引信息\r\n如下信息仅做参考，具体定义具体车型上定义\r\n0: 不显示\r\n1: 充电枪未完好连接，请重新插拔枪。\r\n2: 放电枪未完好连接，请重新插拔枪。\r\n3: 充电桩未启动，请启动充电桩。\r\n4:  请连接好充电桩或用电设备\r\n5:  请连接用电设备\r\n6:  请连接充电枪",
     "DataTypeCategory": "Integer",
@@ -2354,10 +3011,9 @@
     "PhysicalMax": 254,
     "InitialValue": 0,
     "InvalidValue": "0xFF",
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "CS_StopCausePrompt": {
+  {
     "DataTypeName": "CS_StopCausePrompt",
     "DataTypeDescription": "充放电停止原因提示\r\n如下信息仅做参考，具体定义具体车型上定义\r\n0: 不显示\r\n1: 车辆充电系统故障，请重试或联系经销商\r\n2: 车辆续驶里程低于放电截止里程，放电停止。\r\n3: 车辆达到充电截止SOC，充电停止。\r\n4: 充电桩通讯异常，请检查充电桩状态并重试。\r\n5: 充电停止：充电桩异常输出，为保护动力电池，已自动停止充电，若继续使用该充电桩存在损伤电池的风险，建议更换充电桩。\r\n6: 充电停止：充电桩电压输出能力无法满足车辆需求，车辆无法充电，建议更换充电桩。\r\n7: 充电桩电网断电\r\n8: 充电桩供电异常，请检查充电桩状态并重试。\r\n9: 车辆放电系统故障，请重试或联系经销商。\r\n10:  充电设备功率不足，无法开启电池加热\r\n11:  充电设备功率不足，无法开启电池保温\r\n12 车辆低于放电截止SOC，放电停止（预留）\r\n13 车辆准备OTA，充电停止（预留）",
     "DataTypeCategory": "Integer",
@@ -2368,10 +3024,9 @@
     "PhysicalMax": 254,
     "InitialValue": 0,
     "InvalidValue": 255,
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "CS_ChrgStatusPrompt": {
+  {
     "DataTypeName": "CS_ChrgStatusPrompt",
     "DataTypeDescription": "如下信息仅做参考，具体定义具体车型上定义\r\n0: 不显示\r\n1: 电池处于健康充电中，充电时间将延长\r\n2: 为保护长期放置的电池，正在启动小电流激活充电，充电时间将延长\r\n3: 车辆空调开启，充电功率降低，充电时间将延长。\r\n4: 动力电池加热已开启\r\n5: 充电桩电压输出能力无法满足车辆需求，车辆无法充满，建议更换充电桩。\r\n6: 充电桩功率低于车辆最大允许充电功率，充电时间将延长。\r\n7: 充电插座过温，功率受限，请联系授权经销商。\r\n8: 车载充电机过温，功率受限，请联系授权经销商。",
     "DataTypeCategory": "Integer",
@@ -2382,10 +3037,9 @@
     "PhysicalMax": 254,
     "InitialValue": 0,
     "InvalidValue": 255,
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "BatteryFuncPara": {
+  {
     "DataTypeName": "BatteryFuncPara",
     "DataTypeDescription": "电池包工作参数",
     "DataTypeCategory": "Struct",
@@ -2393,10 +3047,9 @@
     "MemberName": "InsulationSwitch",
     "MemberDescription": "电池保温开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "BatteryWorkStatus": {
+  {
     "DataTypeName": "BatteryWorkStatus",
     "DataTypeDescription": "电池包工作状态",
     "DataTypeCategory": "Struct",
@@ -2404,20 +3057,53 @@
     "MemberName": "InsulationSwtich",
     "MemberDescription": "电池保温功能开关",
     "MemberDatatypeReference": "CS_OnOffStatus",
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "ElecStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "HeatingStatus",
+    "MemberDescription": "电池加热状态",
+    "MemberDatatypeReference": "CS_BatteryHeatingStatus",
+    "version": "V1.2"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "InsulationStatus",
+    "MemberDescription": "电池保温状态",
+    "MemberDatatypeReference": "CS_BatteryInsulationStatus",
+    "version": "V1.2"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "HvBatteryLowTempInd",
+    "MemberDescription": "动力电池低温指示",
+    "MemberDatatypeReference": "CS_TrueFalse",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "HvBatterySOC",
+    "MemberDescription": "高压电池包SOC值",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.2"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "HvBattertSOE",
+    "MemberDescription": "高压电池包SOE值",
+    "MemberDatatypeReference": "CS_BatterySOE",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "ElecStatus",
     "DataTypeDescription": "电量状态",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "LowElecLevel",
     "MemberDescription": "低电量告警级别",
-    "MemberDatatypeReference": "CS_LowElecLevel",
-    "tableValue": null
+    "MemberDatatypeReference": "CS_LowElecLevel"
   },
-  "CS_LowElecLevel": {
+  {
     "DataTypeName": "CS_LowElecLevel",
     "DataTypeDescription": "低电量告警级别",
     "DataTypeCategory": "Enumeration",
@@ -2425,44 +3111,27 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NORMAL\r\n0x1: LEVEL1\r\n0x2: LEVEL2 \r\n0x3: LEVEL3  \r\n0xFF: UNKNOWN",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NORMAL",
-      "1": "LEVEL1",
-      "2": "LEVEL2",
-      "3": "LEVEL3",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.6"
   },
-  "CS_BatteryHeatingStatus": {
+  {
     "DataTypeName": "CS_BatteryHeatingStatus",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: IDEL\r\n0x1: HEATING\r\n0xFF: UNKNOWN",
-    "version": "V1.2",
-    "tableValue": {
-      "0": "IDEL",
-      "1": "HEATING",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.2"
   },
-  "CS_BatteryInsulationStatus": {
+  {
     "DataTypeName": "CS_BatteryInsulationStatus",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: IDEL\r\n0x1: INSULATING\r\n0xFF: UNKNOWN",
-    "version": "V1.2",
-    "tableValue": {
-      "0": "IDEL",
-      "1": "INSULATING",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.2"
   },
-  "CS_BatterySOE": {
+  {
     "DataTypeName": "CS_BatterySOE",
     "DataTypeDescription": "电池SOE值",
     "DataTypeCategory": "Integer",
@@ -2474,10 +3143,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFFFFFF",
     "Unit": "Wh",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "ElecLockWorkMode": {
+  {
     "DataTypeName": "ElecLockWorkMode",
     "DataTypeDescription": "电子锁工作模式",
     "DataTypeCategory": "Struct",
@@ -2485,10 +3153,16 @@
     "MemberName": "AntiTheft",
     "MemberDescription": "设置防盗",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "ElecLockStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "LockUnlock",
+    "MemberDescription": "解锁电子锁",
+    "MemberDatatypeReference": "CS_LockUnlock",
+    "version": "V1.2"
+  },
+  {
     "DataTypeName": "ElecLockStatus",
     "DataTypeDescription": "电子锁状态",
     "DataTypeCategory": "Struct",
@@ -2496,10 +3170,23 @@
     "MemberName": "AntiTheft",
     "MemberDescription": "电子锁防盗状态",
     "MemberDatatypeReference": "CS_OnOffStatus",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "CS_ElecLockFltGuid": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "LockStatus",
+    "MemberDescription": "电子锁Lock/Unlock状态",
+    "MemberDatatypeReference": "CS_LockStatus",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "FaultPrompt",
+    "MemberDescription": "电子锁异常提示",
+    "MemberDatatypeReference": "CS_ElecLockFltGuid",
+    "version": "V1.2\r\nV1.42"
+  },
+  {
     "DataTypeName": "CS_ElecLockFltGuid",
     "DataTypeDescription": "0: 不显示\r\n1: 交流充电口电子锁未正常解锁，请手动解锁。\r\n2: 交流充电口电子锁未正常锁止，充电功率受限，请重试或联系经销商。\r\n3: 交流充电口电子锁未正常锁止，无法开启充电",
     "DataTypeCategory": "Integer",
@@ -2510,10 +3197,9 @@
     "PhysicalMax": 254,
     "InitialValue": 0,
     "InvalidValue": "0xFF",
-    "version": "V1.2",
-    "tableValue": null
+    "version": "V1.2"
   },
-  "PWTWorkPara": {
+  {
     "DataTypeName": "PWTWorkPara",
     "DataTypeDescription": "动力系统相关功能设置",
     "DataTypeCategory": "Struct",
@@ -2521,10 +3207,45 @@
     "MemberName": "DriveMode",
     "MemberDescription": "驾驶模式设置",
     "MemberDatatypeReference": "CS_DriveMode",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_DriveMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AccelerateMode",
+    "MemberDescription": "加速模式设置",
+    "MemberDatatypeReference": "CS_AccelerateMode",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "RegenerateLevel",
+    "MemberDescription": "设置能量回收等级",
+    "MemberDatatypeReference": "CS_RegerateLevel",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "WormSwitch",
+    "MemberDescription": "蠕行模式设置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "OnePadelMode",
+    "MemberDescription": "单踏板板模式设置",
+    "MemberDatatypeReference": "CS_OnePadelMode",
+    "version": "V1.6"
+  },
+  {
+    "DataTypeDescription": "1. 此开关关联账号系统，当有账号登录时，车机界面隐藏此开关，并且在账号登录后IVI发送三帧模式记忆开关开启、上次用户设置的加速模式、能量回收、车辆模式、EPS助力模式给到VCU。\r\n2. 当为Guest账号时，车机界面显示模式记忆开关，且出厂设置为关闭状态，每次上电恢复为节能模式；当用户选择将模式记忆开关开启后，每次上电IVI将记忆值发送3帧给VCU和EPS；",
+    "MemberPosition": 5,
+    "MemberName": "MemorySwitch",
+    "MemberDescription": "模式记忆开关设置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "CS_DriveMode",
     "DataTypeDescription": "驾驶模式",
     "DataTypeCategory": "Enumeration",
@@ -2532,23 +3253,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: SPORT\r\n0x2: COMFORT \r\n0x3: ECO\r\n0x4: SNOW\r\n0x5: MUD\r\n0x6: SAND\r\n0x7: WET\r\n0x9: SELF_ADAPTIVE\r\n0xA: EX_ENERGY_SAVING \r\n0xB: PERSONAL\r\n0xFF: UNKNOWN",
-    "version": "V1.1\r\nV1.42",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "SPORT",
-      "2": "COMFORT",
-      "3": "ECO",
-      "4": "SNOW",
-      "5": "MUD",
-      "6": "SAND",
-      "7": "WET",
-      "9": "SELF_ADAPTIVE",
-      "10": "EX_ENERGY_SAVING",
-      "11": "PERSONAL",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1\r\nV1.42"
   },
-  "CS_AccelerateMode": {
+  {
     "DataTypeName": "CS_AccelerateMode",
     "DataTypeDescription": "加速模式",
     "DataTypeCategory": "Enumeration",
@@ -2556,19 +3263,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: ECO\r\n0x2: COMFORT\r\n0x3: SPORT\r\n0x4: CATAPULT\r\n0x5: SNOW\r\n0x6: WET\r\n0xFF: UNKNOWN",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "ECO",
-      "2": "COMFORT",
-      "3": "SPORT",
-      "4": "CATAPULT",
-      "5": "SNOW",
-      "6": "WET",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3"
   },
-  "CS_RegerateLevel": {
+  {
     "DataTypeName": "CS_RegerateLevel",
     "DataTypeDescription": "能量回收等级",
     "DataTypeCategory": "Enumeration",
@@ -2576,19 +3273,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: LEVEL1\r\n0x3: LEVEL2 \r\n0x4: LEVEL3  \r\n0x5: LEVEL4 \r\n0x6: LEVEL5  \r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "LEVEL1",
-      "3": "LEVEL2",
-      "4": "LEVEL3",
-      "5": "LEVEL4",
-      "6": "LEVEL5",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "CS_OnePadelMode": {
+  {
     "DataTypeName": "CS_OnePadelMode",
     "DataTypeDescription": "单踏板模式",
     "DataTypeCategory": "Enumeration",
@@ -2596,17 +3283,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: ONE-PADEL_HOLD\r\n0x3: ONE-PADEL_WORM\r\n0x4: ONE_PADEL_STEER\r\n0xFF: UNKNOWN",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "ONE-PADEL_HOLD",
-      "3": "ONE-PADEL_WORM",
-      "4": "ONE_PADEL_STEER",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.6"
   },
-  "PWTWorkStatus": {
+  {
     "DataTypeName": "PWTWorkStatus",
     "DataTypeDescription": "动力系统相关功能工作状态",
     "DataTypeCategory": "Struct",
@@ -2614,10 +3293,37 @@
     "MemberName": "DriveMode",
     "MemberDescription": "车辆实际的驾驶模式",
     "MemberDatatypeReference": "CS_DriveMode",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "PWTExceptionStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AccelerateMode",
+    "MemberDescription": "车辆实际的加速模式",
+    "MemberDatatypeReference": "CS_AccelerateMode",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "RegenerateLevel",
+    "MemberDescription": "车辆实际能量回收等级",
+    "MemberDatatypeReference": "CS_RegerateLevel",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "WormStatus",
+    "MemberDescription": "车辆蠕行状态",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.42"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "OnePadelMode",
+    "MemberDescription": "单踏板板模式设置",
+    "MemberDatatypeReference": "CS_OnePadelMode",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "PWTExceptionStatus",
     "DataTypeDescription": "动力系统异常状态",
     "DataTypeCategory": "Struct",
@@ -2625,10 +3331,16 @@
     "MemberName": "DriveModeSwitchFailureInd",
     "MemberDescription": "驾驶模式切换结果状态",
     "MemberDatatypeReference": "CS_DriveModeSwitchFailureInd",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "CS_DriveModeSwitchFailureInd": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "OnePadelSwitchFailureInd",
+    "MemberDescription": "单踏板切换结果状态",
+    "MemberDatatypeReference": "CS_OnePadelSwitchFailureInd",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "CS_DriveModeSwitchFailureInd",
     "DataTypeDescription": "驾驶模式切换失败指示",
     "DataTypeCategory": "Enumeration",
@@ -2636,20 +3348,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_INDICATION\r\n0x1: DOOR_NOT_CLOSE\r\n0x2: VEHICLE_STEERING\r\n0x3: SPEED_TOO_HIGH\r\n0x4: MODE_SWITCH_FORBIDDEN\r\n0x5: PARTIAL_MODE_SWITCH_FAILED\r\n0x6: ENTER_LAUNCH_FAILED\r\n0x7: IN_ADS_MODE\r\n0xFF: INVALID",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NO_INDICATION",
-      "1": "DOOR_NOT_CLOSE",
-      "2": "VEHICLE_STEERING",
-      "3": "SPEED_TOO_HIGH",
-      "4": "MODE_SWITCH_FORBIDDEN",
-      "5": "PARTIAL_MODE_SWITCH_FAILED",
-      "6": "ENTER_LAUNCH_FAILED",
-      "7": "IN_ADS_MODE",
-      "255": "INVALID"
-    }
+    "version": "V1.6"
   },
-  "CS_OnePadelSwitchFailureInd": {
+  {
     "DataTypeName": "CS_OnePadelSwitchFailureInd",
     "DataTypeDescription": "单踏板切换结果状态",
     "DataTypeCategory": "Enumeration",
@@ -2657,14 +3358,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_INDICATION\r\n0x1: SWITCH_FORBIDDEN_WHEN_UNPARK\r\n0x2: ENTER_LAUNCH_FAILED",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NO_INDICATION",
-      "1": "SWITCH_FORBIDDEN_WHEN_UNPARK",
-      "2": "ENTER_LAUNCH_FAILED"
-    }
+    "version": "V1.6"
   },
-  "CHSWorkPara": {
+  {
     "DataTypeName": "CHSWorkPara",
     "DataTypeDescription": "底盘系统相关功能配置参数",
     "DataTypeCategory": "Struct",
@@ -2672,10 +3368,65 @@
     "MemberName": "iBoosterMode",
     "MemberDescription": "iBooster助力模式",
     "MemberDatatypeReference": "CS_iBoosterMode",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_iBoosterMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AVHSwitch",
+    "MemberDescription": "自动驻车开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "HDCSwitch",
+    "MemberDescription": "HDC开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "EPSMode",
+    "MemberDescription": "EPS助力模式",
+    "MemberDatatypeReference": "CS_EPSMode",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "ESCSwitch",
+    "MemberDescription": "ESC功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "EPBSw",
+    "MemberDescription": "EPB开关设置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 6,
+    "MemberName": "CSTSw",
+    "MemberDescription": "舒适制动开关设置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 7,
+    "MemberName": "SuspensionMode",
+    "MemberDescription": "悬架减震器模式设置",
+    "MemberDatatypeReference": "CS_SuspensionMode",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 8,
+    "MemberName": "SuspensionHight",
+    "MemberDescription": "悬架空气弹簧高度调节",
+    "MemberDatatypeReference": "CS_SuspensionHeight",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "CS_iBoosterMode",
     "DataTypeDescription": "iBooster模式",
     "DataTypeCategory": "Enumeration",
@@ -2683,15 +3434,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: COMFORT\r\n0x2: SPORT\r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "COMFORT",
-      "2": "SPORT",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "CS_EPSMode": {
+  {
     "DataTypeName": "CS_EPSMode",
     "DataTypeDescription": "EPS模式",
     "DataTypeCategory": "Enumeration",
@@ -2699,16 +3444,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: STANDARD\r\n0x2: COMFORT\r\n0x3: SPORT\r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "STANDARD",
-      "2": "COMFORT",
-      "3": "SPORT",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "CS_SuspensionMode": {
+  {
     "DataTypeName": "CS_SuspensionMode",
     "DataTypeDescription": "悬架模式",
     "DataTypeCategory": "Enumeration",
@@ -2716,16 +3454,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: COMFORT\r\n0x2: NORMAL\r\n0x3: SPORT\r\n0xFF: UNKNOWN",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "COMFORT",
-      "2": "NORMAL",
-      "3": "SPORT",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3"
   },
-  "CS_SuspensionHeight": {
+  {
     "DataTypeName": "CS_SuspensionHeight",
     "DataTypeDescription": "高度调节",
     "DataTypeCategory": "Enumeration",
@@ -2733,18 +3464,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: HIGHTEST\r\n0x2: HIGH\r\n0x3: MIDDLE\r\n0x4: LOW\r\n0x5: LOWEST\r\n0xFF: UNKNOWN",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "HIGHTEST",
-      "2": "HIGH",
-      "3": "MIDDLE",
-      "4": "LOW",
-      "5": "LOWEST",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3"
   },
-  "CHSWorkStatus": {
+  {
     "DataTypeName": "CHSWorkStatus",
     "DataTypeDescription": "底盘系统功能功能工作状态",
     "DataTypeCategory": "Struct",
@@ -2752,10 +3474,65 @@
     "MemberName": "iBoosterMode",
     "MemberDescription": "车辆工作的iBooster助力模式",
     "MemberDatatypeReference": "CS_iBoosterMode",
-    "version": "V1.41",
-    "tableValue": null
+    "version": "V1.41"
   },
-  "CS_AVHStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AVHStatus",
+    "MemberDescription": "自动驻车状态",
+    "MemberDatatypeReference": "CS_AVHStatus",
+    "version": "V1.65"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "HDCStatus",
+    "MemberDescription": "HDC状态",
+    "MemberDatatypeReference": "CS_HDCStatus",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "EPSMode",
+    "MemberDescription": "车辆实际生效的EPS助力模式",
+    "MemberDatatypeReference": "CS_EPSMode",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "ESCSwitch",
+    "MemberDescription": "车辆实际生效的ESC功能开关",
+    "MemberDatatypeReference": "CS_OnOffStatus",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "EPBStatus",
+    "MemberDescription": "EPB状态",
+    "MemberDatatypeReference": "CS_EPBStatus",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 6,
+    "MemberName": "CSTStatus",
+    "MemberDescription": "舒适制动状态",
+    "MemberDatatypeReference": "CS_CSTStatus",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 7,
+    "MemberName": "SuspensionMode",
+    "MemberDescription": "车辆实际生效的悬架模式",
+    "MemberDatatypeReference": "CS_SuspensionMode",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 8,
+    "MemberName": "SuspensionHight",
+    "MemberDescription": "车辆的悬架高度状态",
+    "MemberDatatypeReference": "CS_SuspensionHeight",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "CS_AVHStatus",
     "DataTypeDescription": "自动驻车状态",
     "DataTypeCategory": "Enumeration",
@@ -2763,15 +3540,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: STANDBY\r\n0x2: ACTIVE\r\n0xFF: UNKNOWN",
-    "version": "V1.65",
-    "tableValue": {
-      "0": "OFF",
-      "1": "STANDBY",
-      "2": "ACTIVE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.65"
   },
-  "CS_HDCStatus": {
+  {
     "DataTypeName": "CS_HDCStatus",
     "DataTypeDescription": "HDC状态",
     "DataTypeCategory": "Enumeration",
@@ -2779,15 +3550,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: STANDBY\r\n0x2: ACTIVE\r\n0xFF: UNKNOWN",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "OFF",
-      "1": "STANDBY",
-      "2": "ACTIVE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3"
   },
-  "CS_EPBStatus": {
+  {
     "DataTypeName": "CS_EPBStatus",
     "DataTypeDescription": "EPB状态",
     "DataTypeCategory": "Enumeration",
@@ -2799,19 +3564,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: APPLIED\r\n0x1: RELEASED\r\n0x2: APPLYING\r\n0x3: RELEASING\r\n0x4: HOLD_APPLIED\r\n0x5: COMPLETELY_RELEASED\r\n0x6: HAP_PREPARED\r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "APPLIED",
-      "1": "RELEASED",
-      "2": "APPLYING",
-      "3": "RELEASING",
-      "4": "HOLD_APPLIED",
-      "5": "COMPLETELY_RELEASED",
-      "6": "HAP_PREPARED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "CS_CSTStatus": {
+  {
     "DataTypeName": "CS_CSTStatus",
     "DataTypeDescription": "舒适制动状态",
     "DataTypeCategory": "Enumeration",
@@ -2819,16 +3574,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: STANDBY\r\n0x2: ACTIVE\r\n0x3: FAILURE\r\n0xFF: UNKNOWN",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "OFF",
-      "1": "STANDBY",
-      "2": "ACTIVE",
-      "3": "FAILURE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3"
   },
-  "VehBaseDriveInfo": {
+  {
     "DataTypeName": "VehBaseDriveInfo",
     "DataTypeDescription": "车辆基础驾驶状态信息",
     "DataTypeCategory": "Struct",
@@ -2836,10 +3584,44 @@
     "MemberName": "VehSpeed",
     "MemberDescription": "车速信息",
     "MemberDatatypeReference": "CS_VehSpeed",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_VehSpeed": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "VehGear",
+    "MemberDescription": "档位信息",
+    "MemberDatatypeReference": "CS_Gear",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "BrakePedalStatus",
+    "MemberDescription": "制动踏板状态",
+    "MemberDatatypeReference": "PedalStatus",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "AccPedalStatus",
+    "MemberDescription": "加速踏板状态",
+    "MemberDatatypeReference": "PedalStatus",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "SteerWhlAngle",
+    "MemberDescription": "方向盘转向角度",
+    "MemberDatatypeReference": "CS_SteerAngle",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "SteerWhlAngleSpd",
+    "MemberDescription": "方向盘转向角速度",
+    "MemberDatatypeReference": "CS_SteerAngleSpeed",
+    "version": "V1.3"
+  },
+  {
     "DataTypeName": "CS_VehSpeed",
     "DataTypeCategory": "Integer",
     "BaseDatatype": "uint32",
@@ -2850,10 +3632,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFFFFFF",
     "Unit": "km/h",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_Gear": {
+  {
     "DataTypeName": "CS_Gear",
     "DataTypeDescription": "档位定义",
     "DataTypeCategory": "Enumeration",
@@ -2861,16 +3642,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: PARK\r\n0x1: REVERSE\r\n0x2: NEUTRAL\r\n0x3: DRIVE\r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "PARK",
-      "1": "REVERSE",
-      "2": "NEUTRAL",
-      "3": "DRIVE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "PedalStatus": {
+  {
     "DataTypeName": "PedalStatus",
     "DataTypeDescription": "制动/加速踏板状态",
     "DataTypeCategory": "Struct",
@@ -2878,10 +3652,16 @@
     "MemberName": "PedalSwitch",
     "MemberDescription": "制动踏板状态",
     "MemberDatatypeReference": "CS_PedalSwitch",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_PedalSwitch": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "PedalPosition",
+    "MemberDescription": "制动踏板开度",
+    "MemberDatatypeReference": "CS_PedalPos",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "CS_PedalSwitch",
     "DataTypeDescription": "踏板踩踏状态",
     "DataTypeCategory": "Enumeration",
@@ -2889,14 +3669,9 @@
     "InitialValue": 255,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: RELEASED\r\n0x1: PUSH_DOWN\r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "RELEASED",
-      "1": "PUSH_DOWN",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "CS_PedalPos": {
+  {
     "DataTypeName": "CS_PedalPos",
     "DataTypeDescription": "踏板开度",
     "DataTypeCategory": "Integer",
@@ -2908,10 +3683,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "%",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_SteerAngle": {
+  {
     "DataTypeName": "CS_SteerAngle",
     "DataTypeDescription": "方向盘转向角度",
     "DataTypeCategory": "Integer",
@@ -2923,10 +3697,9 @@
     "InitialValue": 0,
     "InvalidValue": 0,
     "Unit": "deg",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "CS_SteerAngleSpeed": {
+  {
     "DataTypeName": "CS_SteerAngleSpeed",
     "DataTypeDescription": "方向盘转向角速度",
     "DataTypeCategory": "Integer",
@@ -2938,10 +3711,9 @@
     "InitialValue": 0,
     "InvalidValue": 0,
     "Unit": "deg/s",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "ReevWorkPara": {
+  {
     "DataTypeName": "ReevWorkPara",
     "DataTypeDescription": "增程车工作参数配置",
     "DataTypeCategory": "Struct",
@@ -2949,10 +3721,30 @@
     "MemberName": "FuelDetect",
     "MemberDescription": "燃油检测相关配置",
     "MemberDatatypeReference": "FuelDetect",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "FuelDetect": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "FuelCharge",
+    "MemberDescription": "驻车发电功能配置",
+    "MemberDatatypeReference": "FuelCharge",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "VehDriveMode",
+    "MemberDescription": "车辆驱动模式",
+    "MemberDatatypeReference": "CS_VehDriveMode",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "ReevHeat",
+    "MemberDescription": "增程辅热配置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "FuelDetect",
     "DataTypeDescription": "燃油检测功能配置",
     "DataTypeCategory": "Struct",
@@ -2960,25 +3752,25 @@
     "MemberName": "DetectSwitch",
     "MemberDescription": "检测开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_FuelDetectIdlingMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "DetectIdlingMode",
+    "MemberDescription": "检测模式",
+    "MemberDatatypeReference": "CS_FuelDetectIdlingMode",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "CS_FuelDetectIdlingMode",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: HIGH_IDLE_SPEED\r\n0x2: LOW_IDLE_SPEED\r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "HIGH_IDLE_SPEED",
-      "2": "LOW_IDLE_SPEED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "FuelCharge": {
+  {
     "DataTypeName": "FuelCharge",
     "DataTypeDescription": "驻车发电功能配置",
     "DataTypeCategory": "Struct",
@@ -2986,26 +3778,25 @@
     "MemberName": "FuelChargeSwitch",
     "MemberDescription": "功能开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_FuelChargeMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "FuelChargeMode",
+    "MemberDescription": "驻车发电模式",
+    "MemberDatatypeReference": "CS_FuelChargeMode",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "CS_FuelChargeMode",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: HIGH_LEVEL\r\n0x2: MIDDLE_LEVEL\r\n0x3: LOW_LEVEL\r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "HIGH_LEVEL",
-      "2": "MIDDLE_LEVEL",
-      "3": "LOW_LEVEL",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "CS_VehDriveMode": {
+  {
     "DataTypeName": "CS_VehDriveMode",
     "DataTypeDescription": "车辆驱动模式",
     "DataTypeCategory": "Enumeration",
@@ -3013,19 +3804,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: ELECTRIC_ONLY\r\n0x2: ELECTRIC_PREFERRED\r\n0x3: AUTO\r\n0x4: FUEL_PREFERRED_STANDARDLY\r\n0x5: FULE_PREFERRED_EFFICIENT\r\n0x6: DEFAULT\r\n0xFF: UNKNOWN",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "ELECTRIC_ONLY",
-      "2": "ELECTRIC_PREFERRED",
-      "3": "AUTO",
-      "4": "FUEL_PREFERRED_STANDARDLY",
-      "5": "FULE_PREFERRED_EFFICIENT",
-      "6": "DEFAULT",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.1"
   },
-  "ReevStatus": {
+  {
     "DataTypeName": "ReevStatus",
     "DataTypeDescription": "增程车相关状态定义",
     "DataTypeCategory": "Struct",
@@ -3033,10 +3814,44 @@
     "MemberName": "RangeExtenderStatus",
     "MemberDescription": "增程器状态",
     "MemberDatatypeReference": "CS_RangeExtenderStatus",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_FuelDetectStatus": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "EngineSpeed",
+    "MemberDescription": "发动机转速",
+    "MemberDatatypeReference": "CS_EngineSpeed",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "FuelDetectStatus",
+    "MemberDescription": "燃油检测状态",
+    "MemberDatatypeReference": "CS_FuelDetectStatus",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "FuelChargeStatus",
+    "MemberDescription": "驻车发电状态",
+    "MemberDatatypeReference": "CS_FuelChargeStatus",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "VehDriveStatus",
+    "MemberDescription": "车辆驱动实际模式",
+    "MemberDatatypeReference": "CS_VehDriveStatus",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "EngineHeatStatus",
+    "MemberDescription": "增程辅热状态",
+    "MemberDatatypeReference": "CS_EngineHeatStatus",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "CS_FuelDetectStatus",
     "DataTypeDescription": "燃油检测状态",
     "DataTypeCategory": "Enumeration",
@@ -3044,15 +3859,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: HIGH_IDLE_SPEED\r\n0x2: LOW_IDLE_SPEED\r\n0xFF: UNKNOWN",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "OFF",
-      "1": "HIGH_IDLE_SPEED",
-      "2": "LOW_IDLE_SPEED",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.6"
   },
-  "CS_FuelChargeStatus": {
+  {
     "DataTypeName": "CS_FuelChargeStatus",
     "DataTypeDescription": "驻车发电状态",
     "DataTypeCategory": "Enumeration",
@@ -3060,15 +3869,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: HIGH_LEVEL\r\n0x2: MIDDLE_LEVEL\r\n0x3: LOW_LEVEL",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "OFF",
-      "1": "HIGH_LEVEL",
-      "2": "MIDDLE_LEVEL",
-      "3": "LOW_LEVEL"
-    }
+    "version": "V1.6"
   },
-  "CS_VehDriveStatus": {
+  {
     "DataTypeName": "CS_VehDriveStatus",
     "DataTypeDescription": "车辆驱动实际模式",
     "DataTypeCategory": "Enumeration",
@@ -3076,16 +3879,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: ELECTRIC_ONLY\r\n0x1: ELECTRIC_PREFERRED\r\n0x2: AUTO\r\n0x3: FUEL_PREFERRED_STANDARDLY\r\n0x4: FULE_PREFERRED_EFFICIENT",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "ELECTRIC_ONLY",
-      "1": "ELECTRIC_PREFERRED",
-      "2": "AUTO",
-      "3": "FUEL_PREFERRED_STANDARDLY",
-      "4": "FULE_PREFERRED_EFFICIENT"
-    }
+    "version": "V1.6"
   },
-  "CS_EngineHeatStatus": {
+  {
     "DataTypeName": "CS_EngineHeatStatus",
     "DataTypeDescription": "增程辅热状态：\r\nOFF: 增程辅热开关OFF\r\nSTANDBY: 增程辅热开关ON，功能OFF\r\nRUNNING: 增程辅热开关ON，功能ON",
     "DataTypeCategory": "Enumeration",
@@ -3093,14 +3889,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: OFF\r\n0x1: STANDBY\r\n0x2: RUNNING",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "OFF",
-      "1": "STANDBY",
-      "2": "RUNNING"
-    }
+    "version": "V1.6"
   },
-  "ReevExceptionStatus": {
+  {
     "DataTypeName": "ReevExceptionStatus",
     "DataTypeDescription": "增程车异常状态定义",
     "DataTypeCategory": "Struct",
@@ -3108,10 +3899,23 @@
     "MemberName": "FuelDetectSwitchFailureInd",
     "MemberDescription": "燃油检测切换失败状态反馈",
     "MemberDatatypeReference": "CS_FuelDetectSwitchFailureInd",
-    "version": "V1.6",
-    "tableValue": null
+    "version": "V1.6"
   },
-  "CS_FuelDetectSwitchFailureInd": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "FuelChargeSwitchFailureInd",
+    "MemberDescription": "驻车发电切换失败状态反馈",
+    "MemberDatatypeReference": "CS_FuelChargeSwitchFailureInd",
+    "version": "V1.6"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "VehDriveSwitchFailureInd",
+    "MemberDescription": "车辆驱动实际模式切换失败反馈",
+    "MemberDatatypeReference": "CS_VehDriveSwitchFailureInd",
+    "version": "V1.6"
+  },
+  {
     "DataTypeName": "CS_FuelDetectSwitchFailureInd",
     "DataTypeDescription": "燃油检测切换失败状态反馈",
     "DataTypeCategory": "Enumeration",
@@ -3119,14 +3923,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_INDICATION\r\n0x1: ELECTRIC_TOO_HIGH\r\n0x2: VEHICLE_NOT_IN_P_AND_N_GEAR",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NO_INDICATION",
-      "1": "ELECTRIC_TOO_HIGH",
-      "2": "VEHICLE_NOT_IN_P_AND_N_GEAR"
-    }
+    "version": "V1.6"
   },
-  "CS_FuelChargeSwitchFailureInd": {
+  {
     "DataTypeName": "CS_FuelChargeSwitchFailureInd",
     "DataTypeDescription": "驻车发电切换失败状态反馈",
     "DataTypeCategory": "Enumeration",
@@ -3134,14 +3933,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_INDICATION\r\n0x1: ELECTRIC_TOO_HIGH\r\n0x2: VEHICLE_NOT_IN_P_AND_N_GEAR",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NO_INDICATION",
-      "1": "ELECTRIC_TOO_HIGH",
-      "2": "VEHICLE_NOT_IN_P_AND_N_GEAR"
-    }
+    "version": "V1.6"
   },
-  "CS_VehDriveSwitchFailureInd": {
+  {
     "DataTypeName": "CS_VehDriveSwitchFailureInd",
     "DataTypeDescription": "车辆驱动实际模式切换失败反馈",
     "DataTypeCategory": "Enumeration",
@@ -3149,26 +3943,18 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_INDICATION\r\n0x1: ELECTRIC_TOO_LOW",
-    "version": "V1.6",
-    "tableValue": {
-      "0": "NO_INDICATION",
-      "1": "ELECTRIC_TOO_LOW"
-    }
+    "version": "V1.6"
   },
-  "CS_RangeExtenderStatus": {
+  {
     "DataTypeName": "CS_RangeExtenderStatus",
     "DataTypeCategory": "Enumeration",
     "BaseDatatype": "uint8",
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NORMAL\r\n0x1: ABNORMAL",
-    "version": "V1.1",
-    "tableValue": {
-      "0": "NORMAL",
-      "1": "ABNORMAL"
-    }
+    "version": "V1.1"
   },
-  "CS_EngineSpeed": {
+  {
     "DataTypeName": "CS_EngineSpeed",
     "DataTypeDescription": "发动机转速",
     "DataTypeCategory": "Integer",
@@ -3179,10 +3965,9 @@
     "PhysicalMax": 65534,
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "TripResetCmd": {
+  {
     "DataTypeName": "TripResetCmd",
     "DataTypeDescription": "bit0: 重置当前驾驶循环里程\r\nbit1: 重置TripA里程\r\nbit2: 重置TripB里程\r\nbit3: 重置上次充电后里程",
     "DataTypeCategory": "Integer",
@@ -3193,10 +3978,9 @@
     "PhysicalMax": 254,
     "InitialValue": 0,
     "InvalidValue": 255,
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "StatsMileage": {
+  {
     "DataTypeName": "StatsMileage",
     "DataTypeDescription": "里程统计信息",
     "DataTypeCategory": "Struct",
@@ -3204,10 +3988,37 @@
     "MemberName": "TotalMileage",
     "MemberDescription": "总里程信息",
     "MemberDatatypeReference": "CS_Mileage",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_Mileage": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "CurrentMileage",
+    "MemberDescription": "当前驾驶循环里程",
+    "MemberDatatypeReference": "StatsMileageInfo",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "TripAMileage",
+    "MemberDescription": "TripA小计里程",
+    "MemberDatatypeReference": "StatsMileageInfo",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "TripBMileage",
+    "MemberDescription": "TripB小计里程",
+    "MemberDatatypeReference": "StatsMileageInfo",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "LastChargeMileage",
+    "MemberDescription": "自上次充电的里程",
+    "MemberDatatypeReference": "StatsMileageInfo",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "CS_Mileage",
     "DataTypeDescription": "里程信息",
     "DataTypeCategory": "Integer",
@@ -3219,10 +4030,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFFFF",
     "Unit": "km",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "StatsMileageInfo": {
+  {
     "DataTypeName": "StatsMileageInfo",
     "DataTypeDescription": "里程统计信息",
     "DataTypeCategory": "Struct",
@@ -3230,10 +4040,23 @@
     "MemberName": "TotalTripInfo",
     "MemberDescription": "行程总行驶统计信息",
     "MemberDatatypeReference": "TotalTripInfo",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "TotalTripInfo": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "ElecTripInfo",
+    "MemberDescription": "行程电行驶统计信息",
+    "MemberDatatypeReference": "ElecTripInfo",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "FuelTripInfo",
+    "MemberDescription": "行程油行驶统计信息",
+    "MemberDatatypeReference": "FuelTripInfo",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "TotalTripInfo",
     "DataTypeDescription": "行程总行驶信息",
     "DataTypeCategory": "Struct",
@@ -3241,10 +4064,23 @@
     "MemberName": "Distance",
     "MemberDescription": "行驶距离",
     "MemberDatatypeReference": "CS_Mileage",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_TripTimeLength": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "TimeLenth",
+    "MemberDescription": "行驶时长",
+    "MemberDatatypeReference": "CS_TripTimeLength",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AveSpeed",
+    "MemberDescription": "平均速度",
+    "MemberDatatypeReference": "CS_DriveSpeed",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "CS_TripTimeLength",
     "DataTypeDescription": "行驶时长",
     "DataTypeCategory": "Integer",
@@ -3256,10 +4092,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "Min",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_DriveSpeed": {
+  {
     "DataTypeName": "CS_DriveSpeed",
     "DataTypeDescription": "行驶速度",
     "DataTypeCategory": "Integer",
@@ -3271,10 +4106,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "KPH",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "ElecTripInfo": {
+  {
     "DataTypeName": "ElecTripInfo",
     "DataTypeDescription": "行程电行驶信息",
     "DataTypeCategory": "Struct",
@@ -3282,10 +4116,30 @@
     "MemberName": "Distance",
     "MemberDescription": "行驶距离",
     "MemberDatatypeReference": "CS_Mileage",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_ElecConsumption": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "TimeLenth",
+    "MemberDescription": "行驶时长",
+    "MemberDatatypeReference": "CS_TripTimeLength",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "Consumption",
+    "MemberDescription": "耗电量",
+    "MemberDatatypeReference": "CS_ElecConsumption",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "AveConsumption",
+    "MemberDescription": "平均电耗",
+    "MemberDatatypeReference": "CS_AveElecConsumption",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "CS_ElecConsumption",
     "DataTypeDescription": "耗电量",
     "DataTypeCategory": "Integer",
@@ -3297,10 +4151,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "KWH",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_AveElecConsumption": {
+  {
     "DataTypeName": "CS_AveElecConsumption",
     "DataTypeDescription": "平均耗电量",
     "DataTypeCategory": "Integer",
@@ -3312,10 +4165,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "KWH/100Km",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "FuelTripInfo": {
+  {
     "DataTypeName": "FuelTripInfo",
     "DataTypeDescription": "行程燃油行驶信息",
     "DataTypeCategory": "Struct",
@@ -3323,10 +4175,30 @@
     "MemberName": "Distance",
     "MemberDescription": "行驶距离",
     "MemberDatatypeReference": "CS_Mileage",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_FuelConsumption": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "TimeLenth",
+    "MemberDescription": "行驶时长",
+    "MemberDatatypeReference": "CS_TripTimeLength",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "Consumption",
+    "MemberDescription": "耗油量",
+    "MemberDatatypeReference": "CS_FuelConsumption",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "AveConsumption",
+    "MemberDescription": "平均油耗",
+    "MemberDatatypeReference": "CS_AveFuelConsumption",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "CS_FuelConsumption",
     "DataTypeDescription": "耗油量",
     "DataTypeCategory": "Integer",
@@ -3338,10 +4210,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "L",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_AveFuelConsumption": {
+  {
     "DataTypeName": "CS_AveFuelConsumption",
     "DataTypeDescription": "平均油耗",
     "DataTypeCategory": "Integer",
@@ -3353,10 +4224,9 @@
     "InitialValue": 0,
     "InvalidValue": "0xFFFF",
     "Unit": "L/100Km",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "EdrMileage": {
+  {
     "DataTypeName": "EdrMileage",
     "DataTypeDescription": "续航里程",
     "DataTypeCategory": "Struct",
@@ -3364,10 +4234,44 @@
     "MemberName": "StandardMileage",
     "MemberDescription": "标准工况总续航里程",
     "MemberDatatypeReference": "CS_Mileage",
-    "version": "V1.1",
-    "tableValue": null
+    "version": "V1.1"
   },
-  "CS_SteerWheelHeatingLevel": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "StandardElecMileage",
+    "MemberDescription": "标准工况电续航里程",
+    "MemberDatatypeReference": "CS_Mileage",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "StandardFuelMileage",
+    "MemberDescription": "标准工况油续航里程",
+    "MemberDatatypeReference": "CS_Mileage",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "CompositeMileage",
+    "MemberDescription": "综合工况总续航里程",
+    "MemberDatatypeReference": "CS_Mileage",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "CompositeElecMileage",
+    "MemberDescription": "综合工况电续航里程",
+    "MemberDatatypeReference": "CS_Mileage",
+    "version": "V1.1"
+  },
+  {
+    "MemberPosition": 5,
+    "MemberName": "CompositeFuelMileage",
+    "MemberDescription": "综合工况油续航里程",
+    "MemberDatatypeReference": "CS_Mileage",
+    "version": "V1.1"
+  },
+  {
     "DataTypeName": "CS_SteerWheelHeatingLevel",
     "DataTypeDescription": "方向盘加热等级",
     "DataTypeCategory": "Enumeration",
@@ -3375,17 +4279,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST\r\n0x1: OFF\r\n0x2: LEVEL1\r\n0x3: LEVEL2\r\n0x4: LEVEL3\r\n0xFF: UNKNOWN",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "OFF",
-      "2": "LEVEL1",
-      "3": "LEVEL2",
-      "4": "LEVEL3",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.3"
   },
-  "SteerWheelStatus": {
+  {
     "DataTypeName": "SteerWheelStatus",
     "DataTypeDescription": "方向盘工作状态",
     "DataTypeCategory": "Struct",
@@ -3393,10 +4289,9 @@
     "MemberName": "HeatingStatus",
     "MemberDescription": "加热功能工作状态",
     "MemberDatatypeReference": "CS_SteerWheelHeatingLevel",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "VehAntithftStatus": {
+  {
     "DataTypeName": "VehAntithftStatus",
     "DataTypeDescription": "车辆防盗状态",
     "DataTypeCategory": "Struct",
@@ -3404,10 +4299,23 @@
     "MemberName": "AntithftSts",
     "MemberDescription": "防盗状态",
     "MemberDatatypeReference": "CS_AntithftSts",
-    "version": "V1.5",
-    "tableValue": null
+    "version": "V1.5"
   },
-  "CS_AntithftSts": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "AlrmTrigSts",
+    "MemberDescription": "报警触发状态",
+    "MemberDatatypeReference": "CS_AlrmTrigSts",
+    "version": "V1.5"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "AntithSysSts",
+    "MemberDescription": "防盗系统状态",
+    "MemberDatatypeReference": "CS_AntithSysSts",
+    "version": "V1.5"
+  },
+  {
     "DataTypeName": "CS_AntithftSts",
     "DataTypeDescription": "防盗状态",
     "DataTypeCategory": "Enumeration",
@@ -3415,17 +4323,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: UNSET\r\n0x1: SET\r\n0x2: PART_SET\r\n0x3: ALARM\r\n0x4: PRE_SET\r\n0xFF: UNKNOWN",
-    "version": "V1.5",
-    "tableValue": {
-      "0": "UNSET",
-      "1": "SET",
-      "2": "PART_SET",
-      "3": "ALARM",
-      "4": "PRE_SET",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.5"
   },
-  "CS_AlrmTrigSts": {
+  {
     "DataTypeName": "CS_AlrmTrigSts",
     "DataTypeDescription": "报警触发状态",
     "DataTypeCategory": "Enumeration",
@@ -3433,14 +4333,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: INACTIVE\r\n0x1: ACTIVE\r\n0xFF: UNKNOWN",
-    "version": "V1.5",
-    "tableValue": {
-      "0": "INACTIVE",
-      "1": "ACTIVE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.5"
   },
-  "CS_AntithSysSts": {
+  {
     "DataTypeName": "CS_AntithSysSts",
     "DataTypeDescription": "防盗系统状态",
     "DataTypeCategory": "Enumeration",
@@ -3448,14 +4343,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NORMAL\r\n0x1: FAILURE\r\n0xFF: UNKNOWN",
-    "version": "V1.5",
-    "tableValue": {
-      "0": "NORMAL",
-      "1": "FAILURE",
-      "255": "UNKNOWN"
-    }
+    "version": "V1.5"
   },
-  "GuidHomeFuncPara": {
+  {
     "DataTypeName": "GuidHomeFuncPara",
     "DataTypeDescription": "伴我回家功能参数配置",
     "DataTypeCategory": "Struct",
@@ -3463,10 +4353,9 @@
     "MemberName": "BeamDelayClose",
     "MemberDescription": "伴我回家大灯延迟关闭",
     "MemberDatatypeReference": "APP_BeamDelayCloseTime",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "APP_BeamDelayCloseTime": {
+  {
     "DataTypeName": "APP_BeamDelayCloseTime",
     "DataTypeDescription": "大灯延时关闭时间\r\n0表示功能关闭",
     "DataTypeCategory": "Integer",
@@ -3478,10 +4367,9 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "Unit": "s",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "GreetGuestFuncPara": {
+  {
     "DataTypeName": "GreetGuestFuncPara",
     "DataTypeDescription": "迎宾功能参数配置",
     "DataTypeCategory": "Struct",
@@ -3489,10 +4377,16 @@
     "MemberName": "Switch",
     "MemberDescription": "功能开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
   },
-  "SmartLightFuncPara": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "SeatBackPos",
+    "MemberDescription": "座椅后退的位置",
+    "MemberDatatypeReference": "CS_Percent",
+    "version": "V1.0"
+  },
+  {
     "DataTypeName": "SmartLightFuncPara",
     "DataTypeDescription": "智能灯控应用参数",
     "DataTypeCategory": "Struct",
@@ -3500,10 +4394,9 @@
     "MemberName": "AutoHighBeamSw",
     "MemberDescription": "智能大灯开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "SmartDoorWinFuncPara": {
+  {
     "DataTypeName": "SmartDoorWinFuncPara",
     "DataTypeDescription": "智能锁门关窗应用配置参数",
     "DataTypeCategory": "Struct",
@@ -3511,10 +4404,37 @@
     "MemberName": "LockForSpeed",
     "MemberDescription": "车身上锁。根据车速自动上锁功能配置开关",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.3",
-    "tableValue": null
+    "version": "V1.3"
   },
-  "CS_TelectrlUnlockMode": {
+  {
+    "MemberPosition": 1,
+    "MemberName": "UnlockForStalled",
+    "MemberDescription": "车辆熄火自动解锁功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 2,
+    "MemberName": "WinCloseForLock",
+    "MemberDescription": "车辆闭锁自动关窗功能开关",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 3,
+    "MemberName": "TelectrlUnlockMode",
+    "MemberDescription": "遥控解锁车辆模式",
+    "MemberDatatypeReference": "CS_TelectrlUnlockMode",
+    "version": "V1.3"
+  },
+  {
+    "MemberPosition": 4,
+    "MemberName": "PollingFuncCfg",
+    "MemberDescription": "Polling功能配置",
+    "MemberDatatypeReference": "PollingFuncCfg",
+    "version": "V1.41"
+  },
+  {
     "DataTypeName": "CS_TelectrlUnlockMode",
     "DataTypeDescription": "遥控解锁车门模式",
     "DataTypeCategory": "Enumeration",
@@ -3522,21 +4442,22 @@
     "InitialValue": 0,
     "InvalidValue": 255,
     "DiscreteValueDefination": "0x0: NO_REQUEST \r\n0x1: DOOR_DRIVER\r\n0x2: DOOR_ALL",
-    "version": "V1.3",
-    "tableValue": {
-      "0": "NO_REQUEST",
-      "1": "DOOR_DRIVER",
-      "2": "DOOR_ALL"
-    }
+    "version": "V1.3"
   },
-  "PollingFuncCfg": {
+  {
     "DataTypeName": "PollingFuncCfg",
     "DataTypeCategory": "Struct",
     "MemberPosition": 0,
     "MemberName": "ApproachingUnlockSw",
     "MemberDescription": "靠近自动解锁功能配置",
     "MemberDatatypeReference": "CS_OnOffCmd",
-    "version": "V1.0",
-    "tableValue": null
+    "version": "V1.0"
+  },
+  {
+    "MemberPosition": 1,
+    "MemberName": "AwayLockSw",
+    "MemberDescription": "离开自动闭锁功能配置",
+    "MemberDatatypeReference": "CS_OnOffCmd",
+    "version": "V1.0"
   }
-}
+]

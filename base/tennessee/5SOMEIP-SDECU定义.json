@@ -1,0 +1,20 @@
+[
+  {
+    "SOME/IP-SDECUConfiguration": "ECU Name"
+  },
+  {
+    "SOME/IP-SDECUConfiguration": "CDC"
+  },
+  {
+    "SOME/IP-SDECUConfiguration": "MDC"
+  },
+  {
+    "SOME/IP-SDECUConfiguration": "VDC"
+  },
+  {
+    "SOME/IP-SDECUConfiguration": "VIU1"
+  },
+  {
+    "SOME/IP-SDECUConfiguration": "TBOX"
+  }
+]

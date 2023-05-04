@@ -2,187 +2,187 @@
   {
     "输入资料：": "场景能力范围",
     "path": "https：//svn.ci.iauto.com/svn/smartauto/Songhua/01_开发库/21_设计/05_产品设计/07_能力列表/场景能力范围_V1.3.xlsx",
-    "val sdk组入时间": "-"
+    "valsdk组入时间": "-"
   },
   {
     "path": "https://svn.ci.iauto.com/svn/smartauto/Songhua/01_开发库/21_设计/05_产品设计/07_能力列表/场景能力范围_V2.0.xlsx",
-    "val sdk组入时间": "-"
+    "valsdk组入时间": "-"
   },
   {
     "输入资料：": "服务管理列表",
     "path": "https：//svn.ci.iauto.com/svn/smartauto/Songhua/01_开发库/21_设计/01_系统设计/06_VAL/服务导入规则/H53项目CarService 信号表_V01_4-服务描述.xlsx",
-    "val sdk组入时间": "-"
+    "valsdk组入时间": "-"
   },
   {
     "输入资料：": "Carservice H53",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\H53\\car-lib-debug-H53-D-20221009.aar",
-    "val sdk组入时间": 44904
+    "valsdk组入时间": 44904
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\H53\\H53项目CarService 信号表_V01_4-D-20221014.pdf",
-    "val sdk组入时间": 44904
+    "valsdk组入时间": 44904
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\H53\\car-lib-debug-H53-D+20230106.aar",
-    "val sdk组入时间": 44934
+    "valsdk组入时间": 44934
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\H53\\H53项目CarService 信号表_V01_5-SOP20230113.pdf",
-    "val sdk组入时间": 44934
+    "valsdk组入时间": 44934
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\nexus-lib-d-0630.aar",
-    "val sdk组入时间": 44820
+    "valsdk组入时间": 44820
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\MLog-bigsur-debug.aar",
-    "val sdk组入时间": 44820
+    "valsdk组入时间": 44820
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\mega.nexus.framework.static.source.jar",
-    "val sdk组入时间": 44820
+    "valsdk组入时间": 44820
   },
   {
     "输入资料：": "个人中心token 获取",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\token获取\\config-lib-debug-20211207.aar",
-    "val sdk组入时间": 44904
+    "valsdk组入时间": 44904
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\token获取\\voyah-account-manager-debug.aar",
-    "val sdk组入时间": 44904
+    "valsdk组入时间": 44904
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\token获取\\README_V1.13.pdf",
-    "val sdk组入时间": 44904
+    "valsdk组入时间": 44904
   },
   {
     "输入资料：": "Carservice H37",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\H37\\car-lib-debug-H37-C-20230112.aar",
-    "val sdk组入时间": 44934
+    "valsdk组入时间": 44934
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CarService\\H37\\H37项目CarService 信号表_V01_1C20230112.pdf",
-    "val sdk组入时间": 44934
+    "valsdk组入时间": 44934
   },
   {
     "输入资料：": "H53座舱配置字",
     "path": "\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\Config配置\\H53座舱配置字汇总_V0.5_20220523(1).xlsx",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "path": "\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\Config配置\\座舱配置字汇总20220110(1)(1).xlsx",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "天气APP",
     "path": "\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\CPSP其他接口文档\\天气2.pdf",
-    "val sdk组入时间": 44911
+    "valsdk组入时间": 44911
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\天气\\天气【生产地址】.docx",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "爱趣听APP",
     "path": "\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\CPSP其他接口文档\\腾讯\\Flow_ControlSDK_a8bfcc2_1.0.1.180_release_all.aar",
-    "val sdk组入时间": 44893
+    "valsdk组入时间": 44893
   },
   {
     "path": "\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\CPSP其他接口文档\\腾讯\\腾讯车联语义检索接口文档V1.4 (1).pdf",
-    "val sdk组入时间": 44893
+    "valsdk组入时间": 44893
   },
   {
     "输入资料：": "博泰游戏APP",
     "path": "\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\生态接口文档\\岚图H53博泰游戏大厅语音接口.docx",
-    "val sdk组入时间": 44904
+    "valsdk组入时间": 44904
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\H53 CPSP\\岚图H53博泰游戏大厅语音接口v1.2.pdf",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "云听APP",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\云听岚图适配文档\\岚图适配文档\\云听外调SDK_1.3.8.005\\client_sdk_1.3.8.005.jar",
-    "val sdk组入时间": 44904
+    "valsdk组入时间": 44904
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\云听岚图适配文档\\岚图适配文档\\云听外调SDK_1.3.8.005\\云听车载版 Android 外调SDK 接入文档  V1.3.8.005.pdf",
-    "val sdk组入时间": 44904
+    "valsdk组入时间": 44904
   },
   {
     "输入资料：": "VPA APP",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\VPA\\VPA\\sdk-third-release.aar",
-    "val sdk组入时间": 44819
+    "valsdk组入时间": 44819
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\VPA\\SOA_SDK\\sdk-third-release.aar",
-    "val sdk组入时间": 45015
+    "valsdk组入时间": 45015
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\VPA\\SOA_SDK\\SOA 接入文档.pdf",
-    "val sdk组入时间": 45015
+    "valsdk组入时间": 45015
   },
   {
     "输入资料：": "Festival",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\H53 CPSP\\CPSP节日节气接口-20221220.pdf",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "Phone",
     "path": "AOSP api",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "BT",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\蓝牙电话\\H53_BTPhoneSdk_V2.0.5.10.aar",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "Camera",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\相机\\H53_CameraServiceSdk.aar",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "Camera",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\相机\\H53_GallerySDK_V1.0.3_debug.aar",
-    "val sdk组入时间": 45005
+    "valsdk组入时间": 45005
   },
   {
     "输入资料：": "Schedule ",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\日程\\H53_ScheduleBridge_V1.0.5.aar",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "屏幕清洁模式",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\清洁模式\\H53_DisplaySDK_V7.1.6.aar",
-    "val sdk组入时间": 44932
+    "valsdk组入时间": 44932
   },
   {
     "输入资料：": "导航APP",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\H53导航\\导航IVI接口\\monza-map-control-lib-debug.aar",
-    "val sdk组入时间": 44893
+    "valsdk组入时间": 44893
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\H53导航\\导航IVI接口\\导航IVI接口交互文档-2.3.docx",
-    "val sdk组入时间": 44893
+    "valsdk组入时间": 44893
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\地图\\monza-map-control-lib-debug.aar",
-    "val sdk组入时间": 45005
+    "valsdk组入时间": 45005
   },
   {
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\地图\\SOA-导航接口文档0228.docx",
-    "val sdk组入时间": 45005
+    "valsdk组入时间": 45005
   },
   {
     "输入资料：": "KTV APP",
     "path": "https://svn.ci.iauto.com/svn/smartauto/Songhua/01_开发库/21_设计/01_系统设计/06_VAL/01_服务接口文档/雷石KTV/micphonemanager-release.aar",
-    "val sdk组入时间": 44820
+    "valsdk组入时间": 44820
   },
   {
     "输入资料：": "氛围灯",
     "path": "‪\\\\uranus.storm\\iAuto-share\\Songhua\\00_Input\\CP-SP\\氛围灯\\javalib.jar",
-    "val sdk组入时间": 44820
+    "valsdk组入时间": 44820
   },
   {},
   {},

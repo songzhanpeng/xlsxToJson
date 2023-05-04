@@ -28,6 +28,7 @@ function convertSheetToJson(sheet) {
         if (rowIndex !== 0) {
             const item = {};
             sheet.data[0].forEach((key, keyIndex) => {
+                key = specialSymbolReplace(key);
                 item[key] = row[keyIndex];
             });
             jsonData.push(item);
@@ -60,6 +61,11 @@ const cnParse = (str = '') => {
     return parse(formattedStr, false);
 };
 
+function specialSymbolReplace (str) {
+    const reg = /(\n|\r| |)/g;
+    return str.replace(reg,'');
+}
+
 function convertHex(str) {
     if (isString(str)) {
         return str.replace(/0x[0-9a-fA-F]+/g, function (match) {
@@ -86,5 +92,6 @@ module.exports = {
     parse,
     cnParse,
     convertHex,
-    getModeEnv
+    getModeEnv,
+    specialSymbolReplace
 }

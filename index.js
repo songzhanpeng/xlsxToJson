@@ -5,7 +5,7 @@ const {
 } = require('glob');
 const xlsx = require('node-xlsx');
 
-const { convertSheetToJson, mekeJson, getModeEnv } = require('./utils');
+const { convertSheetToJson, mekeJson, getModeEnv, specialSymbolReplace } = require('./utils');
 const config = require(`./config/index.json`)[getModeEnv()];
 
 console.log(`解析 ${getModeEnv()} ...`);
@@ -25,7 +25,7 @@ async function exportJson() {
         const sheets = xlsx.parse(fs.readFileSync(file));
         sheets.forEach(sheet => {
             const jsonData = convertSheetToJson(sheet);
-            const destPath = path.join(config.xlsx.dest, `${sheet.name}.json`);
+            const destPath = path.join(config.xlsx.dest, `${specialSymbolReplace(sheet.name)}.json`);
 
             // 创建输出目录（如果不存在）
             const destDir = path.dirname(destPath);

@@ -1,0 +1,379 @@
+[
+  {
+    "ServiceName": "BCM_Door_CS",
+    "ServiceID": "0x6501",
+    "ServiceDescription": "车门控制服务，针对车身上的4门，尾门，引擎盖、充电口盖对象",
+    "version": "V1.0"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "setCentralLock",
+    "Method/EventID": "0x0002",
+    "Method/EventDescription": "中控锁解锁操作",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nCS_LockUnlock",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.42"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "doorStatusInfo",
+    "FieldPropertyDataType": "DoorStatusInfo",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9002",
+    "Method/EventDescription": "上报车门状态",
+    "EventgroupName@EventgroupID": "BCM_Door_CS_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.0"
+  },
+  {
+    "ServiceName": "TMS_AC_CS",
+    "ServiceID": "0x6604",
+    "ServiceDescription": "空调系统服务接口",
+    "version": "V1.4"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "setSystemFunc",
+    "Method/EventID": "0x0001",
+    "Method/EventDescription": "空调整系统功能设置",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nGlobalACSysPara",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.0"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "setBoxfunc",
+    "Method/EventID": "0x0002",
+    "Method/EventDescription": "空调箱功能设置",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nACBoxPara",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.6"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "setZoneFunc",
+    "Method/EventID": "0x0003",
+    "Method/EventDescription": "空调温区功能设置",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nACZonePara",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.6"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "setAirOutletFunc",
+    "Method/EventID": "0x0004",
+    "Method/EventDescription": "空调电动出风口功能调节",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nAirOutletAdjust",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.6"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "ACSysStatus",
+    "FieldPropertyDataType": "ACWorkStatus",
+    "RPCSpecificType": "Getter",
+    "Method/EventID": "0x1001",
+    "Method/EventDescription": "获取空调的工作状态",
+    "UDP/TCP": "TCP",
+    "version": "V1.0"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "ACSysStatus",
+    "FieldPropertyDataType": "ACWorkStatus",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9001",
+    "Method/EventDescription": "上报空调的工作状态",
+    "EventgroupName@EventgroupID": "TMS_AC_CS_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.0"
+  },
+  {
+    "ServiceName": "TMS_EnvMonitor_CS",
+    "ServiceID": "0x6607",
+    "ServiceDescription": "环境监控服务接口",
+    "version": "V1.4"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "envMonitorStatus",
+    "FieldPropertyDataType": "EnvMonitorStatus",
+    "RPCSpecificType": "Getter",
+    "Method/EventID": "0x1001",
+    "Method/EventDescription": "获取环境监控状态信息",
+    "UDP/TCP": "TCP",
+    "version": "V1.0"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "envMonitorStatus",
+    "FieldPropertyDataType": "EnvMonitorStatus",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9001",
+    "Method/EventDescription": "上报环境监控状态信息",
+    "EventgroupName@EventgroupID": "TMS_EnvMonitor_CS_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.0"
+  },
+  {
+    "ServiceName": "EMS_Battery_CS",
+    "ServiceID": "0x6407",
+    "ServiceDescription": "电池包服务",
+    "version": "V1.2"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "elecStatus",
+    "FieldPropertyDataType": "ElecStatus",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9003",
+    "Method/EventDescription": "上报电量状态",
+    "EventgroupName@EventgroupID": "EMS_Battery_CS_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.6"
+  },
+  {
+    "ServiceName": "EMS_MILEAGE",
+    "ServiceID": "0x6409",
+    "ServiceDescription": "里程相关服务接口",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "resetTrip",
+    "Method/EventID": "0x0001",
+    "Method/EventDescription": "重置里程请求",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nTripResetCmd",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "statsMileage",
+    "FieldPropertyDataType": "StatsMileage",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9001",
+    "Method/EventDescription": "上报里程统计信息",
+    "EventgroupName@EventgroupID": "EMS_MILEAGE_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "cyclic",
+    "CyclicTime(ms)": 1000,
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "edrMileage",
+    "FieldPropertyDataType": "EdrMileage",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9002",
+    "Method/EventDescription": "上报续航里程信息",
+    "EventgroupName@EventgroupID": "EMS_MILEAGE_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "cyclic",
+    "CyclicTime(ms)": 1000,
+    "version": "V1.3"
+  },
+  {
+    "ServiceName": "VCS_CFG",
+    "ServiceID": "0x6306",
+    "ServiceDescription": "车辆运动控制相关模式配置服务",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "setPwrTrainPara",
+    "Method/EventID": "0x0001",
+    "Method/EventDescription": "配置动力系统工作参数",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nPWTWorkPara",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "pwtWorkPara",
+    "FieldPropertyDataType": "PWTWorkPara",
+    "RPCSpecificType": "Getter",
+    "Method/EventID": "0x1001",
+    "Method/EventDescription": "获取动力系统工作参数",
+    "UDP/TCP": "TCP",
+    "version": "V1.3"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "pwtWorkPara",
+    "FieldPropertyDataType": "PWTWorkPara",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9001",
+    "Method/EventDescription": "上报动力系统工作参数",
+    "EventgroupName@EventgroupID": "VCS_CFG_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.3"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "pwtWorkStatus",
+    "FieldPropertyDataType": "PWTWorkStatus",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9002",
+    "Method/EventDescription": "上报动力系统相关工作状态",
+    "EventgroupName@EventgroupID": "VCS_CFG_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.41"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "pwtExceptionStatus",
+    "FieldPropertyDataType": "PWTExceptionStatus",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9003",
+    "Method/EventDescription": "上报动力系统异常状态",
+    "EventgroupName@EventgroupID": "VCS_CFG_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.6"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "setChassisPara",
+    "Method/EventID": "0x0002",
+    "Method/EventDescription": "配置底盘系统相关工作参数",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nCHSWorkPara",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "chsWorkPara",
+    "FieldPropertyDataType": "CHSWorkPara",
+    "RPCSpecificType": "Getter",
+    "Method/EventID": "0x1002",
+    "Method/EventDescription": "获取底盘相关配置参数",
+    "UDP/TCP": "TCP",
+    "version": "V1.3"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "chsWorkPara",
+    "FieldPropertyDataType": "CHSWorkPara",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9004",
+    "Method/EventDescription": "上报底盘相关配置参数",
+    "EventgroupName@EventgroupID": "VCS_CFG_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.3"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "chsWorkStatus",
+    "FieldPropertyDataType": "CHSWorkStatus",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9005",
+    "Method/EventDescription": "上报底盘相关工作状态",
+    "EventgroupName@EventgroupID": "VCS_CFG_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.41"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "vehBaseDriveInfo",
+    "FieldPropertyDataType": "VehBaseDriveInfo",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9006",
+    "Method/EventDescription": "车辆基础状态信息上报",
+    "EventgroupName@EventgroupID": "VCS_CFG_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "cyclic",
+    "CyclicTime(ms)": 20,
+    "version": "V1.1"
+  },
+  {
+    "ServiceName": "VCS_REEV",
+    "ServiceID": "0x6307",
+    "ServiceDescription": "增程车相关服务接口",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "R/R Method",
+    "Method/EventName": "setReevWokPara",
+    "Method/EventID": "0x0001",
+    "Method/EventDescription": "设置增程车相关的功能参数",
+    "UDP/TCP": "TCP",
+    "InputParameter（R/R,F&F）": "CallerId\r\nReevWorkPara",
+    "OutputParameter（R/R）": "CS_ReturnCode",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "reevWorkPara",
+    "FieldPropertyDataType": "ReevWorkPara",
+    "RPCSpecificType": "Getter",
+    "Method/EventID": "0x1001",
+    "Method/EventDescription": "获取增程车相关功能参数",
+    "UDP/TCP": "TCP",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "reevWorkPara",
+    "FieldPropertyDataType": "ReevWorkPara",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9001",
+    "Method/EventDescription": "上报增程车相关功能参数",
+    "EventgroupName@EventgroupID": "VCS_REEV_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "update on change",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "reevStatus",
+    "FieldPropertyDataType": "ReevStatus",
+    "RPCSpecificType": "Getter",
+    "Method/EventID": "0x1002",
+    "Method/EventDescription": "获取增程车相关状态",
+    "UDP/TCP": "TCP",
+    "version": "V1.1"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "reevStatus",
+    "FieldPropertyDataType": "ReevStatus",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9002",
+    "Method/EventDescription": "上报增程车相关状态",
+    "EventgroupName@EventgroupID": "VCS_REEV_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "cyclic",
+    "CyclicTime(ms)": 100,
+    "version": "V1.3"
+  },
+  {
+    "RPCType": "Field",
+    "FieldPropertyName": "reevExceptionStatus",
+    "FieldPropertyDataType": "ReevExceptionStatus",
+    "RPCSpecificType": "Notification Event",
+    "Method/EventID": "0x9003",
+    "Method/EventDescription": "上报增程车异常状态",
+    "EventgroupName@EventgroupID": "VCS_REEV_EventGroup@0x0001",
+    "UDP/TCP": "TCP",
+    "SendStrategy": "cyclic",
+    "CyclicTime(ms)": 100,
+    "version": "V1.3"
+  }
+]

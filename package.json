@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js --mode=songhua",
-    "dev:tennessee": "node index.js --mode=tennessee",
-    "build": "node build.js --mode=songhua",
-    "build:tennessee": "node build.js --mode=tennessee"
+    "build:songhua": "node index.js --mode=songhua && node build.js --mode=songhua",
+    "build:tennessee": "node index.js --mode=tennessee && node build-tennessee.js --mode=tennessee"
   },
   "keywords": [],
   "author": "",
