@@ -11,27 +11,85 @@ console.log(`生成 ${getModeEnv()} ...`);
 function convertJson(jsonData) {
     const result = {};
     try {
-        jsonData.forEach((item) => {
-            const enumName = item['DataTypeName'];
-            const enumValues = cnParse(item['DiscreteValueDefination']) || null;
+        let structValue = {};
+        let structEnumName = '';
 
-            result[enumName] = {
-                ...item,
-                tableValue: enumValues
-            };
-        });
+        for (const item of jsonData) {
+            const { DataTypeCategory } = item;
+
+            switch (DataTypeCategory) {
+                case "Enumeration": {
+                    const enumName = item['DataTypeName'];
+                    const enumValues = cnParse(item['DiscreteValueDefination']) || null;
+
+                    result[enumName] = {
+                        ...item,
+                        tableValue: enumValues
+                    };
+                    break;
+                }
+                case "Struct": {
+                    const enumName = item['DataTypeName'];
+                    structEnumName = enumName;
+
+                    structValue = {
+                        [item.MemberPosition]: item.MemberDatatypeReference,
+                        [item.MemberName]: item.MemberDatatypeReference,
+                    };
+
+                    result[enumName] = {
+                        ...item,
+                        structValue: structValue
+                    };
+                    break;
+                }
+                case "Array": {
+                    const enumName = item['DataTypeName'];
+
+                    result[enumName] = {
+                        ...item,
+                        arrayValue: [item.MemberDatatypeReference]
+                    };
+                    break;
+                }
+                case "Boolean":
+                case "Integer": {
+                    const enumName = item['DataTypeName'];
+
+                    result[enumName] = {
+                        ...item
+                    };
+                    break;
+                }
+                default: {
+                    if (structEnumName) {
+                        structValue = {
+                            ...structValue,
+                            [item.MemberPosition]: item.MemberDatatypeReference,
+                            [item.MemberName]: item.MemberDatatypeReference,
+                        };
+
+                        result[structEnumName] = {
+                            ...item,
+                            structValue: structValue
+                        };
+                    }
+                    break;
+                }
+            }
+        }
     } catch (error) {
         console.log("🚀 ~ file: build.js:23 ~ convertJson ~ error:", error)
     }
     return result;
 }
 
+
 function getLogJson(data, dataType) {
     const logJson = {};
 
     let ServiceID;
     let ServiceDescription;
-    let ServiceName;
 
     for (const item of data) {
         let {
@@ -64,13 +122,17 @@ function getLogJson(data, dataType) {
         const paramNames = (referenceDataType || fieldPropertyDataType).split('\r\n');
 
         paramNames.forEach(paramName => {
-            const dataTypeObj = dataType[paramName]
+            const dataTypeObj = dataType[paramName];
+            const { DataTypeDescription, arrayValue, structValue } = dataTypeObj;
 
             const paramInfo = {
                 type: paramName,
                 paramName: paramName,
-                desc: { displayContent: dataTypeObj.DataTypeDescription, value: "" },
-                serviceMethodType: '',
+                desc: {
+                    displayContent: DataTypeDescription,
+                    value: ""
+                },
+                // serviceMethodType: '',
             };
 
             const logObj = logJson[logKey];
@@ -87,7 +149,20 @@ function getLogJson(data, dataType) {
             }
 
             logJson[logKey].params.push(paramInfo);
-            logJson[logKey].enums[paramName] = dataTypeObj
+            logJson[logKey].enums[paramName] = dataTypeObj;
+
+            if (arrayValue) {
+                arrayValue.forEach(arrayName => {
+                    logJson[logKey].enums[arrayName] = dataType[arrayName];
+                });
+            }
+
+            if (structValue) {
+                for (const key in structValue) {
+                    logJson[logKey].enums[structValue[key]] = dataType[structValue[key]];
+                }
+
+            }
         });
 
 

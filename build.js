@@ -7,11 +7,12 @@ const serviceInterfaceDefinitionJson = require(`${config.xlsx.dest}/ServiceInter
 const dataTypeDefinition = require(`${config.xlsx.dest}/DataTypeDefinition.json`);
 
 console.log(`生成 ${getModeEnv()} ...`);
+
 // 处理 DataType
 function convertJson(jsonData) {
     const result = {};
     try {
-        jsonData.forEach((item) => {
+        for (const item of jsonData) {
             const enumName = item['DataTypeName数据类型名称'];
             const enumValues = parse(item['TableValue枚举值']) || null;
             const cnEnumValues = cnParse(item['Remark备注']) || null;
@@ -21,12 +22,13 @@ function convertJson(jsonData) {
                 tableValue: enumValues,
                 cnTableValue: cnEnumValues
             };
-        });
+        }
     } catch (error) {
         console.log("🚀 ~ file: build.js:23 ~ convertJson ~ error:", error)
     }
     return result;
 }
+
 
 function getLogJson(data, dataType) {
     const logJson = {};
