@@ -1,4 +1,5 @@
 const path = require('path');
+const _ = require('lodash');
 
 const { mekeJson, parse, cnParse, convertHex, getModeEnv } = require('./utils');
 const config = require(`./config/index.json`)[getModeEnv()];
@@ -53,6 +54,8 @@ function convertJson(jsonData) {
                     break;
                 }
                 case "Boolean":
+                case "Float":
+                case "String":
                 case "Integer": {
                     const enumName = item['DataTypeName'];
 
@@ -70,6 +73,7 @@ function convertJson(jsonData) {
                         };
 
                         result[structEnumName] = {
+                            ...result[structEnumName],
                             ...item,
                             structValue: structValue
                         };
@@ -91,80 +95,78 @@ function getLogJson(data, dataType) {
     let ServiceID;
     let ServiceDescription;
 
-    for (const item of data) {
-        let {
-            "ServiceID": serviceIdentifier,
-            "ServiceDescription": serviceDescription,
-            "Method/EventDescription": interfaceDescription,
-            "Method/EventID": interfaceIdentifier,
-            "Method/EventName": parameterName,
-            "FieldPropertyDataType": fieldPropertyDataType,
-            "Method/EventDescription": parameterDescription,
-            "InputParameter（R/R,F&F）": referenceDataType,
-        } = item;
+    try {
+        for (const item of data) {
+            let {
+                "ServiceID": serviceIdentifier,
+                "ServiceDescription": serviceDescription,
+                "Method/EventDescription": interfaceDescription,
+                "Method/EventID": interfaceIdentifier,
+                "Method/EventName": parameterName,
+                "Method/EventDescription": parameterDescription,
+                "InputParameter（R/R,F&F）": referenceDataType,
+                "OutputParameter（R/R）": resultData,
+                "Event/NotificationEventParameter": notifyReferenceDataType,
+                RPCType
+            } = item;
 
-        ServiceID = serviceIdentifier || ServiceID;
-        ServiceDescription = serviceDescription || ServiceDescription;
+            ServiceID = serviceIdentifier || ServiceID;
+            ServiceDescription = serviceDescription || ServiceDescription;
 
-        if (serviceIdentifier) {
-            continue;
+            const regex = /^get/;
+            // 过滤服务哪一行 前三个字符是get也过滤
+            if (serviceIdentifier || regex.test(parameterName)) {
+                continue;
+            }
+
+            serviceIdentifier = ServiceID;
+            serviceDescription = ServiceDescription;
+
+            // 构造 logKey
+            const logKey = `${convertHex(serviceIdentifier)}_${convertHex(interfaceIdentifier)}`;
+
+            // 构造 paramInfo
+            const paramDesc = parameterDescription || "";
+
+            const paramNames = (referenceDataType || notifyReferenceDataType || '').split('\n').filter(Boolean);
+            console.log("🚀 ~ file: build-tennessee.js:131 ~ getLogJson ~ paramNames:", paramNames)
+
+            paramNames.forEach(paramName => {
+                const [type, name] = paramName.split(' ');
+                const dataTypeObj = dataType[type];
+                const { DataTypeDescription, arrayValue, structValue } = dataTypeObj;
+
+                const paramInfo = {
+                    type: type,
+                    paramName: name,
+                    desc: {
+                        displayContent: DataTypeDescription,
+                        value: ""
+                    },
+                    serviceMethodType: parameterName,
+                };
+
+                const logObj = logJson[logKey];
+
+                // 创建
+                if (!logObj) {
+                    logJson[logKey] = {
+                        desc: '',
+                        serviceDescription: serviceDescription,
+                        serviceInterfaceElementDescription: interfaceDescription,
+                        params: [],
+                        enums: {},
+                    }
+                }
+
+                logJson[logKey].params.push(paramInfo);
+                logJson[logKey].enums[type] = dataTypeObj;
+            });
+
+
         }
-
-        serviceIdentifier = ServiceID;
-        serviceDescription = ServiceDescription;
-
-        // 构造 logKey
-        const logKey = `${convertHex(serviceIdentifier)}_${convertHex(interfaceIdentifier)}`;
-
-        // 构造 paramInfo
-        const paramDesc = parameterDescription || "";
-
-        const paramNames = (referenceDataType || fieldPropertyDataType).split('\r\n');
-
-        paramNames.forEach(paramName => {
-            const dataTypeObj = dataType[paramName];
-            const { DataTypeDescription, arrayValue, structValue } = dataTypeObj;
-
-            const paramInfo = {
-                type: paramName,
-                paramName: paramName,
-                desc: {
-                    displayContent: DataTypeDescription,
-                    value: ""
-                },
-                // serviceMethodType: '',
-            };
-
-            const logObj = logJson[logKey];
-
-            // 创建
-            if (!logObj) {
-                logJson[logKey] = {
-                    desc: '',
-                    serviceDescription: serviceDescription,
-                    serviceInterfaceElementDescription: interfaceDescription,
-                    params: [],
-                    enums: {},
-                }
-            }
-
-            logJson[logKey].params.push(paramInfo);
-            logJson[logKey].enums[paramName] = dataTypeObj;
-
-            if (arrayValue) {
-                arrayValue.forEach(arrayName => {
-                    logJson[logKey].enums[arrayName] = dataType[arrayName];
-                });
-            }
-
-            if (structValue) {
-                for (const key in structValue) {
-                    logJson[logKey].enums[structValue[key]] = dataType[structValue[key]];
-                }
-
-            }
-        });
-
+    } catch (error) {
+        console.log("🚀 ~ file: build-tennessee.js:174 ~ getLogJson ~ error:", error)
 
     }
 
@@ -200,12 +202,12 @@ async function bootstrap() {
     // 获取dataType
     const result = convertJson(dataTypeDefinition);
     const destPath = path.join(config.output.dest, `DataType.json`);
-    mekeJson(destPath, JSON.stringify(result, null, 2));
+    await mekeJson(destPath, JSON.stringify(result, null, 2));
 
     // 获取服务列表
-    const logJson = getLogJson(serviceInterfaceDefinitionJson, result);
+    const logJson = getLogJson(serviceInterfaceDefinitionJson, _.cloneDeep(result));
     const logJsonDestPath = path.join(config.output.dest, `logJson.json`);
-    mekeJson(logJsonDestPath, JSON.stringify(logJson, null, 2));
+    await mekeJson(logJsonDestPath, JSON.stringify(logJson, null, 2));
 }
 
 bootstrap();
