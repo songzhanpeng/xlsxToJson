@@ -12,7 +12,7 @@ console.log(`生成 ${getModeEnv()} ...`);
 function convertJson(jsonData) {
     const result = {};
     try {
-        let structValue = {};
+        let structValue = [];
         let structEnumName = '';
 
         for (const item of jsonData) {
@@ -24,7 +24,11 @@ function convertJson(jsonData) {
                     const enumValues = cnParse(item['DiscreteValueDefination']) || null;
 
                     result[enumName] = {
-                        ...item,
+                        DataTypeName: item.DataTypeName,
+                        DataTypeDescription: item.DataTypeDescription,
+                        DataTypeCategory: item.DataTypeCategory,
+                        BaseDatatype: item.BaseDatatype,
+                        version: item.version,
                         tableValue: enumValues
                     };
                     break;
@@ -33,13 +37,20 @@ function convertJson(jsonData) {
                     const enumName = item['DataTypeName'];
                     structEnumName = enumName;
 
-                    structValue = {
-                        [item.MemberPosition]: item.MemberDatatypeReference,
-                        [item.MemberName]: item.MemberDatatypeReference,
-                    };
+                    structValue = [
+                        {
+                            "MemberPosition": item.MemberPosition,
+                            "MemberName": item.MemberName,
+                            "MemberDescription": item.MemberDescription,
+                            "MemberDatatypeReference": item.MemberDatatypeReference,
+                        }
+                    ]
 
                     result[enumName] = {
-                        ...item,
+                        DataTypeName: item.DataTypeName,
+                        DataTypeDescription: item.DataTypeDescription,
+                        DataTypeCategory: item.DataTypeCategory,
+                        version: item.version || "",
                         structValue: structValue
                     };
                     break;
@@ -66,17 +77,12 @@ function convertJson(jsonData) {
                 }
                 default: {
                     if (structEnumName) {
-                        structValue = {
-                            ...structValue,
-                            [item.MemberPosition]: item.MemberDatatypeReference,
-                            [item.MemberName]: item.MemberDatatypeReference,
-                        };
-
-                        result[structEnumName] = {
-                            ...result[structEnumName],
-                            ...item,
-                            structValue: structValue
-                        };
+                        result[structEnumName].structValue.push({
+                            "MemberPosition": item.MemberPosition,
+                            "MemberName": item.MemberName,
+                            "MemberDescription": item.MemberDescription,
+                            "MemberDatatypeReference": item.MemberDatatypeReference,
+                        })
                     }
                     break;
                 }
@@ -129,20 +135,14 @@ function getLogJson(data, dataType) {
             const paramDesc = parameterDescription || "";
 
             const paramNames = (referenceDataType || notifyReferenceDataType || '').split('\n').filter(Boolean);
-            console.log("🚀 ~ file: build-tennessee.js:131 ~ getLogJson ~ paramNames:", paramNames)
 
             paramNames.forEach(paramName => {
                 const [type, name] = paramName.split(' ');
-                const dataTypeObj = dataType[type];
-                const { DataTypeDescription, arrayValue, structValue } = dataTypeObj;
 
                 const paramInfo = {
                     type: type,
                     paramName: name,
-                    desc: {
-                        displayContent: DataTypeDescription,
-                        value: ""
-                    },
+                    value: "",
                     serviceMethodType: parameterName,
                 };
 
@@ -155,12 +155,10 @@ function getLogJson(data, dataType) {
                         serviceDescription: serviceDescription,
                         serviceInterfaceElementDescription: interfaceDescription,
                         params: [],
-                        enums: {},
                     }
                 }
 
                 logJson[logKey].params.push(paramInfo);
-                logJson[logKey].enums[type] = dataTypeObj;
             });
 
 
@@ -175,11 +173,9 @@ function getLogJson(data, dataType) {
         let descs = [];
 
         service.params = service.params.map((item, index) => {
-            const val = `$\{P${index}\}`;
-            const desc = { ...item.desc };
-            desc.value += val;
-            descs.push(val);
-            return { ...item, desc };
+            const value = `$\{P${index}\}`;
+            descs.push(value);
+            return { ...item, value };
         });
 
         let newDesc
