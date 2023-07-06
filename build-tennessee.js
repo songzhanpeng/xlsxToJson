@@ -95,7 +95,7 @@ function convertJson(jsonData) {
 }
 
 
-function getLogJson(data, dataType) {
+function getLogJson(data) {
     const logJson = {};
 
     let ServiceID;
@@ -109,7 +109,6 @@ function getLogJson(data, dataType) {
                 "Method/EventDescription": interfaceDescription,
                 "Method/EventID": interfaceIdentifier,
                 "Method/EventName": parameterName,
-                "Method/EventDescription": parameterDescription,
                 "InputParameter（R/R,F&F）": referenceDataType,
                 "OutputParameter（R/R）": resultData,
                 "Event/NotificationEventParameter": notifyReferenceDataType,
@@ -125,14 +124,12 @@ function getLogJson(data, dataType) {
                 continue;
             }
 
+            // 过滤掉get 不是notify接口的 全是set接口
             serviceIdentifier = ServiceID;
             serviceDescription = ServiceDescription;
 
             // 构造 logKey
             const logKey = `${convertHex(serviceIdentifier)}_${convertHex(interfaceIdentifier)}`;
-
-            // 构造 paramInfo
-            const paramDesc = parameterDescription || "";
 
             const paramNames = (referenceDataType || notifyReferenceDataType || '').split('\n').filter(Boolean);
 
@@ -200,8 +197,8 @@ async function bootstrap() {
     const destPath = path.join(config.output.dest, `DataType.json`);
     await mekeJson(destPath, JSON.stringify(result, null, 2));
 
-    // 获取服务列表
-    const logJson = getLogJson(serviceInterfaceDefinitionJson, _.cloneDeep(result));
+    // 获取logJson
+    const logJson = getLogJson(serviceInterfaceDefinitionJson);
     const logJsonDestPath = path.join(config.output.dest, `logJson.json`);
     await mekeJson(logJsonDestPath, JSON.stringify(logJson, null, 2));
 }
