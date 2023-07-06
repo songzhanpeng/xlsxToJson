@@ -24,16 +24,19 @@ async function exportJson() {
     files.forEach(file => {
         const sheets = xlsx.parse(fs.readFileSync(file));
         sheets.forEach(sheet => {
-            const jsonData = convertSheetToJson(sheet);
-            const destPath = path.join(config.xlsx.dest, `${specialSymbolReplace(sheet.name)}.json`);
-
-            // 创建输出目录（如果不存在）
-            const destDir = path.dirname(destPath);
-            if (!fs.existsSync(destDir)) {
-                fs.mkdirSync(destDir, { recursive: true });
+            // 过滤sheet name 包含!
+            if (!sheet.name.includes("!")) {
+                const jsonData = convertSheetToJson(sheet);
+                const destPath = path.join(config.xlsx.dest, `${specialSymbolReplace(sheet.name)}.json`);
+    
+                // 创建输出目录（如果不存在）
+                const destDir = path.dirname(destPath);
+                if (!fs.existsSync(destDir)) {
+                    fs.mkdirSync(destDir, { recursive: true });
+                }
+    
+                mekeJson(destPath, JSON.stringify(jsonData, null, 2));
             }
-
-            mekeJson(destPath, JSON.stringify(jsonData, null, 2));
         });
     });
 }

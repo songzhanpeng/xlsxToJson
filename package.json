@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:songhua": "node index.js --mode=songhua && node build.js --mode=songhua",
-    "build:tennessee": "node index.js --mode=tennessee && node build-tennessee.js --mode=tennessee"
+    "build:songhua": "rimraf base/songhua && node index.js --mode=songhua && node build.js --mode=songhua",
+    "build:tennessee": "rimraf base/tennessee && node index.js --mode=tennessee && node build-tennessee.js --mode=tennessee"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "glob": "^10.2.2",
     "lodash": "^4.17.21",
-    "node-xlsx": "^0.21.2"
+    "node-xlsx": "^0.21.2",
+    "rimraf": "^5.0.1"
   }
 }
