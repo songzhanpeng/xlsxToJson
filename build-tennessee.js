@@ -6,6 +6,7 @@ const config = require(`./config/index.json`)[getModeEnv()];
 
 const serviceInterfaceDefinitionJson = require(`${config.xlsx.dest}/1服务定义.json`);
 const dataTypeDefinition = require(`${config.xlsx.dest}/2数据类型定义.json`);
+const animationInterface = require(`${config.xlsx.dest}/动画接口(岚图).json`);
 
 console.log(`生成 ${getModeEnv()} ...`);
 // 处理 DataType
@@ -94,7 +95,7 @@ function convertJson(jsonData) {
     return result;
 }
 
-
+// 处理 logJson
 function getLogJson(data) {
     const logJson = {};
 
@@ -162,7 +163,6 @@ function getLogJson(data) {
         }
     } catch (error) {
         console.log("🚀 ~ file: build-tennessee.js:174 ~ getLogJson ~ error:", error)
-
     }
 
     // 处理desc
@@ -191,6 +191,49 @@ function getLogJson(data) {
     return logJson
 }
 
+function setLogJson(logJson) {
+    const historySet = new Set();
+    for (const animation of animationInterface) {
+        if (!animation.ID || !animation['动作服务列表']) {
+            continue;
+        }
+        const {
+            "条件类型": conditionType,
+            "功能": feature,
+            "参数1（objectName）": objectName,
+            "参数2（methodName）": methodName,
+            "参数3（Value）": value = '',
+            ID
+        } = animation;
+        // 处理动作列表数据
+        const actionSet = new Set('');
+        animation['动作服务列表'].split('\n').forEach(item => {
+            actionSet.add(item);
+        });
+
+        // 循环处理数据
+        actionSet.forEach(action => {
+            if (!historySet.has(action)) {
+                historySet.add(action);
+                logJson[action].action = {
+                    ID,
+                    conditionType,
+                    feature,
+                    objectName,
+                    methodName,
+                    value: value.replaceAll('，', ',')
+                }
+            }else {
+                console.warn('\n--------warn start--------');
+                console.warn('当前服务已对应动作, 服务信息:', action)
+                console.warn('不允许同一服务对应多个车模动作, 动作ID:', ID)
+                console.warn('--------warn end--------\n');
+            }
+            
+        })
+    }
+}
+
 async function bootstrap() {
     // 获取dataType
     const result = convertJson(dataTypeDefinition);
@@ -199,6 +242,7 @@ async function bootstrap() {
 
     // 获取logJson
     const logJson = getLogJson(serviceInterfaceDefinitionJson);
+    setLogJson(logJson);
     const logJsonDestPath = path.join(config.output.dest, `logJson.json`);
     await mekeJson(logJsonDestPath, JSON.stringify(logJson, null, 2));
 }
