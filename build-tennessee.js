@@ -3,6 +3,7 @@ const _ = require('lodash');
 
 const { mekeJson, parse, cnParse, convertHex, getModeEnv } = require('./utils');
 const config = require(`./config/index.json`)[getModeEnv()];
+const { Values } = require('./enums');
 
 const serviceInterfaceDefinitionJson = require(`${config.xlsx.dest}/1服务定义.json`);
 const dataTypeDefinition = require(`${config.xlsx.dest}/2数据类型定义.json`);
@@ -191,6 +192,7 @@ function getLogJson(data) {
     return logJson
 }
 
+// 设置动作到log列表
 function setLogJson(logJson) {
     const historySet = new Set();
     for (const animation of animationInterface) {
@@ -223,15 +225,79 @@ function setLogJson(logJson) {
                     methodName,
                     value: value.replaceAll('，', ',')
                 }
-            }else {
+            } else {
                 console.warn('\n--------warn start--------');
                 console.warn('当前服务已对应动作, 服务信息:', action)
                 console.warn('不允许同一服务对应多个车模动作, 动作ID:', ID)
                 console.warn('--------warn end--------\n');
             }
-            
+
         })
     }
+}
+
+// 获取车模动作
+function getCarAction(carAction) {
+    const result = [];
+    try {
+        // 处理数据
+        for (const action of carAction) {
+            const {
+                ID: id,
+                "条件类型": conditionType,
+                "功能": Function,
+                "参数1（objectName）": objectName,
+                "参数2（methodName）": methodName,
+                "参数3（Value）": value,
+                "值类型": valueType,
+                "参数备注": parameterRemarks,
+                "备注（动作是否循环等）": remarks,
+                "完成状态": completionStatus
+            } = action;
+
+            // 跳过这些数据
+            if (!id || completionStatus === '不需要') {
+                continue;
+            }
+
+            const newAction = {
+                id,
+                conditionType,
+                Function,
+                objectName,
+                methodName,
+                value,
+                valueType,
+            }
+
+            // 处理新的数据
+            switch (valueType) {
+                case Values.ENUMERATION: {
+                    const vals = value.replaceAll('，', ',').replaceAll(' ', '').split(',\n')
+                    const obj = {}
+                    vals.forEach(function (val) {
+                        const [value, key] = val.split('=');
+                        obj[key] = value
+                    })
+                    newAction.value = obj;
+                    break;
+                }
+                case Values.RANGE: {
+                    newAction.value = value.replaceAll('～','~');
+                    break;
+                }
+                case Values.STRING:
+                case Values.NO_VALUE: {
+                    newAction.value = '';
+                    break;
+                }
+            }
+            result.push(newAction);
+        }
+    } catch (error) {
+        console.log("🚀 ~ file: build-tennessee.js:244 ~ getCarAction ~ error:", error)
+    }
+    return result;
 }
 
 async function bootstrap() {
@@ -240,9 +306,13 @@ async function bootstrap() {
     const destPath = path.join(config.output.dest, `DataType.json`);
     await mekeJson(destPath, JSON.stringify(result, null, 2));
 
+    // 获取车模动作json
+    const carAction = getCarAction(animationInterface);
+    const carActionPath = path.join(config.output.dest, `carAction.json`);
+    await mekeJson(carActionPath, JSON.stringify(carAction, null, 2));
+
     // 获取logJson
     const logJson = getLogJson(serviceInterfaceDefinitionJson);
-    setLogJson(logJson);
     const logJsonDestPath = path.join(config.output.dest, `logJson.json`);
     await mekeJson(logJsonDestPath, JSON.stringify(logJson, null, 2));
 }
