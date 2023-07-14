@@ -239,6 +239,8 @@ function setLogJson(logJson) {
 // 获取车模动作
 function getCarAction(carAction) {
     const result = [];
+    let newAction = null;
+
     try {
         // 处理数据
         for (const action of carAction) {
@@ -252,22 +254,24 @@ function getCarAction(carAction) {
                 "值类型": valueType,
                 "参数备注": parameterRemarks,
                 "备注（动作是否循环等）": remarks,
-                "完成状态": completionStatus
+                "完成状态": completionStatus,
+                "动作服务列表": actionServiceList,
+                "映射列表": mappingList
             } = action;
 
             // 跳过这些数据
-            if (!id || completionStatus === '不需要') {
+            if (JSON.stringify(action) === '{}' || completionStatus === '不需要') {
                 continue;
             }
 
-            const newAction = {
+            newAction = {
                 id,
                 conditionType,
                 Function,
                 objectName,
                 methodName,
                 value,
-                valueType,
+                valueType
             }
 
             // 处理新的数据
@@ -283,7 +287,7 @@ function getCarAction(carAction) {
                     break;
                 }
                 case Values.RANGE: {
-                    newAction.value = value.replaceAll('～','~');
+                    newAction.value = value.replaceAll('～', '~');
                     break;
                 }
                 case Values.STRING:
@@ -292,6 +296,23 @@ function getCarAction(carAction) {
                     break;
                 }
             }
+
+            if (actionServiceList) {
+                // actionServiceList
+                newAction.actionServiceList = [...new Set(actionServiceList.split('\n'))];
+            }
+
+            if (mappingList) {
+                const vals = mappingList.replaceAll('，', ',').replaceAll(' ', '').split(',\n')
+                const obj = {}
+                vals.forEach(function (val) {
+                    const [key, value] = val.split('=');
+                    obj[key] = value.replaceAll(',', '')
+                })
+                newAction.mapping = obj;
+            }
+
+
             result.push(newAction);
         }
     } catch (error) {
