@@ -10,6 +10,17 @@ const dataTypeDefinition = require(`${config.xlsx.dest}/2数据类型定义.json
 const animationInterface = require(`${config.xlsx.dest}/动画接口(岚图).json`);
 
 console.log(`生成 ${getModeEnv()} ...`);
+
+const originalWarn = console.warn;
+
+console.warn = function () {
+    const separator = '--------------------------------------';
+    console.log('\n' + separator);
+    originalWarn.apply(console, arguments);
+    console.log(separator + '\n');
+};
+
+
 // 处理 DataType
 function convertJson(jsonData) {
     const result = {};
@@ -193,47 +204,34 @@ function getLogJson(data) {
 }
 
 // 设置动作到log列表
-function setLogJson(logJson) {
+function setLogJson(logJson, carAction) {
     const historySet = new Set();
-    for (const animation of animationInterface) {
-        if (!animation.ID || !animation['动作服务列表']) {
-            continue;
+    let historyCarAction = null;
+
+    carAction.map((item, index) => {
+        if (item.id) { // 缓存这次的数据
+            historyCarAction = item;
         }
-        const {
-            "条件类型": conditionType,
-            "功能": feature,
-            "参数1（objectName）": objectName,
-            "参数2（methodName）": methodName,
-            "参数3（Value）": value = '',
-            ID
-        } = animation;
-        // 处理动作列表数据
-        const actionSet = new Set('');
-        animation['动作服务列表'].split('\n').forEach(item => {
-            actionSet.add(item);
-        });
-
-        // 循环处理数据
-        actionSet.forEach(action => {
-            if (!historySet.has(action)) {
-                historySet.add(action);
-                logJson[action].action = {
-                    ID,
-                    conditionType,
-                    feature,
-                    objectName,
-                    methodName,
-                    value: value.replaceAll('，', ',')
+        // 判断服务
+        if (historySet.has(item.actionService)) {
+            console.warn('该服务接口已对应过动作，请不要重复对应:%s', item.actionService)
+        } else {
+            if (item.actionService) {
+                historySet.add(item.actionService);
+                const log = logJson[item.actionService]
+                if (log) { //判断是否有对应的服务接口
+                    log.carAction = {
+                        objectName: historyCarAction.objectName,
+                        methodName: historyCarAction.methodName,
+                        value: historyCarAction.value,
+                        mapping: item.mapping,
+                    }
+                } else {
+                    console.warn('对应不上服务接口请确认是否有效: %s', item.actionService);
                 }
-            } else {
-                console.warn('\n--------warn start--------');
-                console.warn('当前服务已对应动作, 服务信息:', action)
-                console.warn('不允许同一服务对应多个车模动作, 动作ID:', ID)
-                console.warn('--------warn end--------\n');
             }
-
-        })
-    }
+        }
+    });
 }
 
 // 获取车模动作
@@ -255,7 +253,7 @@ function getCarAction(carAction) {
                 "参数备注": parameterRemarks,
                 "备注（动作是否循环等）": remarks,
                 "完成状态": completionStatus,
-                "动作服务列表": actionServiceList,
+                "服务接口": actionService,
                 "映射列表": mappingList
             } = action;
 
@@ -297,9 +295,9 @@ function getCarAction(carAction) {
                 }
             }
 
-            if (actionServiceList) {
-                // actionServiceList
-                newAction.actionServiceList = [...new Set(actionServiceList.split('\n'))];
+            if (actionService) {
+                // actionService
+                newAction.actionService = actionService.trim();
             }
 
             if (mappingList) {
@@ -333,7 +331,11 @@ async function bootstrap() {
     await mekeJson(carActionPath, JSON.stringify(carAction, null, 2));
 
     // 获取logJson
-    const logJson = getLogJson(serviceInterfaceDefinitionJson);
+    const logJson = await getLogJson(serviceInterfaceDefinitionJson);
+
+    // 处理
+    await setLogJson(logJson, carAction);
+
     const logJsonDestPath = path.join(config.output.dest, `logJson.json`);
     await mekeJson(logJsonDestPath, JSON.stringify(logJson, null, 2));
 }
